@@ -25,7 +25,7 @@ class Ui_MainWindowGenerico(QtGui.QMainWindow):
         self.actionEAbrirSerial_Daruma.triggered.connect(self.on_actionEAbrirSerial_Daruma_triggered)
         self.actionTEnviarDados_Daruma.triggered.connect(self.on_actionTEnviarDados_Daruma_triggered)
         self.actionRReceberDados_Daruma.triggered.connect(self.on_actionRReceberDados_Daruma_triggered)
-        self.actionEFecharSerial_Daruma.triggered.connect(self.actionEFecharSerial_Daruma_triggered)
+        self.actionEFecharSerial_Daruma.triggered.connect(self.on_actionEFecharSerial_Daruma_triggered)
 
     def on_pushButtonEncerrar_clicked(self):
         self.close()
@@ -47,7 +47,7 @@ class Ui_MainWindowGenerico(QtGui.QMainWindow):
         self.form_GENERICO_rReceberDados.show()
         pass
 
-    def actionEFecharSerial_Daruma_triggered(self):
+    def on_actionEFecharSerial_Daruma_triggered(self):
         pass
 
     def setupUi(self, MainWindowGenerico):

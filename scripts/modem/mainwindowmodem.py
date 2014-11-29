@@ -8,6 +8,21 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from scripts.modem.ui_modem_conexaocsd import Ui_ui_MODEM_ConexaoCSD
+from scripts.modem.ui_modem_eapagar import Ui_ui_MODEM_eApagar
+from scripts.modem.ui_modem_regbandejainicio import Ui_ui_MODEM_regBandejaInicio
+from scripts.modem.ui_modem_regcaptionwinapp import Ui_ui_MODEM_regCaptionWinAPP
+from scripts.modem.ui_modem_regporta import Ui_ui_MODEM_regPorta
+from scripts.modem.ui_modem_regretornavalorchave import Ui_ui_MODEM_regRetornaValorChave
+from scripts.modem.ui_modem_regtempoalertar import Ui_ui_MODEM_regTempoAlertar
+from scripts.modem.ui_modem_regvelocidade import Ui_ui_MODEM_regVelocidade
+from scripts.modem.ui_modem_rrecebersms import Ui_ui_MODEM_rReceberSms
+from scripts.modem.ui_modem_rrecebersmsindice import Ui_ui_MODEM_rReceberSmsIndice
+from scripts.modem.ui_modem_rretornarimei import Ui_ui_MODEM_rRetornarIMEI
+from scripts.modem.ui_modem_rretornaroperadora import Ui_ui_MODEM_rRetornarOperadora
+from scripts.modem.ui_modem_tenviarsms import Ui_ui_modem_tenviarsms
+from scripts.modem.ui_modem_tenviarsmsoperadora import Ui_ui_MODEM_tEnviarSmsOperadora
+
 
 class Ui_MainWindowModem(QtGui.QMainWindow):
 
@@ -16,6 +31,145 @@ class Ui_MainWindowModem(QtGui.QMainWindow):
 
         self.setupUi(self)
 
+        self.pushButtonEncerrar.clicked.connect(self.on_pushButtonEncerrar_clicked)
+        self.actionMetodo_eDefinirProduto_Daruma.triggered.connect(self.on_eDefinirProduto_Daruma_triggered)
+        self.actionMetodo_tEnviarSms_MODEM_Daruma.triggered.connect(self.on_tEnviarSms_MODEM_Daruma_triggered)
+        self.actionMetodo_regRetornaValorChave_DarumaFramework.triggered.connect(self.on_regRetornaValorChave_DarumaFramework_triggered)
+        self.actionMetodo_regTempoAlertar_MODEM_DarumaFramework.triggered.connect(self.on_regTempoAlertar_MODEM_DarumaFramework_triggered)
+        self.actionMetodo_regRetornaValorChave_DarumaFramework_2.triggered.connect(self.on_regRetornaValorChave_DarumaFramework_2_triggered)
+        self.actionMetodo_regPorta_MODEM_DarumaFramework.triggered.connect(self.on_regPorta_MODEM_DarumaFramework_triggered)
+        self.actionMetodo_regVelocidade_MODEM_DarumaFramework.triggered.connect(self.on_regVelocidade_MODEM_DarumaFramework_triggered)
+        self.actionMetodo_regCaptionWinAPP_MODEM_DarumaFramework.triggered.connect(self.on_regCaptionWinAPP_MODEM_DarumaFramework_triggered)
+        self.actionMetodo_regBandejaInicio_MODEM_DarumaFramework.triggered.connect(self.on_regBandejaInicio_MODEM_DarumaFramework_triggered)
+        self.actionMetodo_eReiniciar_MODEM_DarumaFramework.triggered.connect(self.on_eReiniciar_MODEM_DarumaFramework_triggered)
+        self.actionMetodo_eApagarSms_MODEM_DarumaFramework.triggered.connect(self.on_eApagarSms_MODEM_DarumaFramework_triggered)
+        self.actionMetodo_eInicializar_MODEM_DarumaFramework.triggered.connect(self.on_eInicializar_MODEM_DarumaFramework_triggered)
+        self.actionMetodo_eTrocarBandeja_MODEM_DarumaFramework.triggered.connect(self.on_eTrocarBandeja_MODEM_DarumaFramework_triggered)
+        self.actionMetodo_eBuscarPortaVelocidade_MODEM_DarumaFramework.triggered.connect(self.on_eBuscarPortaVelocidade_MODEM_DarumaFramework_triggered)
+        self.actionMetodo_tEnviarSmsOperadora_MODEM_Daruma.triggered.connect(self.on_tEnviarSmsOperadora_MODEM_Daruma_triggered)
+        self.actionMetodo_rReceberSms_MODEM_DarumaFramework.triggered.connect(self.on_rReceberSms_MODEM_DarumaFramework_triggered)
+        self.actionMetodo_rReceberSmsIndice_MODEM_DarumaFramework.triggered.connect(self.on_rReceberSmsIndice_MODEM_DarumaFramework_triggered)
+        self.actionMetodo_rListarSms_MODEM_DarumaFramework.triggered.connect(self.on_rListarSms_MODEM_DarumaFramework_triggered)
+        self.actionMetodo_rRetornarImei_MODEM_DarumaFramework.triggered.connect(self.on_rRetornarImei_MODEM_DarumaFramework_triggered)
+        self.actionMetodo_rNivelSinalRecebido_MODEM_DarumaFramework.triggered.connect(self.on_rNivelSinalRecebido_MODEM_DarumaFramework_triggered)
+        self.actionMetodo_rRetornarOperadora_MODEM_DarumaFramework.triggered.connect(self.on_rRetornarOperadora_MODEM_DarumaFramework_triggered)
+        self.actionServi_o_CSD_DarumaFramework.triggered.connect(self.on_Servi_o_CSD_DarumaFramework_triggered)
+        self.actionTRUELerApagar.triggered.connect(self.on_TRUELerApagar_triggered)
+        self.actionFALSELerApagar.triggered.connect(self.on_FALSELerApagar_triggered)
+        self.actionTRUEThread.triggered.connect(self.on_TRUEThread_triggered)
+        self.actionFALSEThread.triggered.connect(self.on_FALSEThread_triggered)
+
+    def on_pushButtonEncerrar_clicked(self):
+        self.close()
+
+    def on_eDefinirProduto_Daruma_triggered(self):
+        #iRetorno = eDefinirProduto_Daruma("MODEM");
+        #if(iRetorno == 1):
+        #    QMessageBox.information(this,"Método eDefinirProduto_Daruma","Produto definido com sucesso!")
+        #else:
+        #    QMessageBox.information(this,"Método eDefinirProduto_Daruma","Erro na definição de produto!")
+        pass
+
+    def on_tEnviarSms_MODEM_Daruma_triggered(self):
+        self.form_MODEM_tEnviarSms = Ui_ui_modem_tenviarsms()
+        self.form_MODEM_tEnviarSms.show()
+
+    def on_regRetornaValorChave_DarumaFramework_triggered(self):
+        self.form_MODEM_regRetornaValorChave = Ui_ui_MODEM_regRetornaValorChave()
+        self.form_MODEM_regRetornaValorChave.show()
+
+    def on_regTempoAlertar_MODEM_DarumaFramework_triggered(self):
+        self.form_MODEM_regTempoAlertar = Ui_ui_MODEM_regTempoAlertar()
+        self.form_MODEM_regTempoAlertar.show()
+
+    def on_regRetornaValorChave_DarumaFramework_2_triggered(self):
+        self.form_MODEM_regRetornaValorChave = Ui_ui_MODEM_regRetornaValorChave()
+        self.form_MODEM_regRetornaValorChave.show()
+
+    def on_regPorta_MODEM_DarumaFramework_triggered(self):
+        self.form_MODEM_regPorta = Ui_ui_MODEM_regPorta()
+        self.form_MODEM_regPorta.show()
+
+    def on_regVelocidade_MODEM_DarumaFramework_triggered(self):
+        self.form_MODEM_regVelocidade = Ui_ui_MODEM_regVelocidade()
+        self.form_MODEM_regVelocidade.show()
+
+    def on_regCaptionWinAPP_MODEM_DarumaFramework_triggered(self):
+        self.form_MODEM_regCaptionWinAPP = Ui_ui_MODEM_regCaptionWinAPP()
+        self.form_MODEM_regCaptionWinAPP.show()
+
+    def on_regBandejaInicio_MODEM_DarumaFramework_triggered(self):
+        self.form_MODEM_regBandejaInicio = Ui_ui_MODEM_regBandejaInicio();
+        self.form_MODEM_regBandejaInicio.show();
+
+    def on_eReiniciar_MODEM_DarumaFramework_triggered(self):
+        #trataRetornoModem(eReiniciar_MODEM_DarumaFramework(), this);
+        pass
+
+    def on_eApagarSms_MODEM_DarumaFramework_triggered(self):
+        self.form_MODEM_eApagarSms = Ui_ui_MODEM_eApagar()
+        self.form_MODEM_eApagarSms.show()
+
+    def on_eInicializar_MODEM_DarumaFramework_triggered(self):
+        #trataRetornoModem(eInicializar_MODEM_DarumaFramework(), this)
+        pass
+
+    def on_eTrocarBandeja_MODEM_DarumaFramework_triggered(self):
+        #trataRetornoModem(eTrocarBandeja_MODEM_DarumaFramework(), this)
+        pass
+
+    def on_eBuscarPortaVelocidade_MODEM_DarumaFramework_triggered(self):
+        #trataRetornoModem(eBuscarPortaVelocide_MODEM_DarumaFramework(), this)
+        pass
+
+    def on_tEnviarSmsOperadora_MODEM_Daruma_triggered(self):
+        self.form_MODEM_tEnviarSmsOperadora = Ui_ui_MODEM_tEnviarSmsOperadora()
+        self.form_MODEM_tEnviarSmsOperadora.show()
+
+    def on_rReceberSms_MODEM_DarumaFramework_triggered(self):
+        self.form_MODEM_rReceberSms = Ui_ui_MODEM_rReceberSms()
+        self.form_MODEM_rReceberSms.show()
+
+    def on_rReceberSmsIndice_MODEM_DarumaFramework_triggered(self):
+        self.form_MODEM_rReceberSmsIndice = Ui_ui_MODEM_rReceberSmsIndice()
+        self.form_MODEM_rReceberSmsIndice.show()
+
+    def on_rListarSms_MODEM_DarumaFramework_triggered(self):
+        #trataRetornoModem(rListarSms_MODEM_DarumaFramework(),this)
+        pass
+
+    def on_rRetornarImei_MODEM_DarumaFramework_triggered(self):
+        self.form_MODEM_rRetornarIMEI = Ui_ui_MODEM_rRetornarIMEI()
+        self.form_MODEM_rRetornarIMEI.show()
+
+    def on_rNivelSinalRecebido_MODEM_DarumaFramework_triggered(self):
+        #trataRetornoModem(rNivelSinalRecebido_MODEM_DarumaFramework(),this)
+        pass
+
+    def on_rRetornarOperadora_MODEM_DarumaFramework_triggered(self):
+        self.form_MODEM_rRetornarOperadora = Ui_ui_MODEM_rRetornarOperadora();
+        self.form_MODEM_rRetornarOperadora.show();
+
+    def on_Servi_o_CSD_DarumaFramework_triggered(self):
+        self.form_MODEM_ConexaoCSD = Ui_ui_MODEM_ConexaoCSD()
+        self.form_MODEM_ConexaoCSD.show()
+
+    def on_TRUELerApagar_triggered(self):
+        #trataRetornoModemReg(regLerApagar_MODEM_DarumaFramework("TRUE"), this);
+        pass
+
+    def on_FALSELerApagar_triggered(self):
+        #trataRetornoModemReg(regLerApagar_MODEM_DarumaFramework("FALSE"),this)
+        pass
+
+    def on_TRUEThread_triggered(self):
+        #trataRetornoModemReg(regThread_MODEM_DarumaFramework("TRUE"),this)
+        pass
+
+    def on_FALSEThread_triggered(self):
+        #trataRetornoModemReg(regThread_MODEM_DarumaFramework("FALSE"),this)
+        pass
+        
     def setupUi(self, MainWindowModem):
         MainWindowModem.setObjectName("MainWindowModem")
         MainWindowModem.resize(1361, 643)
