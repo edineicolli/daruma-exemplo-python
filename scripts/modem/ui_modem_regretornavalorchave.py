@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_MODEM_regRetornaValorChave(object):
+class Ui_ui_MODEM_regRetornaValorChave(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_MODEM_regRetornaValorChave, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_MODEM_regRetornaValorChave):
         ui_MODEM_regRetornaValorChave.setObjectName("ui_MODEM_regRetornaValorChave")
         ui_MODEM_regRetornaValorChave.resize(442, 225)

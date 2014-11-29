@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_MODEM_regVelocidade(object):
+class Ui_ui_MODEM_regVelocidade(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_MODEM_regVelocidade, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_MODEM_regVelocidade):
         ui_MODEM_regVelocidade.setObjectName("ui_MODEM_regVelocidade")
         ui_MODEM_regVelocidade.resize(213, 116)

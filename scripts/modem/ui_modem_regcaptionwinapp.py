@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_MODEM_regCaptionWinAPP(object):
+class Ui_ui_MODEM_regCaptionWinAPP(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_MODEM_regCaptionWinAPP, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_MODEM_regCaptionWinAPP):
         ui_MODEM_regCaptionWinAPP.setObjectName("ui_MODEM_regCaptionWinAPP")
         ui_MODEM_regCaptionWinAPP.resize(328, 122)

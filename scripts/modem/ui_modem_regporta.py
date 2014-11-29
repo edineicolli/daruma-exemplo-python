@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_MODEM_regPorta(object):
+class Ui_ui_MODEM_regPorta(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_MODEM_regPorta, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_MODEM_regPorta):
         ui_MODEM_regPorta.setObjectName("ui_MODEM_regPorta")
         ui_MODEM_regPorta.resize(212, 120)

@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_MODEM_rRetornarOperadora(object):
+class Ui_ui_MODEM_rRetornarOperadora(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_MODEM_rRetornarOperadora, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_MODEM_rRetornarOperadora):
         ui_MODEM_rRetornarOperadora.setObjectName("ui_MODEM_rRetornarOperadora")
         ui_MODEM_rRetornarOperadora.resize(209, 116)

@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_MODEM_eApagar(object):
+class Ui_ui_MODEM_eApagar(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_MODEM_eApagar, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_MODEM_eApagar):
         ui_MODEM_eApagar.setObjectName("ui_MODEM_eApagar")
         ui_MODEM_eApagar.resize(212, 115)

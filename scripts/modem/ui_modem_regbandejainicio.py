@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_MODEM_regBandejaInicio(object):
+class Ui_ui_MODEM_regBandejaInicio(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_MODEM_regBandejaInicio, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_MODEM_regBandejaInicio):
         ui_MODEM_regBandejaInicio.setObjectName("ui_MODEM_regBandejaInicio")
         ui_MODEM_regBandejaInicio.resize(212, 109)

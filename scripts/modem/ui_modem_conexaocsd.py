@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_MODEM_ConexaoCSD(object):
+class Ui_ui_MODEM_ConexaoCSD(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_MODEM_ConexaoCSD, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_MODEM_ConexaoCSD):
         ui_MODEM_ConexaoCSD.setObjectName("ui_MODEM_ConexaoCSD")
         ui_MODEM_ConexaoCSD.resize(663, 415)

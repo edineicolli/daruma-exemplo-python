@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_MODEM_regLerApagar(object):
+class Ui_ui_MODEM_regLerApagar(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_MODEM_regLerApagar, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_MODEM_regLerApagar):
         ui_MODEM_regLerApagar.setObjectName("ui_MODEM_regLerApagar")
         ui_MODEM_regLerApagar.resize(286, 150)

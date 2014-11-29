@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_modem_tenviarsms(object):
+class Ui_ui_modem_tenviarsms(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_modem_tenviarsms, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_modem_tenviarsms):
         ui_modem_tenviarsms.setObjectName("ui_modem_tenviarsms")
         ui_modem_tenviarsms.resize(280, 282)

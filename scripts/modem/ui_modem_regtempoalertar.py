@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_MODEM_regTempoAlertar(object):
+class Ui_ui_MODEM_regTempoAlertar(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_MODEM_regTempoAlertar, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_MODEM_regTempoAlertar):
         ui_MODEM_regTempoAlertar.setObjectName("ui_MODEM_regTempoAlertar")
         ui_MODEM_regTempoAlertar.resize(226, 119)

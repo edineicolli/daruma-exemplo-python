@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_MODEM_rRetornarIMEI(object):
+class Ui_ui_MODEM_rRetornarIMEI(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_MODEM_rRetornarIMEI, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_MODEM_rRetornarIMEI):
         ui_MODEM_rRetornarIMEI.setObjectName("ui_MODEM_rRetornarIMEI")
         ui_MODEM_rRetornarIMEI.resize(213, 123)

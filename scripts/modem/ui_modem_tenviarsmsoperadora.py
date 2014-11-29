@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_MODEM_tEnviarSmsOperadora(object):
+class Ui_ui_MODEM_tEnviarSmsOperadora(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_MODEM_tEnviarSmsOperadora, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_MODEM_tEnviarSmsOperadora):
         ui_MODEM_tEnviarSmsOperadora.setObjectName("ui_MODEM_tEnviarSmsOperadora")
         ui_MODEM_tEnviarSmsOperadora.resize(284, 292)

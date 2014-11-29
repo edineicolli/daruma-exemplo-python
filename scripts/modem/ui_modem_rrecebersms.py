@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_MODEM_rReceberSms(object):
+class Ui_ui_MODEM_rReceberSms(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_MODEM_rReceberSms, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_MODEM_rReceberSms):
         ui_MODEM_rReceberSms.setObjectName("ui_MODEM_rReceberSms")
         ui_MODEM_rReceberSms.resize(249, 337)
