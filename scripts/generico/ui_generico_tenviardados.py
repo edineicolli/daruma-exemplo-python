@@ -15,6 +15,23 @@ class Ui_ui_GENERICO_tEnviarDados(QtGui.QWidget):
         super(Ui_ui_GENERICO_tEnviarDados, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        #QStrDados = self.textEdit.toPlainText();
+        #QStrBytes = self.lineEdit.text();
+        #iBytes = QStrBytes.toInt(&result, 10);
+
+        #QByteArray convertDados = QStrDados.toLocal8Bit();
+        #StrDados = convertDados.data();
+
+        #iRetorno = tEnviarDados_Daruma(StrDados, iBytes);
+        #trataRetornoGenerico(iRetorno,this);
+        pass
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_GENERICO_tEnviarDados):
         ui_GENERICO_tEnviarDados.setObjectName("ui_GENERICO_tEnviarDados")

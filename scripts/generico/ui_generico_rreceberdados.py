@@ -15,6 +15,18 @@ class Ui_ui_GENERICO_rReceberDados(QtGui.QWidget):
         super(Ui_ui_GENERICO_rReceberDados, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonReceber.clicked.connect(self.on_pushButtonReceber_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonReceber_clicked(self):
+        #iRetorno = rReceberDados_Daruma(StrRecebe);
+        #trataRetornoGenerico(iRetorno,this);
+        #QString QStrRecebe(StrRecebe);
+        #self.textEditRecebeDados.setText(QStrRecebe);
+        pass
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_GENERICO_rReceberDados):
         ui_GENERICO_rReceberDados.setObjectName("ui_GENERICO_rReceberDados")

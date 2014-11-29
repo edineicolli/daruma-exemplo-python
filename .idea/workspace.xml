@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0336715-d62b-4c0e-b1a8-348ef873d3e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/generico/mainwindowgenerico.py" afterPath="$PROJECT_DIR$/scripts/generico/mainwindowgenerico.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/generico/ui_generico_eabrirserial.py" afterPath="$PROJECT_DIR$/scripts/generico/ui_generico_eabrirserial.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/generico/ui_generico_rreceberdados.py" afterPath="$PROJECT_DIR$/scripts/generico/ui_generico_rreceberdados.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/generico/ui_generico_tenviardados.py" afterPath="$PROJECT_DIR$/scripts/generico/ui_generico_tenviardados.py" />
@@ -39,26 +38,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="widgetprincipal.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/widgetprincipal.py">
+      <file leaf-file-name="mainwindowgenerico.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/generico/mainwindowgenerico.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="584" max-vertical-offset="3349">
-              <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="3009">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="91" />
               <folding>
-                <element signature="e#248#280#0" expanded="true" />
+                <element signature="e#251#283#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainwindowgenerico.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/generico/mainwindowgenerico.py">
+      <file leaf-file-name="ui_generico_eabrirserial.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/generico/ui_generico_eabrirserial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7797927" vertical-offset="532" max-vertical-offset="3009">
-              <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
-              <folding>
-                <element signature="e#251#283#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="1428">
+              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ui_generico_rreceberdados.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/generico/ui_generico_rreceberdados.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="1020">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="28" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ui_generico_tenviardados.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/generico/ui_generico_tenviardados.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7357513" vertical-offset="209" max-vertical-offset="1292">
+              <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,10 +103,10 @@
         <option value="$PROJECT_DIR$/scripts/main.py" />
         <option value="$PROJECT_DIR$/scripts/widgetprincipal.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py" />
-        <option value="$PROJECT_DIR$/scripts/generico/ui_generico_tenviardados.py" />
-        <option value="$PROJECT_DIR$/scripts/generico/ui_generico_rreceberdados.py" />
-        <option value="$PROJECT_DIR$/scripts/generico/ui_generico_eabrirserial.py" />
         <option value="$PROJECT_DIR$/scripts/generico/mainwindowgenerico.py" />
+        <option value="$PROJECT_DIR$/scripts/generico/ui_generico_eabrirserial.py" />
+        <option value="$PROJECT_DIR$/scripts/generico/ui_generico_rreceberdados.py" />
+        <option value="$PROJECT_DIR$/scripts/generico/ui_generico_tenviardados.py" />
       </list>
     </option>
   </component>
@@ -397,38 +414,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/generico/ui_generico_tenviardados.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/generico/ui_generico_eabrirserial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44041452" vertical-offset="0" max-vertical-offset="1071">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/generico/ui_generico_rreceberdados.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48445597" vertical-offset="0" max-vertical-offset="816">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="19847" max-vertical-offset="36924">
@@ -449,13 +434,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/generico/mainwindowgenerico.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7797927" vertical-offset="532" max-vertical-offset="3009">
-          <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="3009">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="91" />
           <folding>
             <element signature="e#251#283#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/generico/ui_generico_eabrirserial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="1428">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/generico/ui_generico_rreceberdados.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="175" max-vertical-offset="1020">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="28" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/generico/ui_generico_tenviardados.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7357513" vertical-offset="209" max-vertical-offset="1292">
+          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

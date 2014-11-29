@@ -16,6 +16,27 @@ class Ui_ui_GENERICO_eAbrirSerial(QtGui.QWidget):
 
         self.setupUi(self)
 
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        iRetorno = 0;
+
+        QStrPorta = self.lineEditPorta.text();
+        QStrVelocidade = self.lineEditVelocidade.text();
+
+        #convertPorta = QStrPorta.toLocal8Bit();
+        #StrPorta = convertPorta.data();
+        #convertVelocidade = QStrVelocidade.toLocal8Bit();
+        #StrVelocidade = convertVelocidade.data();
+
+        #iRetorno = eAbrirSerial_Daruma(StrPorta,StrVelocidade);
+        #trataRetornoGenerico(iRetorno,this);
+        pass
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
+
     def setupUi(self, ui_GENERICO_eAbrirSerial):
         ui_GENERICO_eAbrirSerial.setObjectName("ui_GENERICO_eAbrirSerial")
         ui_GENERICO_eAbrirSerial.resize(181, 160)
