@@ -8,6 +8,11 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from scripts.generico.ui_generico_eabrirserial import Ui_ui_GENERICO_eAbrirSerial
+from scripts.generico.ui_generico_rreceberdados import Ui_ui_GENERICO_rReceberDados
+from scripts.generico.ui_generico_tenviardados import Ui_ui_GENERICO_tEnviarDados
+from scripts.ui_geral_contatossuporte import Ui_ui_Geral_ContatosSuporte
+
 
 class Ui_MainWindowGenerico(QtGui.QMainWindow):
 
@@ -15,6 +20,35 @@ class Ui_MainWindowGenerico(QtGui.QMainWindow):
         super(Ui_MainWindowGenerico, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonGenericoEncerrar.clicked.connect(self.on_pushButtonEncerrar_clicked)
+        self.pushButtonGenericoContatos.clicked.connect(self.on_pushButtonContatos_clicked)
+        self.actionEAbrirSerial_Daruma.triggered.connect(self.on_actionEAbrirSerial_Daruma_triggered)
+        self.actionTEnviarDados_Daruma.triggered.connect(self.on_actionTEnviarDados_Daruma_triggered)
+        self.actionRReceberDados_Daruma.triggered.connect(self.on_actionRReceberDados_Daruma_triggered)
+        self.actionEFecharSerial_Daruma.triggered.connect(self.actionEFecharSerial_Daruma_triggered)
+
+    def on_pushButtonEncerrar_clicked(self):
+        self.close()
+
+    def on_pushButtonContatos_clicked(self):
+        self.form_Geral_ContatosSuporte = Ui_ui_Geral_ContatosSuporte();
+        self.form_Geral_ContatosSuporte.show()
+
+    def on_actionEAbrirSerial_Daruma_triggered(self):
+        self.form_GENERICO_eAbrirSerial = Ui_ui_GENERICO_eAbrirSerial();
+        self.form_GENERICO_eAbrirSerial.show()
+
+    def on_actionTEnviarDados_Daruma_triggered(self):
+        self.form_GENERICO_tEnviarDados = Ui_ui_GENERICO_tEnviarDados();
+        self.form_GENERICO_tEnviarDados.show()
+
+    def on_actionRReceberDados_Daruma_triggered(self):
+        self.form_GENERICO_rReceberDados = Ui_ui_GENERICO_rReceberDados();
+        self.form_GENERICO_rReceberDados.show()
+        pass
+
+    def actionEFecharSerial_Daruma_triggered(self):
+        pass
 
     def setupUi(self, MainWindowGenerico):
         MainWindowGenerico.setObjectName("MainWindowGenerico")

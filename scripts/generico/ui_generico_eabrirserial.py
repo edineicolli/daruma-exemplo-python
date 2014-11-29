@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_GENERICO_eAbrirSerial(object):
+class Ui_ui_GENERICO_eAbrirSerial(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_GENERICO_eAbrirSerial, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_GENERICO_eAbrirSerial):
         ui_GENERICO_eAbrirSerial.setObjectName("ui_GENERICO_eAbrirSerial")
         ui_GENERICO_eAbrirSerial.resize(181, 160)

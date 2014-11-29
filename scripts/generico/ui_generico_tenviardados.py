@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_GENERICO_tEnviarDados(object):
+class Ui_ui_GENERICO_tEnviarDados(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_GENERICO_tEnviarDados, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_GENERICO_tEnviarDados):
         ui_GENERICO_tEnviarDados.setObjectName("ui_GENERICO_tEnviarDados")
         ui_GENERICO_tEnviarDados.resize(347, 211)
