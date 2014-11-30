@@ -16,6 +16,63 @@ class Ui_ui_MODEM_ConexaoCSD(QtGui.QWidget):
 
         self.setupUi(self)
 
+        self.pushButtonAtivarConexao.clicked.connect(self.on_AtivarConexao_clicked)
+        self.pushButtonRealizarChamada.clicked.connect(self.on_RealizarChamada_clicked)
+        self.pushButtonFinalizarChamada.clicked.connect(self.on_FinalizarChamada_clicked)
+        self.pushButtonLimparEnviados.clicked.connect(self.on_pushButtonLimparEnviados_clicked)
+        self.pushButtonEnviarDados.clicked.connect(self.on_pushButtonEnviarDados_clicked)
+        self.pushButtonReceberDados.clicked.connect(self.on_pushButtonReceberDados_clicked)
+        self.pushButtonLimparRecebidos.clicked.connect(self.on_pushButtonLimparRecebidos_clicked)
+        self.pushButtonFechar.clicked.connect(self.on_pushButtonFechar_clicked)
+
+    def on_AtivarConexao_clicked(self):
+        #trataRetornoModem(eAtivarConexaoCsd_MODEM_DarumaFramework(),this);
+        pass
+
+    def on_RealizarChamada_clicked(self):
+        #QString QStrTelefone
+
+        #QStrTelefone = ui->lineEditTelefone->text()
+
+        #QByteArray ConvertTelefone = QStrTelefone.toLocal8Bit()
+        #string StrTelefone = ConvertTelefone.data()
+
+        #trataRetornoModem(eRealizarChamadaCsd_MODEM_DarumaFramework(StrTelefone),this)
+        pass
+
+    def on_FinalizarChamada_clicked(self):
+        #trataRetornoModem(eFinalizarChamadaCsd_MODEM_DarumaFramework(),this)
+        pass
+
+    def on_pushButtonLimparEnviados_clicked(self):
+        self.textEditDadosEnviados.setText("")
+
+    def on_pushButtonEnviarDados_clicked(self):
+        #QStrDadosEnviados = self.textEditDadosEnviados.toPlainText()
+
+        #ConvertDadosEnviados = QStrDadosEnviados.toLocal8Bit()
+        #StrDadosEnviados = ConvertDadosEnviados.data()
+
+        #trataRetornoModem(tEnviarDadosCsd_MODEM_DarumaFramework(StrDadosEnviados),this)
+        pass
+
+    def on_pushButtonReceberDados_clicked(self):
+        #QString QStrDadosRecebidos
+
+        #QByteArray ConvertDadosRecebidos = QStrDadosRecebidos.toLocal8Bit()
+        #StrDadosRecebidos = ConvertDadosRecebidos.data()
+
+        #trataRetornoModem(rReceberDadosCsd_MODEM_DarumaFramework(StrDadosRecebidos),this)
+
+        #self.textEditDadosRecebidos.setText(StrDadosRecebidos)
+        pass
+
+    def on_pushButtonLimparRecebidos_clicked(self):
+        self.textEditDadosRecebidos.setText("")
+
+    def on_pushButtonFechar_clicked(self):
+        self.close()
+
     def setupUi(self, ui_MODEM_ConexaoCSD):
         ui_MODEM_ConexaoCSD.setObjectName("ui_MODEM_ConexaoCSD")
         ui_MODEM_ConexaoCSD.resize(663, 415)
