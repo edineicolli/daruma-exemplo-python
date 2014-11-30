@@ -9,7 +9,7 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_FISCAL_iCCDEstornar(QtGui.QMainWindow):
+class Ui_ui_FISCAL_iCCDEstornar(QtGui.QWidget):
 
     def __init__(self):
         super(Ui_ui_FISCAL_iCCDEstornar, self).__init__()

@@ -9,7 +9,7 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_FISCAL_rInfoEstendida(QtGui.QMainWindow):
+class Ui_ui_FISCAL_rInfoEstendida(QtGui.QWidget):
 
     def __init__(self):
         super(Ui_ui_FISCAL_rInfoEstendida, self).__init__()

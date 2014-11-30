@@ -9,7 +9,7 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_FISCAL_iCNFReceber(QtGui.QMainWindow):
+class Ui_ui_FISCAL_iCNFReceber(QtGui.QWidget):
 
     def __init__(self):
         super(Ui_ui_FISCAL_iCNFReceber, self).__init__()

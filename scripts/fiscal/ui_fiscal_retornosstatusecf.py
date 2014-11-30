@@ -16,6 +16,155 @@ class Ui_ui_FISCAL_RetornosStatusECF(QtGui.QMainWindow):
 
         self.setupUi(self)
 
+        self.actionM_todo_rRetornarInformacao_ECF_Daruma.triggered.connect(self.on_rRetornarInformacao_ECF_Daruma_triggered)
+        self.actionM_todo_rRetornarInformacaoSeparador_ECF_Daruma.triggered.connect(self.on_rRetornarInformacaoSeparador_ECF_Daruma_triggered)
+        self.actionM_todo_rLerAliquotas_ECF_Daruma.triggered.connect(self.on_rLerAliquotas_ECF_Daruma_triggered)
+        self.actionM_todo_rLerMeiosPagto_ECF_Daruma.triggered.connect(self.on_rLerMeiosPagto_ECF_Daruma_triggered)
+        self.actionM_todo_rLerRG_ECF_Daruma.triggered.connect(self.on_rLerRG_ECF_Daruma_triggered)
+        self.actionM_todo_rLerCNF_ECF_Daruma.triggered.connect(self.on_rLerCNF_ECF_Daruma_triggered)
+        self.actionM_todo_rLerDecimais_ECF_Daruma.triggered.connect(self.on_rLerDecimais_ECF_Daruma_triggered)
+        self.actionM_todo_rLerDecimaisInt_ECF_Daruma.triggered.connect(self.on_rLerDecimaisInt_ECF_Daruma_triggered)
+        self.actionM_todo_rLerDecimaisStr_ECF_Daruma.triggered.connect(self.on_rLerDecimaisStr_ECF_Daruma_triggered)
+        self.actionM_todo_rDataHoraImpressora_ECF_Daruma.triggered.connect(self.on_rDataHoraImpressora_ECF_Daruma_triggered)
+        self.actionM_todo_rVerificaImpressoraLigada_ECF_Daruma.triggered.connect(self.on_rVerificaImpressoraLigada_ECF_Daruma_triggered)
+        self.actionM_todo_rVerificarReducaoZ_ECF_Daruma.triggered.connect(self.on_rVerificarReducaoZ_ECF_Daruma_triggered)
+        self.actionM_todo_rRetornarDadosReducaoZ_ECF_Daruma.triggered.connect(self.on_rRetornarDadosReducaoZ_ECF_Daruma_triggered)
+        self.actionM_todo_rTipoUltimoDocumentoInt_ECF_Daruma.triggered.connect(self.on_rTipoUltimoDocumentoInt_ECF_Daruma_triggered)
+        self.actionM_todo_rTipoUltimoDocumentoStr_ECF_Daruma.triggered.connect(self.on_rTipoUltimoDocumentoStr_ECF_Daruma_triggered)
+        self.actionM_todo_rUltimoCMDEnviado_ECF_Daruma.triggered.connect(self.on_rUltimoCMDEnviado_ECF_Daruma_triggered)
+        self.actionM_todo_rMinasLegal_ECF_Daruma.triggered.connect(self.on_rMinasLegal_ECF_Daruma_triggered)
+        self.actionM_todo_rCFSaldoAPagar_ECF_Daruma.triggered.connect(self.on_rCFSaldoAPagar_ECF_Daruma_triggered)
+        self.actionM_todo_rCFSubTotal_ECF_Daruma.triggered.connect(self.on_rCFSubTotal_ECF_Daruma_triggered)
+        self.actionM_todo_rCFVerificarStatus_ECF_Daruma.triggered.connect(self.on_rCFVerificarStatus_ECF_Daruma_triggered)
+        self.actionM_todo_rStatusImpressora_ECF_Daruma.triggered.connect(self.on_rStatusImpressora_ECF_Daruma_triggered)
+        self.actionM_todo_rStatusImpressoraBinario_ECF_Daruma.triggered.connect(self.on_rStatusImpressoraBinario_ECF_Daruma_triggered)
+        self.actionM_todo_rConsultaStatusImpressoraStr_ECF_Daruma.triggered.connect(self.on_rConsultaStatusImpressoraStr_ECF_Daruma_triggered)
+        self.actionM_todo_rConsultaStatusImpressoraInt_ECF_Daruma.triggered.connect(self.on_rConsultaStatusImpressoraInt_ECF_Daruma_triggered)
+        self.actionM_todo_rStatusUltimoCmd_ECF_Daruma.triggered.connect(self.on_rStatusUltimoCmd_ECF_Daruma_triggered)
+        self.actionM_todo_rStatusUltimoCmdInt_ECF_Daruma.triggered.connect(self.on_rStatusUltimoCmdInt_ECF_Daruma_triggered)
+        self.actionM_todo_rStatusUltimoCmdStr_ECF_Daruma.triggered.connect(self.on_rStatusUltimoCmdStr_ECF_Daruma_triggered)
+        self.actionM_todo_rInfoEstendida_ECF_Daruma.triggered.connect(self.on_rInfoEstendida_ECF_Daruma_triggered)
+        self.actionM_todo_rInfoEstendida1_ECF_Daruma.triggered.connect(self.on_rInfoEstendida1_ECF_Daruma_triggered)
+        self.actionM_todo_rInfoEstendida2_ECF_Daruma.triggered.connect(self.on_rInfoEstendida2_ECF_Daruma_triggered)
+        self.actionM_todo_rInfoEstendida3_ECF_Daruma.triggered.connect(self.on_rInfoEstendida3_ECF_Daruma_triggered)
+        self.actionM_todo_rInfoEstendida4_ECF_Daruma.triggered.connect(self.on_rInfoEstendida4_ECF_Daruma_triggered)
+        self.actionM_todo_rInfoEstendida5_ECF_Daruma.triggered.connect(self.on_rInfoEstendida5_ECF_Daruma_triggered)
+        self.actionM_todo_eBuscarPortaVelocidade_ECF_Daruma.triggered.connect(self.on_eBuscarPortaVelocidade_ECF_Daruma_triggered)
+        self.actionM_todo_eVerificarVersaoDLL_Daruma.triggered.connect(self.on_eVerificarVersaoDLL_Daruma_triggered)
+        self.actionM_todo_eRetornarPortasCOM_ECF_Daruma.triggered.connect(self.on_eRetornarPortasCOM_ECF_Daruma_triggered)
+        self.actionM_todo_iRelatorioConfiguracao_ECF_Daruma.triggered.connect(self.on_iRelatorioConfiguracao_ECF_Daruma_triggered)
+
+    def on_rRetornarInformacao_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rRetornarInformacaoSeparador_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rLerAliquotas_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rLerMeiosPagto_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rLerRG_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rLerCNF_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rLerDecimais_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rLerDecimaisInt_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rLerDecimaisStr_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rDataHoraImpressora_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rVerificaImpressoraLigada_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rVerificarReducaoZ_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rRetornarDadosReducaoZ_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rTipoUltimoDocumentoInt_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rTipoUltimoDocumentoStr_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rUltimoCMDEnviado_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rMinasLegal_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rCFSaldoAPagar_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rCFSubTotal_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rCFVerificarStatus_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rStatusImpressora_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rStatusImpressoraBinario_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rConsultaStatusImpressoraStr_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rConsultaStatusImpressoraInt_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rStatusUltimoCmd_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rStatusUltimoCmdInt_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rStatusUltimoCmdStr_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rInfoEstendida_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rInfoEstendida1_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rInfoEstendida2_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rInfoEstendida3_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rInfoEstendida4_ECF_Daruma_triggered(self):
+        pass
+
+    def on_rInfoEstendida5_ECF_Daruma_triggered(self):
+        pass
+
+    def on_eBuscarPortaVelocidade_ECF_Daruma_triggered(self):
+        pass
+
+    def on_eVerificarVersaoDLL_Daruma_triggered(self):
+        pass
+
+    def on_eRetornarPortasCOM_ECF_Daruma_triggered(self):
+        pass
+
+    def on_iRelatorioConfiguracao_ECF_Daruma_triggered(self):
+        pass
+
     def setupUi(self, ui_FISCAL_RetornosStatusECF):
         ui_FISCAL_RetornosStatusECF.setObjectName("ui_FISCAL_RetornosStatusECF")
         ui_FISCAL_RetornosStatusECF.resize(576, 289)

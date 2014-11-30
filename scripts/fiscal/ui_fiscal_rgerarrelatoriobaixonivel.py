@@ -9,7 +9,7 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_FISCAL_rGerarRelatorioBaixoNivel(QtGui.QMainWindow):
+class Ui_ui_FISCAL_rGerarRelatorioBaixoNivel(QtGui.QWidget):
 
     def __init__(self):
         super(Ui_ui_FISCAL_rGerarRelatorioBaixoNivel, self).__init__()

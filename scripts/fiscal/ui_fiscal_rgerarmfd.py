@@ -9,10 +9,10 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_FISCAL_rGerarMFD(QtGui.QMainWindow):
+class Ui_ui_FISCAL_rGerarMFD(QtGui.QWidget):
 
     def __init__(self):
-        super(Ui_ui_FISCAL_rGerarEspelhoMFD, self).__init__()
+        super(Ui_ui_FISCAL_rGerarMFD, self).__init__()
 
         self.setupUi(self)
 

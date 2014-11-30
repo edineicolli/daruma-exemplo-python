@@ -9,7 +9,7 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_FISCAL_rGerarRelatorio(QtGui.QMainWindow):
+class Ui_ui_FISCAL_rGerarRelatorio(QtGui.QWidget):
 
     def __init__(self):
         super(Ui_ui_FISCAL_rGerarRelatorio, self).__init__()

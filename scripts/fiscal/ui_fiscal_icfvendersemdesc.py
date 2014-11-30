@@ -9,7 +9,7 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_FISCAL_iCFVenderSemDesc(QtGui.QMainWindow):
+class Ui_ui_FISCAL_iCFVenderSemDesc(QtGui.QWidget):
 
     def __init__(self):
         super(Ui_ui_FISCAL_iCFVenderSemDesc, self).__init__()

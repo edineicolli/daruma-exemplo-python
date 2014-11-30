@@ -9,7 +9,7 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_FISCAL_rRetornarInformacaoSeparador(QtGui.QMainWindow):
+class Ui_ui_FISCAL_rRetornarInformacaoSeparador(QtGui.QWidget):
 
     def __init__(self):
         super(Ui_ui_FISCAL_rRetornarInformacaoSeparador, self).__init__()
