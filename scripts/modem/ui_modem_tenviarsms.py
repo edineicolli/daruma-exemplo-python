@@ -15,6 +15,18 @@ class Ui_ui_modem_tenviarsms(QtGui.QWidget):
         super(Ui_ui_modem_tenviarsms, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonLimpar.clicked.connect(self.on_Limpar_clicked)
+        self.pushButtonEnviar.clicked.connect(self.on_Enviar_clicked)
+        self.pushButtonFechar.clicked.connect(self.on_Fechar_clicked)
+
+    def on_Limpar_clicked(self):
+        pass
+
+    def on_Enviar_clicked(self):
+        pass
+
+    def on_Fechar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_modem_tenviarsms):
         ui_modem_tenviarsms.setObjectName("ui_modem_tenviarsms")

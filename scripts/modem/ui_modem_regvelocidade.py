@@ -15,6 +15,14 @@ class Ui_ui_MODEM_regVelocidade(QtGui.QWidget):
         super(Ui_ui_MODEM_regVelocidade, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_Enviar_clicked)
+        self.pushButtonFechar.clicked.connect(self.on_Fechar_clicked)
+
+    def on_Enviar_clicked(self):
+        pass
+
+    def on_Fechar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_MODEM_regVelocidade):
         ui_MODEM_regVelocidade.setObjectName("ui_MODEM_regVelocidade")

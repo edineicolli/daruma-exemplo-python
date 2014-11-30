@@ -15,6 +15,14 @@ class Ui_ui_MODEM_regBandejaInicio(QtGui.QWidget):
         super(Ui_ui_MODEM_regBandejaInicio, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_Enviar_clicked)
+        self.pushButtonFechar.clicked.connect(self.on_fechar_clicked)
+
+    def on_Enviar_clicked(self):
+       pass
+
+    def on_fechar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_MODEM_regBandejaInicio):
         ui_MODEM_regBandejaInicio.setObjectName("ui_MODEM_regBandejaInicio")

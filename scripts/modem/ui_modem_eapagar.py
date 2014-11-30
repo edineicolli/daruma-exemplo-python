@@ -15,6 +15,14 @@ class Ui_ui_MODEM_eApagar(QtGui.QWidget):
         super(Ui_ui_MODEM_eApagar, self).__init__()
 
         self.setupUi(self)
+        self.pushButton.clicked.connect(self.on_enviar_clicked)
+        self.pushButton_2.clicked.connect(self.on_fechar_clicked)
+
+    def on_enviar_clicked(self):
+        pass
+
+    def on_fechar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_MODEM_eApagar):
         ui_MODEM_eApagar.setObjectName("ui_MODEM_eApagar")
