@@ -9,7 +9,21 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_dual_regretornavalorchave(object):
+class Ui_ui_dual_regretornavalorchave(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_dual_regretornavalorchave, self).__init__()
+
+        self.setupUi(self)
+        self.pushButtonCancelar.clicked.connect(self.on_Cancelar_clicked)
+        self.pushButtonEnviar.clicked.connect(self.on_Enviar_clicked)
+
+    def on_Cancelar_clicked(self):
+        self.close()
+
+    def on_Enviar_clicked(self):
+        pass
+
     def setupUi(self, ui_dual_regretornavalorchave):
         ui_dual_regretornavalorchave.setObjectName("ui_dual_regretornavalorchave")
         ui_dual_regretornavalorchave.resize(499, 204)

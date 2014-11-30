@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_dual_iimprimirtexto(object):
+class Ui_ui_dual_iimprimirtexto(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_dual_iimprimirtexto, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_dual_iimprimirtexto):
         ui_dual_iimprimirtexto.setObjectName("ui_dual_iimprimirtexto")
         ui_dual_iimprimirtexto.resize(679, 527)

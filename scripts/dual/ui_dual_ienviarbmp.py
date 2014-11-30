@@ -9,7 +9,13 @@
 
 from PySide import QtCore, QtGui
 
-class Ui_ui_dual_ienviarbmp(object):
+class Ui_ui_dual_ienviarbmp(QtGui.QWidget):
+
+    def __init__(self):
+        super(Ui_ui_dual_ienviarbmp, self).__init__()
+
+        self.setupUi(self)
+
     def setupUi(self, ui_dual_ienviarbmp):
         ui_dual_ienviarbmp.setObjectName("ui_dual_ienviarbmp")
         ui_dual_ienviarbmp.resize(280, 100)

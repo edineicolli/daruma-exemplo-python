@@ -8,6 +8,20 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from scripts.dual.ui_dual_iautenticardocumento import Ui_ui_dual_iautenticardocumento
+from scripts.dual.ui_dual_ienviarbmp import Ui_ui_dual_ienviarbmp
+from scripts.dual.ui_dual_iimprimirarquivo import Ui_ui_dual_iimprimirarquivo
+from scripts.dual.ui_dual_iimprimirtexto import Ui_ui_dual_iimprimirtexto
+from scripts.dual.ui_dual_loopingdestatus import Ui_ui_dual_loopingdestatus
+from scripts.dual.ui_dual_loopingstatusdocumento import Ui_ui_dual_loopingstatusdocumento
+from scripts.dual.ui_dual_rconsultastatusimpressora import Ui_ui_dual_rconsultastatusimpressora
+from scripts.dual.ui_dual_reglinhasguilhotina import Ui_ui_dual_reglinhasguilhotina
+from scripts.dual.ui_dual_regportacomunicacao import Ui_ui_dual_regportacomunicacao
+from scripts.dual.ui_dual_regtabulacao import Ui_ui_dual_regtabulacao
+from scripts.dual.ui_dual_regvelocidade import Ui_ui_dual_regvelocidade
+from scripts.fiscal.ui_fiscal_regretornavalorchave import Ui_ui_FISCAL_regRetornaValorChave
+from scripts.ui_geral_contatossuporte import Ui_ui_Geral_ContatosSuporte
+
 
 class Ui_MainWindowDual(QtGui.QMainWindow):
 
@@ -15,6 +29,529 @@ class Ui_MainWindowDual(QtGui.QMainWindow):
         super(Ui_MainWindowDual, self).__init__()
 
         self.setupUi(self)
+        #//CHAMA A FUNÇAO PARA CARREGAR A BIBLIOTECA DARUMAFRAMEWORK
+        #carregarDarumaFramework(this);
+
+        self.actionM_todo_eDefinirProduto_Daruma.triggered.connect(self.on_actionM_todo_eDefinirProduto_Daruma_triggered)
+        self.actionM_todo_regRetornaValorChave_DarumaFramework.triggered.connect(self.on_actionM_todo_regRetornaValorChave_DarumaFramework_triggered)
+        self.actionHabilitarAguardarProcesso.triggered.connect(self.on_actionHabilitarAguardarProcesso_triggered)
+        self.actionDesabilitarAguardarProcesso.triggered.connect(self.on_actionDesabilitarAguardarProcesso_triggered)
+        self.actionHabilitarEnterFinal.triggered.connect(self.on_actionHabilitarEnterFinal_triggered)
+        self.actionDesabilitarEnterFinal.triggered.connect(self.on_actionDesabilitarEnterFinal_triggered)
+        self.actionPadraoGaveta.triggered.connect(self.on_actionPadraoGaveta_triggered)
+        self.actionAlteraPadraoGaveta.triggered.connect(self.on_actionAlteraPadraoGaveta_triggered)
+        self.actionHabilitarTermica.triggered.connect(self.on_actionHabilitarTermica_triggered)
+        self.actionDesabilitarTermica.triggered.connect(self.on_actionDesabilitarTermica_triggered)
+        self.actionHabilitarCodePageAutomatico.triggered.connect(self.on_actionHabilitarCodePageAutomatico_triggered)
+        self.actionDesabilitarCodePageAutomatico.triggered.connect(self.on_actionDesabilitarCodePageAutomatico_triggered)
+        self.actionHabilitarZeroCortado.triggered.connect(self.on_actionHabilitarZeroCortado_triggered)
+        self.actionDesabilitarZeroCortado.triggered.connect(self.on_actionDesabilitarZeroCortado_triggered)
+        self.actionExemplo_1_Buffer.triggered.connect(self.on_actionExemplo_1_Buffer_triggered)
+        self.actionExemplo_2_Tabula_o.triggered.connect(self.on_actionExemplo_2_Tabula_o_triggered)
+        self.actionExemplo_3_Linha_a_Linha.triggered.connect(self.on_actionExemplo_3_Linha_a_Linha_triggered)
+        self.actionExemplo_1_Buffer_2.triggered.connect(self.on_actionExemplo_1_Buffer_2_triggered)
+        self.actionExemplo_2_Tabula_ao.triggered.connect(self.on_actionExemplo_2_Tabula_ao_triggered)
+        self.actionExemplo_3_Linha_a_Linha_2.triggered.connect(self.on_actionExemplo_3_Linha_a_Linha_2_triggered)
+        self.actionTeste_Completo_em_Buffer.triggered.connect(self.on_actionTeste_Completo_em_Buffer_triggered)
+        self.actionTeste_Completo_Linha_a_Linha.triggered.connect(self.on_actionTeste_Completo_Linha_a_Linha_triggered)
+        self.actionExemplo_4_Formulario.triggered.connect(self.on_actionExemplo_4_Formulario_triggered)
+        self.actionM_todo_regVelocidade_DUAL_DarumaFramework.triggered.connect(self.on_actionM_todo_regVelocidade_DUAL_DarumaFramework_triggered)
+        self.actionM_todo_regTabulacao_DUAL_DarumaFramework.triggered.connect(self.on_actionM_todo_regTabulacao_DUAL_DarumaFramework_triggered)
+        self.actionM_todo_regPortaComunicacao_DUAL_DarumaFramework.triggered.connect(self.on_actionM_todo_regPortaComunicacao_DUAL_DarumaFramework_triggered)
+        self.actionM_todo_regLinhasGuilhotina_DUAL_DarumaFramework.triggered.connect(self.on_actionM_todo_regLinhasGuilhotina_DUAL_DarumaFramework_triggered)
+        self.actionM_todo_rStatusImpressora_DUAL_DarumaFramework.triggered.connect(self.on_actionM_todo_rStatusImpressora_DUAL_DarumaFramework_triggered)
+        self.actionM_todo_rStatusDocumento_DUAL_DarumaFramework.triggered.connect(self.on_actionM_todo_rStatusDocumento_DUAL_DarumaFramework_triggered)
+        self.actionM_todo_rStatusGaveta_DUAL_DarumaFramework.triggered.connect(self.on_actionM_todo_rStatusGaveta_DUAL_DarumaFramework_triggered)
+        self.actionM_todo_rConsultaStatusImpressora_DUAL_DarumaFramework.triggered.connect(self.on_actionM_todo_rConsultaStatusImpressora_DUAL_DarumaFramework_triggered)
+        self.actionTeste_para_Looping_de_verica_o_de_Status.triggered.connect(self.on_actionTeste_para_Looping_de_verica_o_de_Status_triggered)
+        self.actionTeste_para_Looping_de_verifica_ao_de_Status_de_Documento.triggered.connect(self.on_actionTeste_para_Looping_de_verifica_ao_de_Status_de_Documento_triggered)
+        self.actionM_todo_iEnviarBMP_DUAL_DarumaFramework.triggered.connect(self.on_actionM_todo_iEnviarBMP_DUAL_DarumaFramework_triggered)
+        self.actionM_todo_iAcionarGaveta_DUAL_DarumaFramework.triggered.connect(self.on_actionM_todo_iAcionarGaveta_DUAL_DarumaFramework_triggered)
+        self.actionM_todo_iAutenticarDocumento_DUAL_DarumaFramework.triggered.connect(self.on_actionM_todo_iAutenticarDocumento_DUAL_DarumaFramework_triggered)
+        self.actionM_todo_iImprimirArquivo_DUAL_DarumaFramework.triggered.connect(self.on_actionM_todo_iImprimirArquivo_DUAL_DarumaFramework_triggered)
+        self.actionM_todo_iImprimirTexto_DUAL_DarumaFramework.triggered.connect(self.on_actionM_todo_iImprimirTexto_DUAL_DarumaFramework_triggered)
+        self.pushButtonEncerrar.clicked.connect(self.on_pushButtonEncerrar_clicked)
+        self.pushButtonContatos_2.clicked.connect(self.on_pushButtonContatos_clicked)
+
+    def on_actionM_todo_eDefinirProduto_Daruma_triggered(self):
+        #trataRetornoDUAL(eDefinirProduto_Daruma("DUAL"), this)
+        pass
+
+
+    def on_actionM_todo_regRetornaValorChave_DarumaFramework_triggered(self):
+        self.form_FISCAL_regRetornaValorChave = Ui_ui_FISCAL_regRetornaValorChave()
+        self.form_FISCAL_regRetornaValorChave.show()
+
+
+    def on_actionHabilitarAguardarProcesso_triggered(self):
+        #trataRetornoDUAL(regAguardarProcesso_DUAL_DarumaFramework("1"), this)
+        pass
+
+
+    def on_actionDesabilitarAguardarProcesso_triggered(self):
+        #trataRetornoDUAL(regAguardarProcesso_DUAL_DarumaFramework("0"),this)
+        pass
+
+
+    def on_actionHabilitarEnterFinal_triggered(self):
+        #trataRetornoDUAL(regEnterFinal_DUAL_DarumaFramework("1"), this)
+        pass
+
+
+    def on_actionDesabilitarEnterFinal_triggered(self):
+        #trataRetornoDUAL(regEnterFinal_DUAL_DarumaFramework("0"), this)
+        pass
+
+
+    def on_actionPadraoGaveta_triggered(self):
+        #trataRetornoDUAL(regModoGaveta_DUAL_DarumaFramework("0"), this)
+        pass
+
+
+    def on_actionAlteraPadraoGaveta_triggered(self):
+        #trataRetornoDUAL(regModoGaveta_DUAL_DarumaFramework("1"), this)
+        pass
+
+
+    def on_actionHabilitarTermica_triggered(self):
+        #trataRetornoDUAL(regTermica_DUAL_DarumaFramework("1"), this)
+        pass
+
+
+    def on_actionDesabilitarTermica_triggered(self):
+        #trataRetornoDUAL(regTermica_DUAL_DarumaFramework("0"), this)
+        pass
+
+
+    def on_actionHabilitarCodePageAutomatico_triggered(self):
+        #trataRetornoDUAL(regCodePageAutomatico_DUAL_DarumaFramework("1"), this)
+        pass
+
+
+    def on_actionDesabilitarCodePageAutomatico_triggered(self):
+        #trataRetornoDUAL(regCodePageAutomatico_DUAL_DarumaFramework("0"), this)
+        pass
+
+    def on_actionHabilitarZeroCortado_triggered(self):
+        #trataRetornoDUAL(regZeroCortado_DUAL_DarumaFramework("1"), this)
+        pass
+
+
+    def on_actionDesabilitarZeroCortado_triggered(self):
+        #trataRetornoDUAL(regZeroCortado_DUAL_DarumaFramework("0"), this)
+        pass
+
+
+    def on_actionExemplo_1_Buffer_triggered(self):
+        '''
+        iRetorno = 0
+        char sTexto[200];memset(sTexto, 0, sizeof(sTexto))
+        iImprimirTexto_DUAL_DarumaFramework("<tc>~</tc><l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce><e><b>CENTRO DE DANÇA FLASH</b></e></ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<l></l><tc>~</tc>",0)
+        iImprimirTexto_DUAL_DarumaFramework("Rua: XV de Novembro N 785 Centro SP BR",0)
+        iImprimirTexto_DUAL_DarumaFramework("Fone: 6234-5678 Fax:6324-5678",0)
+        iImprimirTexto_DUAL_DarumaFramework("Data: <dt></dt><tb><tb>Hora: <hr></hr>",0)
+        strcat(sTexto,"Pedido:00069 Cliente:00013<l></l>")
+        strcat(sTexto,"Atividades Escolhidas:<l></l>")
+        strcat(sTexto,"SAMBA+BOLERO+FORRÓ<l></l>")
+        strcat(sTexto,"Valor: 55,00<l></l>")
+        strcat(sTexto,"Vencimento: 10-03-05<l></l>")
+        strcat(sTexto,"o não pagamento implica no cancelamento da vaga<l></l>")
+        strcat(sTexto,"Início dia 01 de Fevereiro as 17:30hr<l></l>")
+        strcat(sTexto,"Venha Dançar!!!<l></l>")
+        strcat(sTexto,"Samba,Bolero,Soltinho,Forró,Zouk<l></l>")
+        iImprimirTexto_DUAL_DarumaFramework(sTexto,0)
+        memset(sTexto, 0, sizeof(sTexto))
+        strcat(sTexto,"<bmp></bmp><ean8><w3>1234567</w3></ean8>")
+        strcat(sTexto,"<upc-a><txt>12345678912</txt></upc-a>")
+        strcat(sTexto,"<code39><txt>12345678A-B-Z*F-E-H*</txt></code39>")
+        strcat(sTexto,"<code93><txt>12345678A-B-Z-F&</txt></code93>")
+        strcat(sTexto,"<codabar><txt>12345678A$$</txt></codabar>")
+        strcat(sTexto,"<code11><txt>1234567891234567</txt></code11>")
+        strcat(sTexto,"<code128><txt>123456789123-A-B-*_%-&</txt></code128>")
+        strcat(sTexto,"<msi><txt>1234567890</txt></msi>")
+        strcat(sTexto,"<i2of5><txt>1234</txt></i2of5>")
+        strcat(sTexto,"<s2of5><txt>12345678</txt></s2of5>")
+        strcat(sTexto,"<bmp></bmp>")
+        strcat(sTexto,"<ean13><cbv><w3><h70>123456789123</h70></w3></cbv></ean13><sl>05</sl>")
+        strcat(sTexto,"<code39><w3><h120><txt>12345678A-B-Z*F-E-H*</txt></h120></w3></code39><sl>05</sl>")
+        iImprimirTexto_DUAL_DarumaFramework(sTexto,0)
+        iImprimirTexto_DUAL_DarumaFramework("<ad>Obrigado.</ad>",0)
+        iRetorno = iImprimirTexto_DUAL_DarumaFramework("<sl>3</sl><sn></sn>",0)
+        trataRetornoDUAL(iRetorno,this)
+        '''
+        pass
+
+
+    def on_actionExemplo_2_Tabula_o_triggered(self):
+        '''
+        iRetorno = 0
+        iImprimirTexto_UAL_DarumaFramework("<tb><b>FRAB<tb>Ano<tb>Modelo<tb>Valor<tb>Cor</b>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb>GM<tb>2000<tb>Corsa<tb>12.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb>Ford<tb>2005<tb>Fiesta<tb>14.000<tb>Verde",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb>Fiat<tb>1998<tb>Uno Mille<tb>9.000<tb>Branco",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb>GM<tb>1997<tb>Vectra<tb>18.000<tb>Prata",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb>GM<tb>1999<tb>Tigra<tb>17.000<tb>Verde",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb>Ford<tb>2001<tb>Versalhes<tb>5.000<tb>Vinho",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb>GM<tb>1998<tb>Corsa<tb>10.000<tb>Preto",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb>Fiat<tb>1996<tb>Fiurino<tb>6.000<tb>Branca",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb>WV<tb>1979<tb>Fusca<tb>3.000<tb>Bordo",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb>GM<tb>1996<tb>Vectra<tb>16.000<tb>Grafite",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb>Fiat<tb>1985<tb>Fiat147<tb>3.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb>Hond<tb>2003<tb>Civic<tb>28.000<tb>Preto",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb>Fiat<tb>1999<tb>Palio<tb>12.000<tb>Cinza",0)
+        iRetorno = iImprimirTexto_DUAL_DarumaFramework("<tb>GM<tb>2003<tb>Celta<tb>17.000<tb>Branco<sl>7</sl>",0)
+        trataRetornoDUAL(iRetorno,this)
+        '''
+        pass
+
+
+    def on_actionExemplo_3_Linha_a_Linha_triggered(self):
+        '''
+        iRetorno = 0
+        iImprimirTexto_UAL_DarumaFramework("<tc>#</tc>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<e><ce>ACADEMIA NEW SPORTS</ce></e>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb><i>Rua Nossa Senhora da Luz</i>, 350",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb><i>Jardim Social   -   Curitiba   -  PR</i>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb>CNPJ 04.888.968/0001-79<tb><e>234-5678<l></l></e>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tc>#</tc><l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<i><dt></dt><i>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ad>Recibo nr.258963</ad><l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<c>Nome : </c><b>ELAINE MARIA</b><sp>5</sp>(545)<l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<c>Plano : </c><b>MUSCULAÇÃO NOTURNO</b><sp>5</sp>(5)<l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce><e>VALOR PAGO : 45,00</e></ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<c>Ref. ao período de 03/04/2005 até 03/05/2005</c><l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<c>Obs: MENSALIDADE</c><l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tc>_</tc><l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce><e>WWW.ACADEMIANEW.COM.BR</e></ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tc>_</tc><l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce><e>SAUDE BELEZA E BEM ESTAR</e></ce>",0)
+        iRetorno = iImprimirTexto_DUAL_DarumaFramework("<sl>7</sl>",0)
+        trataRetornoDUAL(iRetorno,this)
+        '''
+        pass
+
+    def on_actionExemplo_1_Buffer_2_triggered(self):
+        '''
+        iRetorno = 0
+        char sTexto[200];memset(sTexto, 0, sizeof(sTexto))
+        iImprimirTexto_DUAL_DarumaFramework("<tc>~</tc><l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<bmp></bmp>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce><e><b>CENTRO DE DANÇA</b></e></ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("ce><e><b>FLASH</b></e></ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<l></l><tc>~</tc>",0)
+        strcat(sTexto,"Rua: XV de Novembro N 785 Centro SP")
+        strcat(sTexto,"Fone: 6234-5678 Fax:6324-5678")
+        iImprimirTexto_DUAL_DarumaFramework(sTexto,0)
+        iImprimirTexto_DUAL_DarumaFramework("Data: <dt></dt><tb><tb>Hora:<hr></hr>",0)
+        memset(sTexto, 0, sizeof(sTexto))
+        strcat(sTexto,"Pedido:00069 Cliente:00013<l></l>")
+        strcat(sTexto,"Atividades Escolhidas:<l></l>")
+        strcat(sTexto,"SAMBA+BOLERO+FORRÓ<l></l>")
+        strcat(sTexto,"Valor: 55,00<l></l>")
+        strcat(sTexto,"Vencimento: 10-03-05<l></l>")
+        strcat(sTexto,"o não pagamento implica no<l></l>")
+        strcat(sTexto,"cancelamento da vaga<l></l>")
+        strcat(sTexto,"Início dia 01 de Fevereiro - 17:30hr<l></l>")
+        strcat(sTexto,"Venha Dançar!!!<l></l>")
+        strcat(sTexto,"Samba,Bolero,Soltinho,Forró,Zouk<l></l>")
+        iImprimirTexto_DUAL_DarumaFramework(sTexto,0)
+        memset(sTexto, 0, sizeof(sTexto))
+        strcat(sTexto,"<ean8><w3>1234567</w3></ean8>")
+        strcat(sTexto,"<upc-a><txt>12345678912</txt></upc-a>")
+        strcat(sTexto,"<code39><txt>12345678A-B-Z*F-E-H*</txt></code39>")
+        strcat(sTexto,"<code93><txt>12345678A-B-Z-F&</txt></code93>")
+        strcat(sTexto,"<codabar><txt>12345678A$$</txt></codabar>")
+        strcat(sTexto,"<code11><txt>1234567891234567</txt></code11>")
+        strcat(sTexto,"<code128><txt>123456789123-A-B-*_%-&</txt></code128>")
+        strcat(sTexto,"<msi><txt>1234567890</txt></msi>")
+        strcat(sTexto,"<i2of5><txt>1234</txt></i2of5>")
+        strcat(sTexto,"<s2of5><txt>12345678</txt></s2of5>")
+        strcat(sTexto,"<ean13><cbv><w3><h70>123456789123</h70></w3></cbv></ean13>")
+        strcat(sTexto,"<code39><w3><h120><txt>12345678A-B-Z*F-E-H*</txt></h120></w3></code39><sl>05</sl>")
+        iImprimirTexto_DUAL_DarumaFramework(sTexto,0)
+        iRetorno = iImprimirTexto_DUAL_DarumaFramework("<sl>3</sl>",0)
+        trataRetornoDUAL(iRetorno,this)
+        '''
+        pass
+
+
+    def on_actionExemplo_2_Tabula_ao_triggered(self):
+        '''
+        iRetorno = 0
+        iImprimirTexto_UAL_DarumaFramework("<b>FABR<tb>Ano<tb>Modelo<tb>Valor<tb>Cor",0)
+        iImprimirTexto_DUAL_DarumaFramework("GM<tb>2000<tb>Corsa<tb>12.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("Ford<tb>2005<tb>Fiesta<tb>14.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("Fiat<tb>1998<tb>Uno<tb>9.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("GM<tb>1997<tb>Vectra<tb>18.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("GM<tb>1999<tb>Tigra<tb>17.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("Ford<tb>2001<tb>Ka<tb>5.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("GM<tb>1998<tb>Corsa<tb>10.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("Fiat<tb>1996<tb>Fiurino<tb>6.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("WV<tb>1979<tb>Fusca<tb>3.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("GM<tb>1996<tb>Vectra<tb>16.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("Fiat<tb>1985<tb>Fiat147<tb>3.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("Hond<tb>2003<tb>Civic<tb>28.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("Fiat<tb>1999<tb>Palio<tb>12.000<tb>Azul",0)
+        iRetorno = iImprimirTexto_DUAL_DarumaFramework("GM<tb>2003<tb>Celta<tb>17.000<tb>Azul<sl>7</sl>",0)
+        trataRetornoDUAL(iRetorno,this)
+        '''
+        pass
+
+
+    def on_actionExemplo_3_Linha_a_Linha_2_triggered(self):
+        '''
+        iRetorno=0
+        iImprimirText_DUAL_DarumaFramework("<tc>#</tc>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<e>  ACADEMIA NEW</e>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<e>    SPORTS</e>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb><i>Rua Nossa Sra. da Luz</i>, 350",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb><i>Jardim Social - Curitiba - PR</i>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb>CNPJ 04.888.968/0001-79<l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tc>#</tc><l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<i><dt></dt><i>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb>Recibo nr.258963<l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<c>Nome : </c><b>ELAINE MARIA</b><sp>5</sp>(545)<l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<c>Plano : </c><b>MUSCULAÇÃO NOTURNO</b><sp>5</sp>(5)<l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce><e>VALOR PAGO : 45,00</e></ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<c>Ref. ao período de 03/04/012 a 03/05/012</c><l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<c>Obs: MENSALIDADE</c><l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tc>_</tc><l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce><e>WWW.ACADEMIA.COM</e></ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tc>_</tc><l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce><e>SAUDE BELEZA E</e></ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce><e>BEM ESTAR</e></ce>",0)
+        iRetorno = iImprimirTexto_DUAL_DarumaFramework("<sl>7</sl>",0)
+        trataRetornoDUAL(iRetorno,this)
+        '''
+        pass
+
+
+    def on_actionTeste_Completo_em_Buffer_triggered(self):
+        '''
+        char sTexto[2000];memset(sTexto, 0, sizeof(sTexto)
+        iImprimirTexto_DUAL_DarumaFramework("<e><b>BUFFER COMPLETO</e></b><l></l>",0)
+        strcat(sTexto,"<e>DATA:<dt></dt></e><l></l><e>Hora:<hr></hr></e><l></l>")
+        strcat(sTexto,"<ce>Avançando 5 Linhas</ce><sl>5</sl>Inserindo<sp>5</sp>5 espaços em Branco<sl>2</sl>")
+        strcat(sTexto,"<ce>Formatação Normal</ce><l></l>DARUMA AUTOMAÇÃO!!<sl>2</sl><ce>Negr+Ital+Subl+Expand</ce><l></l>")
+        strcat(sTexto,"<b><i><s><e>DARUMA AUTOMAÇÃO!!</b></i></s></e><sl>2</sl><ce>Negr+Ital+Subl+Condensado</ce><l></l>")
+        strcat(sTexto,"<b><i><s><c>DARUMA AUTOMAÇÃO!!</b></i></s></c><sl>2</sl><ce>Negr+Ital+Subl+Normal</ce><l></l>")
+        strcat(sTexto,"<b><i><s><n>DARUMA AUTOMAÇÃO!!</b></i></s></n><sl>2</sl><ce>Expandido</ce><l></l>")
+        strcat(sTexto,"<e>DARUMA AUTOMAÇÃO!!</e><sl>2</sl><ce>Condensado</ce><l></l>")
+        strcat(sTexto,"<c>DARUMA AUTOMAÇÃO!!</c><sl>2</sl><ce>Negrito+Expandido</ce><l></l>")
+        strcat(sTexto,"<b><e>DARUMA AUTOMAÇÃO!!</b></e><sl>2</sl><ce>Itálico+Expandido</ce><l></l>")
+        strcat(sTexto,"<i><e>DARUMA AUTOMAÇÃO!!</i></e><sl>2</sl><ce>Sublinhado+Expandido</ce><l></l>")
+        strcat(sTexto,"<s><e>DARUMA AUTOMAÇÃO!!</s></e><sl>2</sl><ce>Negrito+Condensado</ce><l></l>")
+        strcat(sTexto,"<b><c>DARUMA AUTOMAÇÃO!!</b></c><sl>2</sl><ce>Itálico+Condensado</ce><l></l>")
+        strcat(sTexto,"<i><c>DARUMA AUTOMAÇÃO!!</i></c><sl>2</sl><ce>Sublinhado+Condensado</ce><l></l>")
+        strcat(sTexto,"<s><c>DARUMA AUTOMAÇÃO!!</s></c><sl>2</sl><ce>Negrito+Normal</ce><l></l>")
+        strcat(sTexto,"<b><n>DARUMA AUTOMAÇÃO!!</n></b><l></l>")
+        iImprimirTexto_DUAL_DarumaFramework(sTexto,0)
+        iImprimirTexto_DUAL_DarumaFramework("<e><b>FIM BUFFER COMPLETO</b></e><sl>03</sl>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<sl>03</sl>",0)
+        trataRetornoDUAL(iImprimirTexto_DUAL_DarumaFramework("<gui></gui>",0), this)
+        '''
+        pass
+
+
+    def on_actionTeste_Completo_Linha_a_Linha_triggered(self):
+        '''
+        iRetorno = 0
+        iImprimirTexto_UAL_DarumaFramework("<sn><l><ce><s>Teste com Formatação DHTM</s></ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<n>Estes são os carácteres que<l> você poderá utilizar<n><l>Você poderá a qualquer momento<l> combinar as formatações!!",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<b>><</b>> Para sinalizar Negrito",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<i>><</i>> Para sinalizar Itálico",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<s>><</s>> Para sinalizar Sublinhado",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<e>><</e>> Para sinalizar Expandido",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<c>><</c>> Para sinalizar Condensado",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<n>><</n>> Para sinalizar Normal",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<l>><</l>> Para Saltar Uma Linha",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<fe>><</fe>> Ativa o Modo fonte Elite",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<ad>><</ad>> Para alinhar a direita",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<ft>>n1,..,n6<</ft>> Habilitar tabulação",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<tb>><</tb>>Saltar até proxima tabulação",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<sl>>NN<</sl>> Saltar Várias Linhas",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<tc>>C<</tc>>Riscar Linha<l> com Carácter Específico",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<ce>><</ce>> Para Centralizar",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<dt>><</dt>> Para Imprimir Data Atual",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<hr>><</hr>> Para Imprimir Hora Atual",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<sp>>NN<</sp>> Inserir NN Espaços<l> em Branco",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<sn>><</sn>> Sinal Sonoro, Apitar",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<g>><</g>> Abre a Gaveta",0)
+        iImprimirTexto_DUAL_DarumaFramework("<<a>><</a>> Aguardar Término da Impressão",0)
+        iImprimirTexto_DUAL_DarumaFramework("<l><tc>_</tc><tc>_</tc>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<e><ce>TABULAÇÃO</ce><e><l></l><tc>_</tc>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<b>FABR<tb>Ano<tb>Modelo<tb>Valor<tb>Cor</b>",0)
+        iImprimirTexto_DUAL_DarumaFramework("GM<tb>2000<tb>Corsa<tb>12.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("Ford<tb>2005<tb>Fiesta<tb>14.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("Fiat<tb>1998<tb>Uno<tb>9.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("GM<tb>1997<tb>Vectra<tb>18.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("GM<tb>1999<tb>Tigra<tb>17.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("Ford<tb>2001<tb>Ka<tb>5.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("GM<tb>1998<tb>Corsa<tb>10.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("Fiat<tb>1996<tb>Fiurino<tb>6.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("WV<tb>1979<tb>Fusca<tb>3.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("GM<tb>1996<tb>Vectra<tb>16.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("Fiat<tb>1985<tb>Fiat147<tb>3.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("Hond<tb>2003<tb>Civic<tb>28.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("Fiat<tb>1999<tb>Palio<tb>12.000<tb>Azul",0)
+        iImprimirTexto_DUAL_DarumaFramework("GM<tb>2003<tb>Celta<tb>17.000<tb>Azul<sl>7</sl>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<l><tc>_</tc>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<l></l><e>DATA:<dt></dt></e><l></l><e>Hora:<hr></hr></e><l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>Anvançando 3 Linhas</ce><sl>3</sl>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>Anvançando 1 Linha</ce><sl>1</sl>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<l>Inserindo<sp>5</sp>5 espaços em Branco",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>Formatação Normal</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<n>DARUMA AUTOMAÇÃO!!</n><l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>NEGR+ITAL+SUBL+EXPAND</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<b><i><s><e>DARUMA AUTOMAÇÃO!!</b></i></s></e>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>NEGR+ITAL+SUBL+CONDENSADO</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<b><i><s><c>DARUMA AUTOMAÇÃO!!</b></i></s></c>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>NEGR+ITAL+SUBL+NORMAL</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<b><i><s><n>DARUMA AUTOMAÇÃO!!</b></i></s></n>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>EXPANDIDO</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<e>DARUMA AUTOMAÇÃO!!<e>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>CONDENSADO</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<c>DARUMA AUTOMAÇÃO!!</c>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>NEGRITO+EXPANDIDO</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<b><e>DARUMA AUTOMAÇÃO!!</b></e>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>ITÁLICO+EXPANDIDO</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<i><e>DARUMA AUTOMAÇÃO!!</i></e>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce><dt></dt>SUBLINHADO+EXPANDIDO</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<s><e>DARUMA AUTOMAÇÃO!!</s></e>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>NEGRITO+CONDENSADO</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<b><c>DARUMA AUTOMAÇÃO!!</b></c>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>ITÁLICO+CONDENSADO</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<i><c>DARUMA AUTOMAÇÃO!!</i></c>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>SUBLINHADO+CONDENSADO</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<s><c>DARUMA AUTOMAÇÃO!!</s></c>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>NEGRITO+NORMAL</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<b><n>DARUMA AUTOMAÇÃO!!</b></n>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>ITÁLICO+NORMAL</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<l><i><n>DARUMA AUTOMAÇÃO!!</i></n>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>SUBLINHADO+NORMAL</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<s><n>DARUMA AUTOMAÇÃO!!</s></n><l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>ALINHADO A DIREITA</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ad>DARUMA</ad><l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>CENTRALIZADO + EXPANDIDO</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<e><ce>DARUMA!!</ce></e><l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ft>05,10,15,20,30,40</ft>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<ce>TABULADO NA COLUNA 10</ce>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<tb></tb><tb></tb>DARUMA<l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<l><e><b>FIM TAGS COMPLETO</e></b>",0)
+        iRetorno = iImprimirTexto_DUAL_DarumaFramework("<sl>03</sl>",0)
+        trataRetornoDUAL(iRetorno,this)
+        '''
+        pass
+
+
+    def on_actionExemplo_4_Formulario_triggered(self):
+        '''
+        iRetorno = 0
+        char sTexto[200];memset(sTexto, 0, sizeof(sTexto))
+        iImprimirTexto_DUAL_DarumaFramework("<sp>4</sp>Nome da Empresa:Daruma Developers Community",0)
+        strcat(sTexto,"<ce><tc>-</tc></ce><l></l>")
+        strcat(sTexto,"<sp>4</sp>Endereço:<i>Avenida Paulista, 1776 - 16ºAndar</i><l></l>")
+        strcat(sTexto,"<sp>4</sp>Fones:<i>11-31464900</i><l></l>")
+        strcat(sTexto,"<sp>4</sp>Pedido Nº:<i>0541</i><l></l>")
+        strcat(sTexto,"<sp>4</sp>Data:<i><dt></dt></i><l></l>")
+        strcat(sTexto,"<ce><tc>-</tc></ce><l></l>")
+        strcat(sTexto,"<sp>4</sp>Tema Mensagem:<i>Desenvolvimento</i><l></l>")
+        strcat(sTexto,"<sp>4</sp>Titulo Mensagem:<i>Exemplo Qt</i><l></l>")
+        strcat(sTexto,"<sp>4</sp>Valor Mensagem:<i>5,00</i><l></l>")
+        strcat(sTexto,"<sp>4</sp>Forma Cobranca:<i>Boleto</i><l></l>")
+        strcat(sTexto,"<sp>4</sp>Cliente:<i>Sucesso Beatriz Silva</i><l></l>")
+        strcat(sTexto,"<sp>4</sp>Fone Res:<i>11-31464900</i><l></l>")
+        strcat(sTexto,"<sp>4</sp>Celular:<i>99239281</i><l></l>")
+        strcat(sTexto,"<sp>4</sp>Fone Com:<i>11-31464900</i><sl>1</sl><l></l>")
+        strcat(sTexto,"<ce><b>Mensagem Promo:Agradecemos a Preferência!!<l></l>(www.desenvolvedoresdaruma.com.br)</b></ce><sl>2</sl><l></l>")
+        strcat(sTexto,"<sp>35</sp>Hora:<hr></hr><l></l>")
+        iImprimirTexto_DUAL_DarumaFramework(sTexto,0)
+        iRetorno = iImprimirTexto_DUAL_DarumaFramework("<e><tc>-</tc></ce><sl>7</sl>",0)
+        trataRetornoDUAL(iRetorno,this)
+        '''
+        pass
+
+    def on_actionM_todo_regVelocidade_DUAL_DarumaFramework_triggered(self):
+        self.form_dual_regvelocidade=Ui_ui_dual_regvelocidade()
+        self.form_dual_regvelocidade.show()
+
+    def on_actionM_todo_regTabulacao_DUAL_DarumaFramework_triggered(self):
+        self.form_dual_regtabulacao=Ui_ui_dual_regtabulacao()
+        self.form_dual_regtabulacao.show()
+
+
+    def on_actionM_todo_regPortaComunicacao_DUAL_DarumaFramework_triggered(self):
+        self.form_dual_regportacomunicacao = Ui_ui_dual_regportacomunicacao()
+        self.form_dual_regportacomunicacao.show()
+
+    def on_actionM_todo_regLinhasGuilhotina_DUAL_DarumaFramework_triggered(self):
+        self.form_dual_reglinhasguilhotina = Ui_ui_dual_reglinhasguilhotina()
+        self.form_dual_reglinhasguilhotina.show()
+
+    def on_actionM_todo_rStatusImpressora_DUAL_DarumaFramework_triggered(self):
+        #trataRetornoDUAL(rStatusImpressora_DUAL_DarumaFramework(),this)
+        pass
+
+
+    def on_actionM_todo_rStatusDocumento_DUAL_DarumaFramework_triggered(self):
+        #trataRetornoDUAL(rStatusDocumento_DUAL_DarumaFramework(),this)
+        pass
+
+
+    def on_actionM_todo_rStatusGaveta_DUAL_DarumaFramework_triggered(self):
+        #gavetaStatus = 0
+        #trataRetornoDUAL(rSatusGaveta_DUAL_DarumaFramework(&gavetaStatus),this)
+
+        #/* ***Converte o char Retorno para QString, para poder ser transferido para o QMessageBox*** */
+        #QString StrgavetaStatus; StrgavetaStatus.append(QString("%1").arg(gavetaStatus))
+
+        #/* ***Devolve o retorno da DLL para o campo de texto*** */
+        #QMessageBox::information(this,"DarumaFramework - Qt C++","Status: "+StrgavetaStatus)
+        pass
+
+    def on_actionM_todo_rConsultaStatusImpressora_DUAL_DarumaFramework_triggered(self):
+        self.form_dual_rconsultastatusimpressora = Ui_ui_dual_rconsultastatusimpressora()
+        self.form_dual_rconsultastatusimpressora.show()
+
+    def on_actionTeste_para_Looping_de_verica_o_de_Status_triggered(self):
+        self.form_dual_loopingdestatus = Ui_ui_dual_loopingdestatus()
+        self.form_dual_loopingdestatus.show()
+
+    def on_actionTeste_para_Looping_de_verifica_ao_de_Status_de_Documento_triggered(self):
+        self.form_dual_loopingstatusdocumento = Ui_ui_dual_loopingstatusdocumento()
+        self.form_dual_loopingstatusdocumento.show()
+
+    def on_actionM_todo_iEnviarBMP_DUAL_DarumaFramework_triggered(self):
+        self.form_dual_ienviarbmp = Ui_ui_dual_ienviarbmp()
+        self.form_dual_ienviarbmp.show()
+
+    def on_actionM_todo_iAcionarGaveta_DUAL_DarumaFramework_triggered(self):
+        #trataRetornoDUAL(iAcionarGaveta_DUAL_DarumaFramework(), this)
+        pass
+
+    def on_actionM_todo_iAutenticarDocumento_DUAL_DarumaFramework_triggered(self):
+        self.form_dual_iautenticardocumento = Ui_ui_dual_iautenticardocumento()
+        self.form_dual_iautenticardocumento.show()
+
+    def on_actionM_todo_iImprimirArquivo_DUAL_DarumaFramework_triggered(self):
+        self.form_dual_iimprimirarquivo = Ui_ui_dual_iimprimirarquivo()
+        self.form_dual_iimprimirarquivo.show()
+
+    def on_actionM_todo_iImprimirTexto_DUAL_DarumaFramework_triggered(self):
+        self.form_dual_iimprimirtexto = Ui_ui_dual_iimprimirtexto()
+        self.form_dual_iimprimirtexto.show()
+
+    #// *** FIM *** //
+    #/* ****** MENU DUAL ******* */
+
+    def on_pushButtonEncerrar_clicked(self):
+        self.close()
+
+    def on_pushButtonContatos_clicked(self):
+        self.form_Geral_ContatosSuporte = Ui_ui_Geral_ContatosSuporte
+        self.form_Geral_ContatosSuporte.show()
 
     def setupUi(self, MainWindowDual):
         MainWindowDual.setObjectName("MainWindowDual")
