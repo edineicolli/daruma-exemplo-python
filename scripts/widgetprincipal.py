@@ -14,7 +14,7 @@ from scripts.dual.mainwindowdual import Ui_MainWindowDual
 from scripts.fiscal.mainwindowfiscal import Ui_MainWindowFISCAL
 from scripts.generico.mainwindowgenerico import Ui_MainWindowGenerico
 from scripts.modem.mainwindowmodem import Ui_MainWindowModem
-
+import Recursos_rc
 
 class Ui_WidgetPrincipal(QtGui.QWidget):
 
@@ -187,5 +187,3 @@ class Ui_WidgetPrincipal(QtGui.QWidget):
         self.pushButtonGenerico.setText(QtGui.QApplication.translate("WidgetPrincipal", "GENÉRICO", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButtonHelpOnline.setText(QtGui.QApplication.translate("WidgetPrincipal", "Help Online", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButtonFechar.setText(QtGui.QApplication.translate("WidgetPrincipal", "Fechar Aplicação", None, QtGui.QApplication.UnicodeUTF8))
-
-#import Recursos_rc

@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0336715-d62b-4c0e-b1a8-348ef873d3e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcadastrar.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcadastrar.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcadastrarpadrao.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcadastrarpadrao.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confprogramaravancopapel.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confprogramaravancopapel.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confprogramaridloja.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confprogramaridloja.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confprogramaroperador.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confprogramaroperador.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ersaassinararquivo.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ersaassinararquivo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iccdestornar.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iccdestornar.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfabrir.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfabrir.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfencerrarresumido.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfencerrarresumido.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfidentificarconsumidor.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfidentificarconsumidor.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancardescontoitem.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancardescontoitem.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfvenderresumido.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfvenderresumido.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfvendersemdesc.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfvendersemdesc.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfreceber.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfreceber.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iimprimircodigobarras.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iimprimircodigobarras.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_parametrizacaosintegra.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_parametrizacaosintegra.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rassinarrsa.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rassinarrsa.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressoraint.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressoraint.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressorastr.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressorastr.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_retornosstatusecf.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_retornosstatusecf.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarmfd.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarmfd.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatorio.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatorio.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatoriobaixonivel.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatoriobaixonivel.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsped.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsped.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rinfoestendida.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rinfoestendida.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacao.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacao.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacaoseparador.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacaoseparador.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/widgetprincipal.py" afterPath="$PROJECT_DIR$/scripts/widgetprincipal.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="daruma-exemplo-python.iws" />
@@ -63,6 +37,36 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ui_geral_contatossuporte.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/ui_geral_contatossuporte.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3910">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="widgetprincipal.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/widgetprincipal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3315">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Recursos_rc.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/Recursos_rc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.04450262" vertical-offset="34" max-vertical-offset="459">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="mainwindowfiscal.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -75,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui_fiscal_retornosstatusecf.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ui_fiscal_retornosstatusecf.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_retornosstatusecf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82198954" vertical-offset="2508" max-vertical-offset="6511">
-              <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2508" max-vertical-offset="6511">
+              <caret line="159" column="12" selection-start-line="159" selection-start-column="12" selection-end-line="159" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -93,8 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scripts/modem/ui_modem_regretornavalorchave.py" />
-        <option value="$PROJECT_DIR$/scripts/modem/ui_modem_regtempoalertar.py" />
         <option value="$PROJECT_DIR$/scripts/modem/ui_modem_regvelocidade.py" />
         <option value="$PROJECT_DIR$/scripts/modem/ui_modem_rrecebersms.py" />
         <option value="$PROJECT_DIR$/scripts/modem/ui_modem_rrecebersmsindice.py" />
@@ -144,6 +146,8 @@
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacao.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacaoseparador.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_retornosstatusecf.py" />
+        <option value="$PROJECT_DIR$/scripts/widgetprincipal.py" />
+        <option value="$PROJECT_DIR$/scripts/Recursos_rc.py" />
       </list>
     </option>
   </component>
@@ -206,24 +210,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daruma-exemplo-python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daruma-exemplo-python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fiscal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -476,35 +462,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfencerrar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfreceber.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1921">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfrecebersemdesc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1360">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnftotalizarcomprovante.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -512,7 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -520,7 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3485">
           <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -528,7 +487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3094">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -536,7 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2992">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -544,7 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -552,7 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -560,7 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31428573" vertical-offset="0" max-vertical-offset="2924">
           <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -568,7 +522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2856">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -576,7 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2856">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -584,7 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2244">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -592,7 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -600,7 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2363">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -608,7 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1989">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -616,7 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1326">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -624,7 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1326">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -632,7 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -640,7 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
           <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -648,7 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -656,7 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -664,7 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
           <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -672,7 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
           <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,7 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -688,7 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1411">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,7 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -704,7 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2992">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -712,7 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -720,7 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -728,7 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2057">
           <caret line="11" column="42" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -736,7 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3621">
           <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -744,7 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2244">
           <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,7 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3298">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,7 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2057">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,7 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
           <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,7 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -784,7 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,7 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -800,7 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -808,7 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -816,7 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -824,7 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31428573" vertical-offset="0" max-vertical-offset="2159">
           <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -832,7 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31428573" vertical-offset="0" max-vertical-offset="1938">
           <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -840,7 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -848,7 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -856,15 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31428573" vertical-offset="0" max-vertical-offset="1275">
           <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,8 +789,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_retornosstatusecf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82198954" vertical-offset="2508" max-vertical-offset="6511">
-          <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2508" max-vertical-offset="6511">
+          <caret line="159" column="12" selection-start-line="159" selection-start-column="12" selection-end-line="159" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ui_geral_contatossuporte.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3910">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/widgetprincipal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3315">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Recursos_rc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.04450262" vertical-offset="34" max-vertical-offset="459">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
