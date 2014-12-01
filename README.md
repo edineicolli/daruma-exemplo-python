@@ -11,6 +11,6 @@ pyside-uic -o output.py input.ui
 Comando para converter o arquivo de recursos com as imagens para o python igual ou superior a versão 3:<br>
 pyside-rcc -py3 Recursos.qrc -o Recursos_rc.py
 
-cx_Freeze:
-http://www.lfd.uci.edu/~gohlke/pythonlibs/dpv9ch6y/cx_Freeze-4.3.3.win32-py3.4.exe
+cx_Freeze:<br>
+http://www.lfd.uci.edu/~gohlke/pythonlibs/dpv9ch6y/cx_Freeze-4.3.3.win32-py3.4.exe<br>
 http://www.lfd.uci.edu/~gohlke/pythonlibs/dpv9ch6y/cx_Freeze-4.3.3.win-amd64-py3.4.exe

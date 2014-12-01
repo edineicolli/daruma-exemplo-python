@@ -10,13 +10,12 @@
 from PySide import QtCore, QtGui
 from PySide.QtCore import QUrl
 from PySide.QtGui import QDesktopServices
+
 from scripts.dual.mainwindowdual import Ui_MainWindowDual
 from scripts.fiscal.mainwindowfiscal import Ui_MainWindowFISCAL
 from scripts.generico.mainwindowgenerico import Ui_MainWindowGenerico
 from scripts.modem.mainwindowmodem import Ui_MainWindowModem
-import Recursos_rc
-
-
+from scripts import Recursos_rc
 
 class Ui_WidgetPrincipal(QtGui.QWidget):
 
