@@ -16,6 +16,8 @@ from scripts.generico.mainwindowgenerico import Ui_MainWindowGenerico
 from scripts.modem.mainwindowmodem import Ui_MainWindowModem
 import Recursos_rc
 
+
+
 class Ui_WidgetPrincipal(QtGui.QWidget):
 
     def __init__(self):

@@ -1,0 +1,2 @@
+cx-Freeze==4.3.3
+pyside==1.2.2
