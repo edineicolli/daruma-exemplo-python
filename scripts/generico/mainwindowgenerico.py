@@ -27,6 +27,8 @@ class Ui_MainWindowGenerico(QtGui.QMainWindow):
         self.actionRReceberDados_Daruma.triggered.connect(self.on_actionRReceberDados_Daruma_triggered)
         self.actionEFecharSerial_Daruma.triggered.connect(self.on_actionEFecharSerial_Daruma_triggered)
 
+        #carregarDarumaFramework(this);
+
     def on_pushButtonEncerrar_clicked(self):
         self.close()
 
@@ -36,18 +38,19 @@ class Ui_MainWindowGenerico(QtGui.QMainWindow):
 
     def on_actionEAbrirSerial_Daruma_triggered(self):
         self.form_GENERICO_eAbrirSerial = Ui_ui_GENERICO_eAbrirSerial();
-        self.form_GENERICO_eAbrirSerial.show()
+        self.form_GENERICO_eAbrirSerial.showMaximized()
 
     def on_actionTEnviarDados_Daruma_triggered(self):
         self.form_GENERICO_tEnviarDados = Ui_ui_GENERICO_tEnviarDados();
-        self.form_GENERICO_tEnviarDados.show()
+        self.form_GENERICO_tEnviarDados.showMaximized()
 
     def on_actionRReceberDados_Daruma_triggered(self):
         self.form_GENERICO_rReceberDados = Ui_ui_GENERICO_rReceberDados();
-        self.form_GENERICO_rReceberDados.show()
-        pass
+        self.form_GENERICO_rReceberDados.showMaximized()
 
     def on_actionEFecharSerial_Daruma_triggered(self):
+        #iRetorno = eFecharSerial_Daruma();
+        #trataRetornoGenerico(iRetorno,this);
         pass
 
     def setupUi(self, MainWindowGenerico):
