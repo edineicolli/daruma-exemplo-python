@@ -8,6 +8,8 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import regAguardarProcesso_DUAL_DarumaFramework
+from scripts.dual.retornodual import tratarRetornoDUAL
 from scripts.dual.ui_dual_iautenticardocumento import Ui_ui_dual_iautenticardocumento
 from scripts.dual.ui_dual_ienviarbmp import Ui_ui_dual_ienviarbmp
 from scripts.dual.ui_dual_iimprimirarquivo import Ui_ui_dual_iimprimirarquivo
@@ -74,7 +76,7 @@ class Ui_MainWindowDual(QtGui.QMainWindow):
         self.pushButtonContatos_2.clicked.connect(self.on_pushButtonContatos_clicked)
 
     def on_actionM_todo_eDefinirProduto_Daruma_triggered(self):
-        #trataRetornoDUAL(eDefinirProduto_Daruma("DUAL"), this)
+        #tratarRetornoDUAL(eDefinirProduto_Daruma("DUAL"), self)
         pass
 
 
@@ -84,61 +86,59 @@ class Ui_MainWindowDual(QtGui.QMainWindow):
 
 
     def on_actionHabilitarAguardarProcesso_triggered(self):
-        #trataRetornoDUAL(regAguardarProcesso_DUAL_DarumaFramework("1"), this)
-        pass
+        tratarRetornoDUAL(regAguardarProcesso_DUAL_DarumaFramework("1"), self)
 
 
     def on_actionDesabilitarAguardarProcesso_triggered(self):
-        #trataRetornoDUAL(regAguardarProcesso_DUAL_DarumaFramework("0"),this)
-        pass
+        tratarRetornoDUAL(regAguardarProcesso_DUAL_DarumaFramework("0"), self)
 
 
     def on_actionHabilitarEnterFinal_triggered(self):
-        #trataRetornoDUAL(regEnterFinal_DUAL_DarumaFramework("1"), this)
+        #tratarRetornoDUAL(regEnterFinal_DUAL_DarumaFramework("1"), self)
         pass
 
 
     def on_actionDesabilitarEnterFinal_triggered(self):
-        #trataRetornoDUAL(regEnterFinal_DUAL_DarumaFramework("0"), this)
+        #tratarRetornoDUAL(regEnterFinal_DUAL_DarumaFramework("0"), self)
         pass
 
 
     def on_actionPadraoGaveta_triggered(self):
-        #trataRetornoDUAL(regModoGaveta_DUAL_DarumaFramework("0"), this)
+        #tratarRetornoDUAL(regModoGaveta_DUAL_DarumaFramework("0"), self)
         pass
 
 
     def on_actionAlteraPadraoGaveta_triggered(self):
-        #trataRetornoDUAL(regModoGaveta_DUAL_DarumaFramework("1"), this)
+        #tratarRetornoDUAL(regModoGaveta_DUAL_DarumaFramework("1"), self)
         pass
 
 
     def on_actionHabilitarTermica_triggered(self):
-        #trataRetornoDUAL(regTermica_DUAL_DarumaFramework("1"), this)
+        #tratarRetornoDUAL(regTermica_DUAL_DarumaFramework("1"), self)
         pass
 
 
     def on_actionDesabilitarTermica_triggered(self):
-        #trataRetornoDUAL(regTermica_DUAL_DarumaFramework("0"), this)
+        #tratarRetornoDUAL(regTermica_DUAL_DarumaFramework("0"), self)
         pass
 
 
     def on_actionHabilitarCodePageAutomatico_triggered(self):
-        #trataRetornoDUAL(regCodePageAutomatico_DUAL_DarumaFramework("1"), this)
+        #tratarRetornoDUAL(regCodePageAutomatico_DUAL_DarumaFramework("1"), self)
         pass
 
 
     def on_actionDesabilitarCodePageAutomatico_triggered(self):
-        #trataRetornoDUAL(regCodePageAutomatico_DUAL_DarumaFramework("0"), this)
+        #tratarRetornoDUAL(regCodePageAutomatico_DUAL_DarumaFramework("0"), self)
         pass
 
     def on_actionHabilitarZeroCortado_triggered(self):
-        #trataRetornoDUAL(regZeroCortado_DUAL_DarumaFramework("1"), this)
+        #tratarRetornoDUAL(regZeroCortado_DUAL_DarumaFramework("1"), self)
         pass
 
 
     def on_actionDesabilitarZeroCortado_triggered(self):
-        #trataRetornoDUAL(regZeroCortado_DUAL_DarumaFramework("0"), this)
+        #tratarRetornoDUAL(regZeroCortado_DUAL_DarumaFramework("0"), self)
         pass
 
 
@@ -350,7 +350,7 @@ class Ui_MainWindowDual(QtGui.QMainWindow):
         iImprimirTexto_DUAL_DarumaFramework(sTexto,0)
         iImprimirTexto_DUAL_DarumaFramework("<e><b>FIM BUFFER COMPLETO</b></e><sl>03</sl>",0)
         iImprimirTexto_DUAL_DarumaFramework("<sl>03</sl>",0)
-        trataRetornoDUAL(iImprimirTexto_DUAL_DarumaFramework("<gui></gui>",0), this)
+        trataRetornoDUAL(iImprimirTexto_DUAL_DarumaFramework("<gui></gui>",0), self)
         '''
         pass
 
@@ -491,18 +491,18 @@ class Ui_MainWindowDual(QtGui.QMainWindow):
         self.form_dual_reglinhasguilhotina.show()
 
     def on_actionM_todo_rStatusImpressora_DUAL_DarumaFramework_triggered(self):
-        #trataRetornoDUAL(rStatusImpressora_DUAL_DarumaFramework(),this)
+        #tratarRetornoDUAL(rStatusImpressora_DUAL_DarumaFramework(), self)
         pass
 
 
     def on_actionM_todo_rStatusDocumento_DUAL_DarumaFramework_triggered(self):
-        #trataRetornoDUAL(rStatusDocumento_DUAL_DarumaFramework(),this)
+        #tratarRetornoDUAL(rStatusDocumento_DUAL_DarumaFramework(), self)
         pass
 
 
     def on_actionM_todo_rStatusGaveta_DUAL_DarumaFramework_triggered(self):
         #gavetaStatus = 0
-        #trataRetornoDUAL(rSatusGaveta_DUAL_DarumaFramework(&gavetaStatus),this)
+        #tratarRetornoDUAL(rSatusGaveta_DUAL_DarumaFramework(&gavetaStatus), self)
 
         #/* ***Converte o char Retorno para QString, para poder ser transferido para o QMessageBox*** */
         #QString StrgavetaStatus; StrgavetaStatus.append(QString("%1").arg(gavetaStatus))
@@ -528,7 +528,7 @@ class Ui_MainWindowDual(QtGui.QMainWindow):
         self.form_dual_ienviarbmp.show()
 
     def on_actionM_todo_iAcionarGaveta_DUAL_DarumaFramework_triggered(self):
-        #trataRetornoDUAL(iAcionarGaveta_DUAL_DarumaFramework(), this)
+        #tratarRetornoDUAL(iAcionarGaveta_DUAL_DarumaFramework(), self)
         pass
 
     def on_actionM_todo_iAutenticarDocumento_DUAL_DarumaFramework_triggered(self):
