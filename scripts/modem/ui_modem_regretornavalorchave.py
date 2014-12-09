@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import regRetornaValorChave_DarumaFramework
+from scripts.modem.retornomodem import tratarRetornoModemReg
+
 
 class Ui_ui_MODEM_regRetornaValorChave(QtGui.QWidget):
 
@@ -19,7 +22,13 @@ class Ui_ui_MODEM_regRetornaValorChave(QtGui.QWidget):
         self.pushButtonFechar.clicked.connect(self.on_Fechar_clicked)
 
     def on_Enviar_clicked(self):
-        pass
+        StrProduto = self.lineEditProduto.text()
+        StrChave = self.lineEditChave.text()
+
+        StrValorRetornado = ''
+        tratarRetornoModemReg(regRetornaValorChave_DarumaFramework(StrProduto, StrChave, StrValorRetornado), self)
+
+        self.lineEditValorRetornado.setText(StrValorRetornado)
 
     def on_Fechar_clicked(self):
         self.close()

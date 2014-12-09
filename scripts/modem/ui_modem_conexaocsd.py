@@ -8,6 +8,11 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import eAtivarConexaoCsd_MODEM_DarumaFramework, eRealizarChamadaCsd_MODEM_DarumaFramework, \
+    eFinalizarChamadaCsd_MODEM_DarumaFramework, tEnviarDadosCsd_MODEM_DarumaFramework, \
+    rReceberDadosCsd_MODEM_DarumaFramework
+from scripts.modem.retornomodem import tratarRetornoModem
+
 
 class Ui_ui_MODEM_ConexaoCSD(QtGui.QWidget):
 
@@ -26,46 +31,29 @@ class Ui_ui_MODEM_ConexaoCSD(QtGui.QWidget):
         self.pushButtonFechar.clicked.connect(self.on_pushButtonFechar_clicked)
 
     def on_AtivarConexao_clicked(self):
-        #trataRetornoModem(eAtivarConexaoCsd_MODEM_DarumaFramework(),this);
-        pass
+        tratarRetornoModem(eAtivarConexaoCsd_MODEM_DarumaFramework(), self)
 
     def on_RealizarChamada_clicked(self):
-        #QString QStrTelefone
 
-        #QStrTelefone = ui->lineEditTelefone->text()
-
-        #QByteArray ConvertTelefone = QStrTelefone.toLocal8Bit()
-        #string StrTelefone = ConvertTelefone.data()
-
-        #trataRetornoModem(eRealizarChamadaCsd_MODEM_DarumaFramework(StrTelefone),this)
-        pass
+        StrTelefone = self.lineEditTelefone.text()
+        tratarRetornoModem(eRealizarChamadaCsd_MODEM_DarumaFramework(StrTelefone), self)
 
     def on_FinalizarChamada_clicked(self):
-        #trataRetornoModem(eFinalizarChamadaCsd_MODEM_DarumaFramework(),this)
-        pass
+        tratarRetornoModem(eFinalizarChamadaCsd_MODEM_DarumaFramework(), self)
 
     def on_pushButtonLimparEnviados_clicked(self):
         self.textEditDadosEnviados.setText("")
 
     def on_pushButtonEnviarDados_clicked(self):
-        #QStrDadosEnviados = self.textEditDadosEnviados.toPlainText()
+        StrDadosEnviados = self.textEditDadosEnviados.toPlainText()
 
-        #ConvertDadosEnviados = QStrDadosEnviados.toLocal8Bit()
-        #StrDadosEnviados = ConvertDadosEnviados.data()
-
-        #trataRetornoModem(tEnviarDadosCsd_MODEM_DarumaFramework(StrDadosEnviados),this)
-        pass
+        tratarRetornoModem(tEnviarDadosCsd_MODEM_DarumaFramework(StrDadosEnviados), self)
 
     def on_pushButtonReceberDados_clicked(self):
-        #QString QStrDadosRecebidos
 
-        #QByteArray ConvertDadosRecebidos = QStrDadosRecebidos.toLocal8Bit()
-        #StrDadosRecebidos = ConvertDadosRecebidos.data()
-
-        #trataRetornoModem(rReceberDadosCsd_MODEM_DarumaFramework(StrDadosRecebidos),this)
-
-        #self.textEditDadosRecebidos.setText(StrDadosRecebidos)
-        pass
+        StrDadosRecebidos = ''
+        tratarRetornoModem(rReceberDadosCsd_MODEM_DarumaFramework(StrDadosRecebidos), self)
+        self.textEditDadosRecebidos.setText(StrDadosRecebidos)
 
     def on_pushButtonLimparRecebidos_clicked(self):
         self.textEditDadosRecebidos.setText("")

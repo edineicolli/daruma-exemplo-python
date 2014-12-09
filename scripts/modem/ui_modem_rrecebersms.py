@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import rReceberSms_MODEM_DarumaFramework
+from scripts.modem.retornomodem import tratarRetornoModem
+
 
 class Ui_ui_MODEM_rReceberSms(QtGui.QWidget):
 
@@ -20,10 +23,26 @@ class Ui_ui_MODEM_rReceberSms(QtGui.QWidget):
         self.pushButtonFechar.clicked.connect(self.on_Fechar_clicked)
 
     def on_Limpar_clicked(self):
-        pass
+        self.lineEditIndiceSms.setText('')
+        self.lineEditTelefone.setText('')
+        self.lineEditData.setText('')
+        self.lineEditHora.setText('')
+        self.textEditMensagem.setText('')
 
     def on_Enviar_clicked(self):
-        pass
+
+        StrIndiceSms = ''
+        StrTelefone = ''
+        StrData = ''
+        StrHora = ''
+        StrMensagemTexto = ''
+        tratarRetornoModem(rReceberSms_MODEM_DarumaFramework(StrIndiceSms, StrTelefone, StrData, StrHora, StrMensagemTexto), self)
+
+        self.lineEditIndiceSms.setText(StrIndiceSms)
+        self.lineEditTelefone.setText(StrTelefone)
+        self.lineEditData.setText(StrData)
+        self.lineEditHora.setText(StrHora)
+        self.textEditMensagem.setText(StrMensagemTexto)
 
     def on_Fechar_clicked(self):
         self.close()

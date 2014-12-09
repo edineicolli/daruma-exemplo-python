@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import eApagarSms_MODEM_DarumaFramework
+from scripts.modem.retornomodem import tratarRetornoModem
+
 
 class Ui_ui_MODEM_eApagar(QtGui.QWidget):
 
@@ -15,11 +18,12 @@ class Ui_ui_MODEM_eApagar(QtGui.QWidget):
         super(Ui_ui_MODEM_eApagar, self).__init__()
 
         self.setupUi(self)
-        self.pushButton.clicked.connect(self.on_enviar_clicked)
+        self.pushButton.clicked.connect(self.on_apagar_clicked)
         self.pushButton_2.clicked.connect(self.on_fechar_clicked)
 
-    def on_enviar_clicked(self):
-        pass
+    def on_apagar_clicked(self):
+        StrIndiceSms = self.lineEditIndiceSms.text()
+        tratarRetornoModem(eApagarSms_MODEM_DarumaFramework(StrIndiceSms), self)
 
     def on_fechar_clicked(self):
         self.close()

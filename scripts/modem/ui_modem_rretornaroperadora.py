@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import rRetornarOperadora_MODEM_DarumaFramework
+from scripts.modem.retornomodem import tratarRetornoModem
+
 
 class Ui_ui_MODEM_rRetornarOperadora(QtGui.QWidget):
 
@@ -19,7 +22,9 @@ class Ui_ui_MODEM_rRetornarOperadora(QtGui.QWidget):
         self.pushButtonFechar.clicked.connect(self.on_Fechar_clicked)
 
     def on_Enviar_clicked(self):
-        pass
+        StrOperadora = ''
+        tratarRetornoModem(rRetornarOperadora_MODEM_DarumaFramework(StrOperadora), self)
+        self.lineEditOperadora.setText(StrOperadora)
 
     def on_Fechar_clicked(self):
         self.close()

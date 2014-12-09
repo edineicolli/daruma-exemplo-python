@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import regCaptionWinAPP_MODEM_DarumaFramework
+from scripts.modem.retornomodem import tratarRetornoModemReg
+
 
 class Ui_ui_MODEM_regCaptionWinAPP(QtGui.QWidget):
 
@@ -19,7 +22,8 @@ class Ui_ui_MODEM_regCaptionWinAPP(QtGui.QWidget):
         self.pushButtonFechar.clicked.connect(self.on_Fechar_clicked)
 
     def on_Enviar_clicked(self):
-        pass
+        StrCaptionWinAPP = self.lineEditCaptionWinAPP.text()
+        tratarRetornoModemReg(regCaptionWinAPP_MODEM_DarumaFramework(StrCaptionWinAPP), self)
 
     def on_Fechar_clicked(self):
         self.close()
