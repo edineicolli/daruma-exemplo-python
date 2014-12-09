@@ -8,6 +8,12 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import eDefinirProduto_Daruma, eReiniciar_MODEM_DarumaFramework, \
+    eInicializar_MODEM_DarumaFramework, eTrocarBandeja_MODEM_DarumaFramework, \
+    eBuscarPortaVelocidade_MODEM_DarumaFramework, rListarSms_MODEM_DarumaFramework, \
+    rNivelSinalRecebido_MODEM_DarumaFramework, regLerApagar_MODEM_DarumaFramework, regThread_MODEM_DarumaFramework
+from scripts.modem.retornomodem import tratarRetornoModem, tratarRetornoModemReg
 from scripts.modem.ui_modem_conexaocsd import Ui_ui_MODEM_ConexaoCSD
 from scripts.modem.ui_modem_eapagar import Ui_ui_MODEM_eApagar
 from scripts.modem.ui_modem_regbandejainicio import Ui_ui_MODEM_regBandejaInicio
@@ -63,12 +69,11 @@ class Ui_MainWindowModem(QtGui.QMainWindow):
         self.close()
 
     def on_eDefinirProduto_Daruma_triggered(self):
-        #iRetorno = eDefinirProduto_Daruma("MODEM");
-        #if(iRetorno == 1):
-        #    QMessageBox.information(this,"Método eDefinirProduto_Daruma","Produto definido com sucesso!")
-        #else:
-        #    QMessageBox.information(this,"Método eDefinirProduto_Daruma","Erro na definição de produto!")
-        pass
+        iRetorno = eDefinirProduto_Daruma("MODEM");
+        if(iRetorno == 1):
+            QMessageBox.information(self, "Método eDefinirProduto_Daruma","Produto definido com sucesso!")
+        else:
+            QMessageBox.information(self,"Método eDefinirProduto_Daruma","Erro na definição de produto!")
 
     def on_tEnviarSms_MODEM_Daruma_triggered(self):
         self.form_MODEM_tEnviarSms = Ui_ui_modem_tenviarsms()
@@ -103,24 +108,20 @@ class Ui_MainWindowModem(QtGui.QMainWindow):
         self.form_MODEM_regBandejaInicio.show();
 
     def on_eReiniciar_MODEM_DarumaFramework_triggered(self):
-        #trataRetornoModem(eReiniciar_MODEM_DarumaFramework(), this);
-        pass
+        tratarRetornoModem(eReiniciar_MODEM_DarumaFramework(), self);
 
     def on_eApagarSms_MODEM_DarumaFramework_triggered(self):
         self.form_MODEM_eApagarSms = Ui_ui_MODEM_eApagar()
         self.form_MODEM_eApagarSms.show()
 
     def on_eInicializar_MODEM_DarumaFramework_triggered(self):
-        #trataRetornoModem(eInicializar_MODEM_DarumaFramework(), this)
-        pass
+        tratarRetornoModem(eInicializar_MODEM_DarumaFramework(), self)
 
     def on_eTrocarBandeja_MODEM_DarumaFramework_triggered(self):
-        #trataRetornoModem(eTrocarBandeja_MODEM_DarumaFramework(), this)
-        pass
+        tratarRetornoModem(eTrocarBandeja_MODEM_DarumaFramework(), self)
 
     def on_eBuscarPortaVelocidade_MODEM_DarumaFramework_triggered(self):
-        #trataRetornoModem(eBuscarPortaVelocide_MODEM_DarumaFramework(), this)
-        pass
+        tratarRetornoModem(eBuscarPortaVelocidade_MODEM_DarumaFramework(), self)
 
     def on_tEnviarSmsOperadora_MODEM_Daruma_triggered(self):
         self.form_MODEM_tEnviarSmsOperadora = Ui_ui_MODEM_tEnviarSmsOperadora()
@@ -135,16 +136,14 @@ class Ui_MainWindowModem(QtGui.QMainWindow):
         self.form_MODEM_rReceberSmsIndice.show()
 
     def on_rListarSms_MODEM_DarumaFramework_triggered(self):
-        #trataRetornoModem(rListarSms_MODEM_DarumaFramework(),this)
-        pass
+        tratarRetornoModem(rListarSms_MODEM_DarumaFramework(), self)
 
     def on_rRetornarImei_MODEM_DarumaFramework_triggered(self):
         self.form_MODEM_rRetornarIMEI = Ui_ui_MODEM_rRetornarIMEI()
         self.form_MODEM_rRetornarIMEI.show()
 
     def on_rNivelSinalRecebido_MODEM_DarumaFramework_triggered(self):
-        #trataRetornoModem(rNivelSinalRecebido_MODEM_DarumaFramework(),this)
-        pass
+        tratarRetornoModem(rNivelSinalRecebido_MODEM_DarumaFramework(), self)
 
     def on_rRetornarOperadora_MODEM_DarumaFramework_triggered(self):
         self.form_MODEM_rRetornarOperadora = Ui_ui_MODEM_rRetornarOperadora();
@@ -155,20 +154,16 @@ class Ui_MainWindowModem(QtGui.QMainWindow):
         self.form_MODEM_ConexaoCSD.show()
 
     def on_TRUELerApagar_triggered(self):
-        #trataRetornoModemReg(regLerApagar_MODEM_DarumaFramework("TRUE"), this);
-        pass
+        tratarRetornoModemReg(regLerApagar_MODEM_DarumaFramework("TRUE"), self);
 
     def on_FALSELerApagar_triggered(self):
-        #trataRetornoModemReg(regLerApagar_MODEM_DarumaFramework("FALSE"),this)
-        pass
+        tratarRetornoModemReg(regLerApagar_MODEM_DarumaFramework("FALSE"), self)
 
     def on_TRUEThread_triggered(self):
-        #trataRetornoModemReg(regThread_MODEM_DarumaFramework("TRUE"),this)
-        pass
+        tratarRetornoModemReg(regThread_MODEM_DarumaFramework("TRUE"), self)
 
     def on_FALSEThread_triggered(self):
-        #trataRetornoModemReg(regThread_MODEM_DarumaFramework("FALSE"),this)
-        pass
+        tratarRetornoModemReg(regThread_MODEM_DarumaFramework("FALSE"), self)
         
     def setupUi(self, MainWindowModem):
         MainWindowModem.setObjectName("MainWindowModem")
