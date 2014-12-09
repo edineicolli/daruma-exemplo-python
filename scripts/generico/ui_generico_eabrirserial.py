@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import eAbrirSerial_Daruma
+from scripts.generico.retornogenerico import tratarRetornoGenerico
+
 
 class Ui_ui_GENERICO_eAbrirSerial(QtGui.QWidget):
 
@@ -20,19 +23,11 @@ class Ui_ui_GENERICO_eAbrirSerial(QtGui.QWidget):
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
     def on_pushButtonEnviar_clicked(self):
-        iRetorno = 0;
+        StrPorta = self.lineEditPorta.text()
+        StrVelocidade = self.lineEditVelocidade.text()
 
-        QStrPorta = self.lineEditPorta.text();
-        QStrVelocidade = self.lineEditVelocidade.text();
-
-        #convertPorta = QStrPorta.toLocal8Bit();
-        #StrPorta = convertPorta.data();
-        #convertVelocidade = QStrVelocidade.toLocal8Bit();
-        #StrVelocidade = convertVelocidade.data();
-
-        #iRetorno = eAbrirSerial_Daruma(StrPorta,StrVelocidade);
-        #trataRetornoGenerico(iRetorno,this);
-        pass
+        iRetorno = eAbrirSerial_Daruma(StrPorta,StrVelocidade)
+        tratarRetornoGenerico(iRetorno, self)
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

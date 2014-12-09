@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import rReceberDados_Daruma
+from scripts.generico.retornogenerico import tratarRetornoGenerico
+
 
 class Ui_ui_GENERICO_rReceberDados(QtGui.QWidget):
 
@@ -19,11 +22,10 @@ class Ui_ui_GENERICO_rReceberDados(QtGui.QWidget):
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
     def on_pushButtonReceber_clicked(self):
-        #iRetorno = rReceberDados_Daruma(StrRecebe);
-        #trataRetornoGenerico(iRetorno,this);
-        #QString QStrRecebe(StrRecebe);
-        #self.textEditRecebeDados.setText(QStrRecebe);
-        pass
+        StrRecebe = ''
+        iRetorno = rReceberDados_Daruma(StrRecebe);
+        tratarRetornoGenerico(iRetorno, self);
+        self.textEditRecebeDados.setText(StrRecebe);
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

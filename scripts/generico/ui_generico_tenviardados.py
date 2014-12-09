@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import tEnviarDados_Daruma
+from scripts.generico.retornogenerico import tratarRetornoGenerico
+
 
 class Ui_ui_GENERICO_tEnviarDados(QtGui.QWidget):
 
@@ -19,16 +22,12 @@ class Ui_ui_GENERICO_tEnviarDados(QtGui.QWidget):
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
     def on_pushButtonEnviar_clicked(self):
-        #QStrDados = self.textEdit.toPlainText();
-        #QStrBytes = self.lineEdit.text();
-        #iBytes = QStrBytes.toInt(&result, 10);
+        StrDados = self.textEdit.toPlainText();
+        StrBytes = self.lineEdit.text();
+        iBytes = 0;
 
-        #QByteArray convertDados = QStrDados.toLocal8Bit();
-        #StrDados = convertDados.data();
-
-        #iRetorno = tEnviarDados_Daruma(StrDados, iBytes);
-        #trataRetornoGenerico(iRetorno,this);
-        pass
+        iRetorno = tEnviarDados_Daruma(StrDados, iBytes);
+        tratarRetornoGenerico(iRetorno, self);
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

@@ -8,6 +8,8 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import eFecharSerial_Daruma
+from scripts.generico.retornogenerico import tratarRetornoGenerico
 from scripts.generico.ui_generico_eabrirserial import Ui_ui_GENERICO_eAbrirSerial
 from scripts.generico.ui_generico_rreceberdados import Ui_ui_GENERICO_rReceberDados
 from scripts.generico.ui_generico_tenviardados import Ui_ui_GENERICO_tEnviarDados
@@ -49,9 +51,8 @@ class Ui_MainWindowGenerico(QtGui.QMainWindow):
         self.form_GENERICO_rReceberDados.showMaximized()
 
     def on_actionEFecharSerial_Daruma_triggered(self):
-        #iRetorno = eFecharSerial_Daruma();
-        #trataRetornoGenerico(iRetorno,this);
-        pass
+        iRetorno = eFecharSerial_Daruma();
+        tratarRetornoGenerico(iRetorno, self);
 
     def setupUi(self, MainWindowGenerico):
         MainWindowGenerico.setObjectName("MainWindowGenerico")
