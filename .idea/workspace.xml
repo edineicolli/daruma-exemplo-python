@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0336715-d62b-4c0e-b1a8-348ef873d3e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/modem/retornomodem.py" afterPath="$PROJECT_DIR$/scripts/modem/retornomodem.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/modem/ui_modem_conexaocsd.py" afterPath="$PROJECT_DIR$/scripts/modem/ui_modem_conexaocsd.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/modem/ui_modem_eapagar.py" afterPath="$PROJECT_DIR$/scripts/modem/ui_modem_eapagar.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/modem/ui_modem_regbandejainicio.py" afterPath="$PROJECT_DIR$/scripts/modem/ui_modem_regbandejainicio.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/modem/ui_modem_regcaptionwinapp.py" afterPath="$PROJECT_DIR$/scripts/modem/ui_modem_regcaptionwinapp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/modem/ui_modem_regporta.py" afterPath="$PROJECT_DIR$/scripts/modem/ui_modem_regporta.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/modem/ui_modem_regretornavalorchave.py" afterPath="$PROJECT_DIR$/scripts/modem/ui_modem_regretornavalorchave.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/modem/ui_modem_regtempoalertar.py" afterPath="$PROJECT_DIR$/scripts/modem/ui_modem_regtempoalertar.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/modem/ui_modem_regvelocidade.py" afterPath="$PROJECT_DIR$/scripts/modem/ui_modem_regvelocidade.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/modem/ui_modem_rrecebersms.py" afterPath="$PROJECT_DIR$/scripts/modem/ui_modem_rrecebersms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/modem/ui_modem_rrecebersmsindice.py" afterPath="$PROJECT_DIR$/scripts/modem/ui_modem_rrecebersmsindice.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/modem/ui_modem_rretornarimei.py" afterPath="$PROJECT_DIR$/scripts/modem/ui_modem_rretornarimei.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/modem/ui_modem_rretornaroperadora.py" afterPath="$PROJECT_DIR$/scripts/modem/ui_modem_rretornaroperadora.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/modem/ui_modem_tenviarsms.py" afterPath="$PROJECT_DIR$/scripts/modem/ui_modem_tenviarsms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/modem/ui_modem_tenviarsmsoperadora.py" afterPath="$PROJECT_DIR$/scripts/modem/ui_modem_tenviarsmsoperadora.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/fiscal/retornofiscal.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py" afterPath="$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="daruma-exemplo-python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,13 +50,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainwindowdual.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mainwindowdual.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/dual/mainwindowdual.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.3795812" vertical-offset="120" max-vertical-offset="13379">
+            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="13379">
               <caret line="83" column="63" selection-start-line="83" selection-start-column="63" selection-end-line="83" selection-end-column="63" />
               <folding>
                 <element signature="e#247#279#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainwindowfiscal.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.87172776" vertical-offset="6467" max-vertical-offset="36414">
+              <caret line="400" column="0" selection-start-line="400" selection-start-column="0" selection-end-line="400" selection-end-column="0" />
+              <folding>
+                <element signature="e#249#281#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,8 +82,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfvendersemdesc.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfreceber.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iimprimircodigobarras.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_parametrizacaosintegra.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rassinarrsa.py" />
@@ -133,6 +131,8 @@
         <option value="$PROJECT_DIR$/scripts/modem/ui_modem_tenviarsms.py" />
         <option value="$PROJECT_DIR$/scripts/modem/ui_modem_tenviarsmsoperadora.py" />
         <option value="$PROJECT_DIR$/scripts/modem/retornomodem.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/retornofiscal.py" />
       </list>
     </option>
   </component>
@@ -195,6 +195,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="daruma-exemplo-python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="daruma-exemplo-python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fiscal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -385,7 +403,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -394,7 +412,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33490565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33490565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -459,13 +477,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rrsachavepublica.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarnumeroseriecodificado.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
@@ -640,7 +651,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1275">
           <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding>
-            <element signature="e#257#289#0" expanded="true" />
+            <element signature="e#257#289#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -650,7 +661,7 @@
         <state vertical-scroll-proportion="0.3115183" vertical-offset="697" max-vertical-offset="3077">
           <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
           <folding>
-            <element signature="e#251#283#0" expanded="true" />
+            <element signature="e#251#283#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -681,14 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55497384" vertical-offset="196" max-vertical-offset="35377">
-          <caret line="115" column="8" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/modem/ui_modem_reglerapagar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="578">
@@ -702,7 +705,7 @@
         <state vertical-scroll-proportion="0.4450262" vertical-offset="136" max-vertical-offset="1037">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#255#287#0" expanded="true" />
+            <element signature="e#255#287#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -712,7 +715,7 @@
         <state vertical-scroll-proportion="0.6884817" vertical-offset="94" max-vertical-offset="1037">
           <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
           <folding>
-            <element signature="e#257#289#0" expanded="true" />
+            <element signature="e#257#289#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -722,7 +725,7 @@
         <state vertical-scroll-proportion="0.04450262" vertical-offset="102" max-vertical-offset="1700">
           <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding>
-            <element signature="e#262#294#0" expanded="true" />
+            <element signature="e#262#294#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -732,7 +735,7 @@
         <state vertical-scroll-proportion="0.08900524" vertical-offset="51" max-vertical-offset="1037">
           <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
           <folding>
-            <element signature="e#250#282#0" expanded="true" />
+            <element signature="e#250#282#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -742,7 +745,7 @@
         <state vertical-scroll-proportion="0.4450262" vertical-offset="136" max-vertical-offset="1037">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#258#290#0" expanded="true" />
+            <element signature="e#258#290#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -752,7 +755,7 @@
         <state vertical-scroll-proportion="0.67277485" vertical-offset="185" max-vertical-offset="1037">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="e#258#290#0" expanded="true" />
+            <element signature="e#258#290#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -762,7 +765,7 @@
         <state vertical-scroll-proportion="0.37696335" vertical-offset="230" max-vertical-offset="1037">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <element signature="e#249#281#0" expanded="true" />
+            <element signature="e#249#281#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -772,7 +775,7 @@
         <state vertical-scroll-proportion="0.91099477" vertical-offset="893" max-vertical-offset="2669">
           <caret line="73" column="39" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
           <folding>
-            <element signature="e#252#284#0" expanded="true" />
+            <element signature="e#252#284#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -782,7 +785,7 @@
         <state vertical-scroll-proportion="0.578534" vertical-offset="306" max-vertical-offset="1904">
           <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
           <folding>
-            <element signature="e#253#285#0" expanded="true" />
+            <element signature="e#253#285#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -792,7 +795,7 @@
         <state vertical-scroll-proportion="0.59947646" vertical-offset="213" max-vertical-offset="1054">
           <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
           <folding>
-            <element signature="e#260#292#0" expanded="true" />
+            <element signature="e#260#292#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -802,7 +805,7 @@
         <state vertical-scroll-proportion="0.6439791" vertical-offset="196" max-vertical-offset="1054">
           <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
           <folding>
-            <element signature="e#255#287#0" expanded="true" />
+            <element signature="e#255#287#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -812,7 +815,7 @@
         <state vertical-scroll-proportion="0.33246073" vertical-offset="400" max-vertical-offset="1870">
           <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
           <folding>
-            <element signature="e#259#291#0" expanded="true" />
+            <element signature="e#259#291#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -822,7 +825,7 @@
         <state vertical-scroll-proportion="0.42670158" vertical-offset="347" max-vertical-offset="1428">
           <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
           <folding>
-            <element signature="e#252#284#0" expanded="true" />
+            <element signature="e#252#284#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -832,7 +835,7 @@
         <state vertical-scroll-proportion="0.46596858" vertical-offset="332" max-vertical-offset="1513">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding>
-            <element signature="e#261#293#0" expanded="true" />
+            <element signature="e#261#293#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -850,7 +853,7 @@
         <state vertical-scroll-proportion="0.91099477" vertical-offset="2678" max-vertical-offset="6715">
           <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
           <folding>
-            <element signature="e#248#280#0" expanded="true" />
+            <element signature="e#248#280#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -860,7 +863,7 @@
         <state vertical-scroll-proportion="0.04450262" vertical-offset="187" max-vertical-offset="1343">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#257#289#0" expanded="true" />
+            <element signature="e#257#289#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -883,10 +886,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/dual/mainwindowdual.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.3795812" vertical-offset="120" max-vertical-offset="13379">
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="13379">
           <caret line="83" column="63" selection-start-line="83" selection-start-column="63" selection-end-line="83" selection-end-column="63" />
           <folding>
             <element signature="e#247#279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/retornofiscal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6126582" vertical-offset="115" max-vertical-offset="578">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87172776" vertical-offset="6467" max-vertical-offset="36414">
+          <caret line="400" column="0" selection-start-line="400" selection-start-column="0" selection-end-line="400" selection-end-column="0" />
+          <folding>
+            <element signature="e#249#281#0" expanded="true" />
           </folding>
         </state>
       </provider>
