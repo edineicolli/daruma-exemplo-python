@@ -23,7 +23,7 @@ from pydaruma.pydaruma import iCFAbrirPadrao_ECF_Daruma, iCFCancelarAcrescimoUlt
     iCFCancelarDescontoSubtotal_ECF_Daruma, iCFEncerrar_ECF_Daruma, iCFAbrir_ECF_Daruma, iCFVender_ECF_Daruma, \
     iCFTotalizarCupom_ECF_Daruma, iCFEfetuarPagamento_ECF_Daruma, iCFCancelar_ECF_Daruma, \
     iCFEmitirCupomAdicional_ECF_Daruma, iCFEncerrarResumido_ECF_Daruma, iCFEncerrarPadrao_ECF_Daruma, \
-    iCFEfetuarPagamentoPadrao_ECF_Daruma
+    iCFEfetuarPagamentoPadrao_ECF_Daruma, rCMEfetuarCalculo_ECF_Daruma
 from scripts.fiscal.retornofiscal import tratarRetornoFiscal
 from scripts.fiscal.ui_fiscal_confcadastrarpadrao import Ui_ui_FISCAL_confCadastrarPadrao
 from scripts.fiscal.ui_fiscal_confcfbpprogramaruf import Ui_ui_FISCAL_confCFBPProgramarUF
@@ -424,21 +424,15 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_ConfiguracaoCupomMania.show()
 
     def on_actionTotal_de_ISS_e_ICMS_contabilizando_ultimo_CF_Mania_triggered(self):
-        #char cISS[200];
-        #char cICMS[200];
-        #QString QStrTotalImposto;
+        cISS = b''
+        cICMS = b''
 
-        #rCMEfetuarCalculo_ECF_Daruma(cISS,cICMS);
+        rCMEfetuarCalculo_ECF_Daruma(cISS, cICMS)
 
-        #//MONTO A STRING PARA APRESENTAÇÃO NO QMESSAGEBOX
-        #QStrTotalImposto += "Total ISS: ";
-        #QStrTotalImposto += cISS;
-        #QStrTotalImposto += "\n";
-        #QStrTotalImposto += "Total ICMS: ";
-        #QStrTotalImposto += cICMS;
+        # MONTO A STRING PARA APRESENTAÇÃO NO QMESSAGEBOX
+        StrTotalImposto = ''.join(["Total ISS: ", cISS.decode(), "\n", "Total ICMS: ", cICMS.decode()])
 
-        #QMessageBox::information(this,"DarumaFramework - Qt C++",QStrTotal.posto)
-        pass
+        QMessageBox.information(self, "DarumaFramework - Qt C++", StrTotalImposto)
 
     def on_actionM_todo_iEstornarPagamento_ECF_Daruma_triggered(self):
         self.form_FISCAL_iEstornarPagamento = Ui_ui_FISCAL_iEstornarPagamento()
