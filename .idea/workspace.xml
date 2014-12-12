@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a0336715-d62b-4c0e-b1a8-348ef873d3e9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py" afterPath="$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/retornofiscal.py" afterPath="$PROJECT_DIR$/scripts/fiscal/retornofiscal.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="daruma-exemplo-python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,8 +65,8 @@
       <file leaf-file-name="mainwindowfiscal.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28795812" vertical-offset="7115" max-vertical-offset="36312">
-              <caret line="425" column="34" selection-start-line="425" selection-start-column="34" selection-end-line="425" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.91099477" vertical-offset="10668" max-vertical-offset="36210">
+              <caret line="648" column="46" selection-start-line="648" selection-start-column="46" selection-end-line="648" selection-end-column="46" />
               <folding>
                 <element signature="e#249#281#0" expanded="true" />
               </folding>
@@ -72,11 +74,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ui_fiscal_confcadastrar.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcadastrar.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="retornofiscal.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/fiscal/retornofiscal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="561">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="pydaruma.py" pinned="false" current-in-tab="false">
         <entry file="file://C:/Python34/Lib/site-packages/pydaruma/pydaruma.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7914" max-vertical-offset="17697">
-              <caret line="475" column="68" selection-start-line="475" selection-start-column="68" selection-end-line="475" selection-end-column="68" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="11824" max-vertical-offset="17697">
+              <caret line="703" column="34" selection-start-line="703" selection-start-column="4" selection-end-line="703" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -139,8 +161,8 @@
         <option value="$PROJECT_DIR$/scripts/modem/ui_modem_tenviarsms.py" />
         <option value="$PROJECT_DIR$/scripts/modem/ui_modem_tenviarsmsoperadora.py" />
         <option value="$PROJECT_DIR$/scripts/modem/retornomodem.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/retornofiscal.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/retornofiscal.py" />
       </list>
     </option>
   </component>
@@ -480,18 +502,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="39" />
+      <option name="time" value="40" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarnumeroseriecodificado.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacaoseparador.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31428573" vertical-offset="0" max-vertical-offset="2159">
@@ -584,13 +599,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4117647" vertical-offset="0" max-vertical-offset="578">
           <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/Recursos_rc.py">
@@ -831,25 +846,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/retornofiscal.py">
+    <entry file="file://C:/Python34/Lib/site-packages/pydaruma/pydaruma.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6126582" vertical-offset="115" max-vertical-offset="578">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="11824" max-vertical-offset="17697">
+          <caret line="703" column="34" selection-start-line="703" selection-start-column="4" selection-end-line="703" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python34/Lib/site-packages/pydaruma/pydaruma.py">
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/retornofiscal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7914" max-vertical-offset="17697">
-          <caret line="475" column="68" selection-start-line="475" selection-start-column="68" selection-end-line="475" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="561">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcadastrar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28795812" vertical-offset="7115" max-vertical-offset="36312">
-          <caret line="425" column="34" selection-start-line="425" selection-start-column="34" selection-end-line="425" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.91099477" vertical-offset="10668" max-vertical-offset="36210">
+          <caret line="648" column="46" selection-start-line="648" selection-start-column="46" selection-end-line="648" selection-end-column="46" />
           <folding>
             <element signature="e#249#281#0" expanded="true" />
           </folding>

@@ -23,7 +23,7 @@ from pydaruma.pydaruma import iCFAbrirPadrao_ECF_Daruma, iCFCancelarAcrescimoUlt
     iCFCancelarDescontoSubtotal_ECF_Daruma, iCFEncerrar_ECF_Daruma, iCFAbrir_ECF_Daruma, iCFVender_ECF_Daruma, \
     iCFTotalizarCupom_ECF_Daruma, iCFEfetuarPagamento_ECF_Daruma, iCFCancelar_ECF_Daruma, \
     iCFEmitirCupomAdicional_ECF_Daruma, iCFEncerrarResumido_ECF_Daruma, iCFEncerrarPadrao_ECF_Daruma, \
-    iCFEfetuarPagamentoPadrao_ECF_Daruma, rCMEfetuarCalculo_ECF_Daruma
+    iCFEfetuarPagamentoPadrao_ECF_Daruma, rCMEfetuarCalculo_ECF_Daruma, iCFVenderResumido_ECF_Daruma
 from scripts.fiscal.retornofiscal import tratarRetornoFiscal
 from scripts.fiscal.ui_fiscal_confcadastrarpadrao import Ui_ui_FISCAL_confCadastrarPadrao
 from scripts.fiscal.ui_fiscal_confcfbpprogramaruf import Ui_ui_FISCAL_confCFBPProgramarUF
@@ -458,23 +458,17 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         tratarRetornoFiscal(iRetorno, self)
 
     def on_actionCupom_Fiscal_Resumido_triggered(self):
-        '''
-         iRetorno = 0;
+
         iCFAbrirPadrao_ECF_Daruma()
         iCFVenderResumido_ECF_Daruma("F1","1,00","12345678901234","REFRIGERANTE");
         iCFTotalizarCupomPadrao_ECF_Daruma()
 
-        '''
-        '''
-            Utilizarei a funçao iCFEncerrarResumido_ECF_Daruma que já passa a forma de pagamento padrão, não sendo
-            necessário eu enviar a forma de pagamento antes.
-            iCFEfetuarPagamentoPadrao_ECF_Daruma()
-        '''
-        '''
-            iRetorno = iCFEncerrarResumido_ECF_Daruma()
-            trataRetorno(iRetor(), self)
-        '''
-        pass
+        # Utilizarei a funçao iCFEncerrarResumido_ECF_Daruma que já passa a forma de pagamento padrão, não sendo
+        # necessário eu enviar a forma de pagamento antes.
+        iCFEfetuarPagamentoPadrao_ECF_Daruma()
+
+        iRetorno = iCFEncerrarResumido_ECF_Daruma()
+        tratarRetornoFiscal(iRetorno, self)
 
     def on_actionCupom_Fiscal_Pr_Venda_triggered(self):
         iRetorno = 0;

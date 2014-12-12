@@ -7,9 +7,9 @@ __author__ = 'Edinei'
 def tratarRetornoFiscal(iRetorno, Janela):
     QStrMensagem = ''
     iRetornoLocal = iRetorno
-    cInterpretaErro = ''
-    cInterpretaAviso = ''
-    cInterpretaRetorno = ''
+    cInterpretaErro = b''
+    cInterpretaAviso = b''
+    cInterpretaRetorno = b''
 
     #ESTE MÉTODO VERIFICA O STATUS DO ULTIMO COMANDO, E INTERPRETA OS INDICES DE AVISO E ERRO.
     eRetornarAvisoErroUltimoCMD_ECF_Daruma(cInterpretaAviso,cInterpretaErro)
