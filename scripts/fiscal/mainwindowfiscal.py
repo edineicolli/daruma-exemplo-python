@@ -23,7 +23,8 @@ from pydaruma.pydaruma import iCFAbrirPadrao_ECF_Daruma, iCFCancelarAcrescimoUlt
     iCFCancelarDescontoSubtotal_ECF_Daruma, iCFEncerrar_ECF_Daruma, iCFAbrir_ECF_Daruma, iCFVender_ECF_Daruma, \
     iCFTotalizarCupom_ECF_Daruma, iCFEfetuarPagamento_ECF_Daruma, iCFCancelar_ECF_Daruma, \
     iCFEmitirCupomAdicional_ECF_Daruma, iCFEncerrarResumido_ECF_Daruma, iCFEncerrarPadrao_ECF_Daruma, \
-    iCFEfetuarPagamentoPadrao_ECF_Daruma, rCMEfetuarCalculo_ECF_Daruma, iCFVenderResumido_ECF_Daruma
+    iCFEfetuarPagamentoPadrao_ECF_Daruma, rCMEfetuarCalculo_ECF_Daruma, iCFVenderResumido_ECF_Daruma, \
+    regAlterarValor_Daruma
 from scripts.fiscal.retornofiscal import tratarRetornoFiscal
 from scripts.fiscal.ui_fiscal_confcadastrarpadrao import Ui_ui_FISCAL_confCadastrarPadrao
 from scripts.fiscal.ui_fiscal_confcfbpprogramaruf import Ui_ui_FISCAL_confCFBPProgramarUF
@@ -471,36 +472,29 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         tratarRetornoFiscal(iRetorno, self)
 
     def on_actionCupom_Fiscal_Pr_Venda_triggered(self):
-        iRetorno = 0;
+
         #QString QStrMensagemAviso;
 
-        #QStrMensagemAviso += "Importante: \n";
-        #QStrMensagemAviso += "Funcionalidade disponível apenas no ECF MACH1 e MACH2.";
+        StrMensagemAviso = "Importante: \n"+"Funcionalidade disponível apenas no ECF MACH1 e MACH2."
 
-        #QMessageBox::information(this,"DarumaFramework - Qt C++",QStrMensagemAviso);
+        QMessageBox.information(self, "DarumaFramework - Qt/Python", StrMensagemAviso)
 
         #ALTERA O XML PARA HABILITAR O MODO PRÉ VENDA
-        #regAlterarValor_Daruma("ECF\\CF\\ModoPreVenda","1");
+        regAlterarValor_Daruma("ECF\\CF\\ModoPreVenda","1")
 
         #INICIA A IMPRESSAO DO CUPOM FISCAL
-        #iCFAbrir_ECF_Daruma("111.111.111.11","Daruma Developers Community","Avenida Shishima Hifumi,2910");
+        iCFAbrir_ECF_Daruma("111.111.111.11","Daruma Developers Community","Avenida Shishima Hifumi,2910")
 
-        iCF = 50;
-        i=0;
-        '''
-        for (i=1;i<=iCF;i++)
-
-            iCFVender_ECF_Daruma("F1","1,00","1,00","D$","0,00","12345678901234","UN","ITE.");
+        for i in range(0, 50):
+            iCFVender_ECF_Daruma("F1","1,00","1,00","D$","0,00","12345678901234","UN","ITE.")
 
         iCFTotalizarCupomPadrao_ECF_Daruma()
         iCFEfetuarPagamentoPadrao_ECF_Daruma()
-        iRetorno = iCFEncerrar_ECF_Daruma("0","MENSAGEM PROMOCIONAL COM ATE 8 LINHAS");
-        tratarRetornoFiscal(iRetorno,this);
-        '''
+        iRetorno = iCFEncerrar_ECF_Daruma("0","MENSAGEM PROMOCIONAL COM ATE 8 LINHAS")
+        tratarRetornoFiscal(iRetorno, self);
 
         #ALTERA O XML PARA DESABILITAR O MODO PRÉ VENDA
-        #regAlterarValor_Daruma("ECF\\CF\\ModoPreVen.","0")
-        pass
+        regAlterarValor_Daruma("ECF\\CF\\ModoPreVen.","0")
 
     #// *** FIM *** //
     #// *** MÉTODOS DE CUPOM FISCAL *** //
