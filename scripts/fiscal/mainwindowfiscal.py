@@ -24,7 +24,7 @@ from pydaruma.pydaruma import iCFAbrirPadrao_ECF_Daruma, iCFCancelarAcrescimoUlt
     iCFTotalizarCupom_ECF_Daruma, iCFEfetuarPagamento_ECF_Daruma, iCFCancelar_ECF_Daruma, \
     iCFEmitirCupomAdicional_ECF_Daruma, iCFEncerrarResumido_ECF_Daruma, iCFEncerrarPadrao_ECF_Daruma, \
     iCFEfetuarPagamentoPadrao_ECF_Daruma, rCMEfetuarCalculo_ECF_Daruma, iCFVenderResumido_ECF_Daruma, \
-    regAlterarValor_Daruma
+    regAlterarValor_Daruma, iTEF_ImprimirResposta_ECF_Daruma
 from scripts.fiscal.retornofiscal import tratarRetornoFiscal
 from scripts.fiscal.ui_fiscal_confcadastrarpadrao import Ui_ui_FISCAL_confCadastrarPadrao
 from scripts.fiscal.ui_fiscal_confcfbpprogramaruf import Ui_ui_FISCAL_confCFBPProgramarUF
@@ -577,30 +577,24 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         pass
 
     def on_actionExemplo_Completo_TEF_triggered(self):
-        iRetorno = 0
-        '''
-        QMessageBox::information(this,"DarumaFramework - Qt C++","Procedimento necessita de Forma de Pagamento -CARTÃO- cadastrado no ECF.");
-        QMessageBox::information(this,"DarumaFramework - Qt C++","É necessario que exista o arquivo IntPos.001 no destino C:\\");
+        QMessageBox.information(self,"DarumaFramework - Qt/Python","Procedimento necessita de Forma de Pagamento -CARTÃO- cadastrado no ECF.")
+        QMessageBox.information(self,"DarumaFramework - Qt/Ptyhon","É necessario que exista o arquivo IntPos.001 no destino C:\\")
 
-        iCFAbrir_ECF_Daruma("111.111.111.11","Daruma Developers Community","Avenida Shishima Hifumi,2910");
+        iCFAbrir_ECF_Daruma("111.111.111.11","Daruma Developers Community","Avenida Shishima Hifumi,2910")
 
-        int iCF = 10;
-        int i=0;
-        for (i=1;i<=iCF;i++)
+        for i in range(0, 50):
+            iCFVender_ECF_Daruma("F1","1,00","1,00","D$","0,00","12345678901234","UN","ITE.")
 
-            iCFVender_ECF_Daruma("F1","1,00","1,00","D$","0,00","12345678901234","UN","ITE.");
+        iCFTotalizarCupom_ECF_Daruma("A%","10,00")
+        iCFEfetuarPagamento_ECF_Daruma("CARTÃO","10,00","Pagamento Efetuado")
+        iCFEncerrar_ECF_Daruma("0","Mensagem Promocional com até 8 linhas")
 
-        iCFTotalizarCupom_ECF_Daruma("A%","10,00");
-        iCFEfetuarPagamento_ECF_Daruma("CARTÃO","10,00","Pagamento Efetuado");
-        iCFEncerrar_ECF_Daruma("0","Mensagem Promocional com até 8 linhas");
+        QMessageBox.information(self, "DarumaFramework - Qt/Python","Vou travar o teclado ate encontrar o arquivo! Caminho do Arquivo: C:\\IntPos.001")
+        iRetorno = iTEF_ImprimirResposta_ECF_Daruma("C:\IntPos.001", True, "CARTAO","10,00")
+        if (iRetorno == 0):
+            QMessageBox.information(self, "DarumaFramework - Qt/Python","Erro na Leitura do Arquivo IntPos.001")
 
-        QMessageBox::information(this,"DarumaFramework - Qt C++","Vou travar o teclado ate encontrar o arquivo! Caminho do Arquivo: C:\\IntPos.001");
-        iRetorno = iTEF_ImprimirResposta_ECF_Daruma("C:\IntPos.001",true,"CARTAO","10,00");
-        if (iRetorno == 0)
-            QMessageBox::information(this,"DarumaFramework - Qt C++","Erro na Leitura do Arquivo IntPos.001");
         tratarRetornoFiscal(iTEF_Fechar_ECF_Daruma(), self)
-        '''
-        pass
 
     def on_actionM_todo_eTEF_EsperarArquivo_ECF_Daruma_triggered(self):
         self.form_FISCAL_eTEF_EsperarArquivo = Ui_ui_FISCAL_eTEF_EsperarArquivo()
