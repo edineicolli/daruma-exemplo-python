@@ -24,7 +24,7 @@ from pydaruma.pydaruma import iCFAbrirPadrao_ECF_Daruma, iCFCancelarAcrescimoUlt
     iCFTotalizarCupom_ECF_Daruma, iCFEfetuarPagamento_ECF_Daruma, iCFCancelar_ECF_Daruma, \
     iCFEmitirCupomAdicional_ECF_Daruma, iCFEncerrarResumido_ECF_Daruma, iCFEncerrarPadrao_ECF_Daruma, \
     iCFEfetuarPagamentoPadrao_ECF_Daruma, rCMEfetuarCalculo_ECF_Daruma, iCFVenderResumido_ECF_Daruma, \
-    regAlterarValor_Daruma, iTEF_ImprimirResposta_ECF_Daruma
+    regAlterarValor_Daruma, iTEF_ImprimirResposta_ECF_Daruma, iCCDImprimirTexto_ECF_Daruma
 from scripts.fiscal.retornofiscal import tratarRetornoFiscal
 from scripts.fiscal.ui_fiscal_confcadastrarpadrao import Ui_ui_FISCAL_confCadastrarPadrao
 from scripts.fiscal.ui_fiscal_confcfbpprogramaruf import Ui_ui_FISCAL_confCFBPProgramarUF
@@ -541,40 +541,32 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         tratarRetornoFiscal(iCCDSegundaVia_ECF_Daruma(), self)
 
     def on_actionExemplo_CCD_Completo_triggered(self):
-        #iRetorno = 0;
-        '''
-        #QMessageBox::information(this,"DarumaFramework - Qt C++","Procedimento necessita de Forma de Pagamento -CARTÃO- cadastrado no ECF.\n Caso não tenha esta forma cadastrada, o pagamento será efetuado como DINHEIRO e o vinculado não sera impresso.");
 
-        #iRetorno = iCFAbrir_ECF_Daruma("111.111.111.11","Daruma Developers Community","Avenida Shishima Hifumi,2910");
-        #if(iRetorno != 1
-            tratarRetornoFiscal(iRetorno,this);
+        QMessageBox.information(self, "DarumaFramework - Qt/Python","Procedimento necessita de Forma de Pagamento -CARTÃO- cadastrado no ECF.\n Caso não tenha esta forma cadastrada, o pagamento será efetuado como DINHEIRO e o vinculado não sera impresso.")
+
+        iRetorno = iCFAbrir_ECF_Daruma("111.111.111.11","Daruma Developers Community","Avenida Shishima Hifumi,2910")
+        if(iRetorno != 1):
+            tratarRetornoFiscal(iRetorno, self)
             iCFCancelar_ECF_Daruma()
-     . retur
 
-        int iCF = 10;
-        int i=0;
-        for (i=1;i<=iCF;i++)
+        for i in range(0, 10):
+            iCFVender_ECF_Daruma("F1","1,00","1,00","D$","0,00","12345678901234","UN","ITEM")
 
-            iCFVender_ECF_Daruma("F1","1,00","1,00","D$","0,00","12345678901234","UN","ITE.");
-
-
-        iCFTotalizarCupom_ECF_Daruma("A%","10,00");
-        iCFEfetuarPagamento_ECF_Daruma("TEF","10,00","Pagamento Efetuado");
-        iCFEncerrar_ECF_Daruma("0","Mensagem Promocional com até 8 linhas");
+        iCFTotalizarCupom_ECF_Daruma("A%","10,00")
+        iCFEfetuarPagamento_ECF_Daruma("TEF","10,00","Pagamento Efetuado")
+        iCFEncerrar_ECF_Daruma("0","Mensagem Promocional com até 8 linhas")
 
         iRetorno = iCCDAbrirPadrao_ECF_Daruma()
-        if(iRetorno != 1
-            tratarRetornoFiscal(iRetorno,this);
+        if(iRetorno != 1):
+            tratarRetornoFiscal(iRetorno, self)
             iCFCancelar_ECF_Daruma()
-     . retur
-        iCCDImprimirTexto_ECF_Daruma("Imprimindo Texto Livre em CCD");
-        iCCDImprimirTexto_ECF_Daruma("Imprimindo Texto Livre em CCD");
-        iCCDImprimirTexto_ECF_Daruma("Imprimindo Texto Livre em CCD");
-        iRetorno = iCCDImprimirTexto_ECF_Daruma("Imprimindo Texto Livre em CCD");
+
+        iCCDImprimirTexto_ECF_Daruma("Imprimindo Texto Livre em CCD")
+        iCCDImprimirTexto_ECF_Daruma("Imprimindo Texto Livre em CCD")
+        iCCDImprimirTexto_ECF_Daruma("Imprimindo Texto Livre em CCD")
+        iCCDImprimirTexto_ECF_Daruma("Imprimindo Texto Livre em CCD")
         iRetorno = iCCDFechar_ECF_Daruma()
-        tratarRetornoFiscal(iRetor(), self)
-        '''
-        pass
+        tratarRetornoFiscal(iRetorno, self)
 
     def on_actionExemplo_Completo_TEF_triggered(self):
         QMessageBox.information(self,"DarumaFramework - Qt/Python","Procedimento necessita de Forma de Pagamento -CARTÃO- cadastrado no ECF.")
