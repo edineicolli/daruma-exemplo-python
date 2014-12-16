@@ -8,6 +8,10 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import confCadastrar_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_confCadastrar(QtGui.QWidget):
 
@@ -15,6 +19,22 @@ class Ui_ui_FISCAL_confCadastrar(QtGui.QWidget):
         super(Ui_ui_FISCAL_confCadastrar, self).__init__()
 
         self.setupUi(self)
+
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+
+    def on_pushButtonEnviar_clicked(self):
+        if ((self.comboBoxTipo.currentIndex() == 0 ) and (self.lineEditValor.text() == "") and (self.lineEditSeparador.text() == "")):
+            QMessageBox.warning(self, "DarumaFramework - Qt/Python","Preencha todos os Campos!")
+        else:
+            StrTipo = self.comboBoxTipo.currentText()
+            StrValor = self.lineEditValor.text()
+            StrSeparador = self.lineEditSeparador.text()
+            tratarRetornoFiscal(confCadastrar_ECF_Daruma(StrTipo,StrValor,StrSeparador), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_confCadastrar):
         ui_FISCAL_confCadastrar.setObjectName("ui_FISCAL_confCadastrar")
