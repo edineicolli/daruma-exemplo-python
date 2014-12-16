@@ -24,7 +24,9 @@ from pydaruma.pydaruma import iCFAbrirPadrao_ECF_Daruma, iCFCancelarAcrescimoUlt
     iCFTotalizarCupom_ECF_Daruma, iCFEfetuarPagamento_ECF_Daruma, iCFCancelar_ECF_Daruma, \
     iCFEmitirCupomAdicional_ECF_Daruma, iCFEncerrarResumido_ECF_Daruma, iCFEncerrarPadrao_ECF_Daruma, \
     iCFEfetuarPagamentoPadrao_ECF_Daruma, rCMEfetuarCalculo_ECF_Daruma, iCFVenderResumido_ECF_Daruma, \
-    regAlterarValor_Daruma, iTEF_ImprimirResposta_ECF_Daruma, iCCDImprimirTexto_ECF_Daruma
+    regAlterarValor_Daruma, iTEF_ImprimirResposta_ECF_Daruma, iCCDImprimirTexto_ECF_Daruma, iCNFAbrir_ECF_Daruma, \
+    iCNFReceber_ECF_Daruma, iCNFTotalizarComprovante_ECF_Daruma, iCNFEfetuarPagamento_ECF_Daruma, \
+    iCNFEncerrar_ECF_Daruma
 from scripts.fiscal.retornofiscal import tratarRetornoFiscal
 from scripts.fiscal.ui_fiscal_confcadastrarpadrao import Ui_ui_FISCAL_confCadastrarPadrao
 from scripts.fiscal.ui_fiscal_confcfbpprogramaruf import Ui_ui_FISCAL_confCFBPProgramarUF
@@ -698,26 +700,19 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         tratarRetornoFiscal(iCNFCancelar_ECF_Daruma(), self)
 
     def on_actionExemplo_CNF_Detalhado_triggered(self):
-        '''
-        int iretAbrir;
-        int iretReceber;
-        int iretTotalizar;
-        int iretPagamento;
-        int iretEncerrar;
-        QMessageBox::warning(this,"DarumaFramework - Qt C++",("É necessário ter pelo menos um Totalizador Não Fiscal Cadastrado. Caso nao possua, o Comprovante sairá cancelado."));
 
-            iretAbrir = iCNFAbrir_ECF_Daruma("111.111.111-11","Daruma Developers Community","Av Shishima Hifumi");
-            iretReceber = iCNFReceber_ECF_Daruma("03","5,00","A%","10,00");
-            iretTotalizar = iCNFTotalizarComprovante_ECF_Daruma("D%","10,00");
-            iretPagamento = iCNFEfetuarPagamento_ECF_Daruma("Dinheiro","10,00","Efetuar Pagamento Com Mensagem");
-            iretEncerrar = iCNFEncerrar_ECF_Daruma("Mensagem Promocional no Encerramento com até 8 linhas!");
+        QMessageBox.warning(self, "DarumaFramework - Qt/Python",("É necessário ter pelo menos um Totalizador Não Fiscal Cadastrado. Caso nao possua, o Comprovante sairá cancelado."))
 
-            if((iretAbrir != 1)||(iretReceber != 1)||(iretTotalizar != 1)||(iretPagamento != 1)||(iretEncerrar != 1))
+        iretAbrir = iCNFAbrir_ECF_Daruma("111.111.111-11","Daruma Developers Community","Av Shishima Hifumi")
+        iretReceber = iCNFReceber_ECF_Daruma("03","5,00","A%","10,00")
+        iretTotalizar = iCNFTotalizarComprovante_ECF_Daruma("D%","10,00")
+        iretPagamento = iCNFEfetuarPagamento_ECF_Daruma("Dinheiro","10,00","Efetuar Pagamento Com Mensagem")
+        iretEncerrar = iCNFEncerrar_ECF_Daruma("Mensagem Promocional no Encerramento com até 8 linhas!")
 
-                iCNFCancelar_ECF_Daruma()
-                QMessageBox::warning(this,"DarumaFramework - Qt C++","Ocorreu um Erro. O Cupom foi Cancelado").
-        '''
-        pass
+        if((iretAbrir != 1) and (iretReceber != 1) and (iretTotalizar != 1) and (iretPagamento != 1) and (iretEncerrar != 1)):
+            iCNFCancelar_ECF_Daruma()
+            QMessageBox.warning(self, "DarumaFramework - Qt/Python","Ocorreu um Erro. O Cupom foi Cancelado")
+
     #// *** FIM *** //
     #// *** COMPROVANTE NÃO FISCAL *** //
 
