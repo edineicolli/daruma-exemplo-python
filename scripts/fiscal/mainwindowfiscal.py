@@ -26,7 +26,7 @@ from pydaruma.pydaruma import iCFAbrirPadrao_ECF_Daruma, iCFCancelarAcrescimoUlt
     iCFEfetuarPagamentoPadrao_ECF_Daruma, rCMEfetuarCalculo_ECF_Daruma, iCFVenderResumido_ECF_Daruma, \
     regAlterarValor_Daruma, iTEF_ImprimirResposta_ECF_Daruma, iCCDImprimirTexto_ECF_Daruma, iCNFAbrir_ECF_Daruma, \
     iCNFReceber_ECF_Daruma, iCNFTotalizarComprovante_ECF_Daruma, iCNFEfetuarPagamento_ECF_Daruma, \
-    iCNFEncerrar_ECF_Daruma
+    iCNFEncerrar_ECF_Daruma, rStatusGaveta_ECF_Daruma
 from scripts.fiscal.retornofiscal import tratarRetornoFiscal
 from scripts.fiscal.ui_fiscal_confcadastrarpadrao import Ui_ui_FISCAL_confCadastrarPadrao
 from scripts.fiscal.ui_fiscal_confcfbpprogramaruf import Ui_ui_FISCAL_confCFBPProgramarUF
@@ -475,7 +475,6 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
 
     def on_actionCupom_Fiscal_Pr_Venda_triggered(self):
 
-        #QString QStrMensagemAviso;
 
         StrMensagemAviso = "Importante: \n"+"Funcionalidade disponível apenas no ECF MACH1 e MACH2."
 
@@ -884,16 +883,14 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         tratarRetornoFiscal(eAbrirGaveta_ECF_Daruma(), self)
 
     def on_actionM_todo_rStatusGaveta_ECF_Daruma_triggered(self):
-        '''
-        #int iStatus;
-        tratarRetornoFiscal(rStatusGaveta_ECF_Daruma(&iStatus),this);
 
-        if (iStatus == 0)
-            QMessageBox::information(this,"DarumaFramework - Qt C++","Gaveta Fechada");
-        if (iStatus == 1)
-            QMessageBox::information(this,"DarumaFramework - Qt C++","Gaveta .erta")
-        '''
-        pass
+        iStatus = None
+        tratarRetornoFiscal(rStatusGaveta_ECF_Daruma(iStatus), self)
+
+        if (iStatus == 0):
+            QMessageBox.information(self, "DarumaFramework - Qt/Python", "Gaveta Fechada")
+        if (iStatus == 1):
+            QMessageBox.information(self, "DarumaFramework - Qt/Python", "Gaveta aberta")
 
     def on_actionM_todo_eCarregarBitmapPromocional_ECF_Daruma_triggered(self):
         self.form_FISCAL_eCarregarBitmapPromocional = Ui_ui_FISCAL_eCarregarBitmapPromocional()
