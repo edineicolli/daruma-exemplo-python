@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import regAlterarValor_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_ConfiguracaoCupomMania(QtGui.QWidget):
 
@@ -15,6 +18,22 @@ class Ui_ui_FISCAL_ConfiguracaoCupomMania(QtGui.QWidget):
         super(Ui_ui_FISCAL_ConfiguracaoCupomMania, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        iIndice = self.comboBoxValor.currentIndex()
+
+        if(iIndice == 0 ):
+            StrValor = "0"
+            tratarRetornoFiscal(regAlterarValor_Daruma("ECF\\CF\\CupomMania",StrValor), self)
+
+        if(iIndice == 1 ):
+            StrValor = "1"
+            tratarRetornoFiscal(regAlterarValor_Daruma("ECF\\CF\\CupomMania",StrValor), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_ConfiguracaoCupomMania):
         ui_FISCAL_ConfiguracaoCupomMania.setObjectName("ui_FISCAL_ConfiguracaoCupomMania")
