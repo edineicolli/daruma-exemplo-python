@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0336715-d62b-4c0e-b1a8-348ef873d3e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcadastrarpadrao.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcadastrarpadrao.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcfbpprogramaruf.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcfbpprogramaruf.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="daruma-exemplo-python.iws" />
@@ -39,13 +39,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainwindowfiscal.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mainwindowfiscal.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14285715" vertical-offset="2040" max-vertical-offset="35734">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="35734">
               <caret line="125" column="23" selection-start-line="125" selection-start-column="23" selection-end-line="125" selection-end-column="23" />
               <folding>
                 <element signature="e#249#281#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ui_fiscal_confcfbpprogramaruf.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcfbpprogramaruf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.31428573" vertical-offset="51" max-vertical-offset="1394">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="38" />
+              <folding>
+                <element signature="e#262#294#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,7 +71,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rassinarrsa.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressoraint.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressorastr.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarmfd.py" />
@@ -110,6 +121,7 @@
         <option value="$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcadastrar.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcadastrarpadrao.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcfbpprogramaruf.py" />
       </list>
     </option>
   </component>
@@ -454,13 +466,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornargtcodificado.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rleituraxcustomizada.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
@@ -798,30 +803,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcadastrarpadrao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2857143" vertical-offset="68" max-vertical-offset="1870">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#262#294#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcadastrar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.028571429" vertical-offset="153" max-vertical-offset="2601">
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcadastrarpadrao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2" vertical-offset="68" max-vertical-offset="1870">
+          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14285715" vertical-offset="2040" max-vertical-offset="35734">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="35734">
           <caret line="125" column="23" selection-start-line="125" selection-start-column="23" selection-end-line="125" selection-end-column="23" />
           <folding>
             <element signature="e#249#281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcfbpprogramaruf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31428573" vertical-offset="51" max-vertical-offset="1394">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="e#262#294#0" expanded="true" />
           </folding>
         </state>
       </provider>
