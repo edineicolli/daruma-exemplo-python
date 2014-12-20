@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import confProgramarAvancoPapel_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_confProgramarAvancoPapel(QtGui.QWidget):
 
@@ -15,6 +18,31 @@ class Ui_ui_FISCAL_confProgramarAvancoPapel(QtGui.QWidget):
         super(Ui_ui_FISCAL_confProgramarAvancoPapel, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        # Declaracao de variaveis de recebimento da UI.
+        StrLinhasGui = self.lineEditLinhasGui.text()
+        StrSepDocs = self.lineEditSepEntreDocumentos.text()
+        StrSepLinhas = self.lineEditSepEntreLinhas.text()
+
+        StrStatusCliche = ""
+        StrStatusGui = ""
+
+        if(self.radioButtonClicheDes.isChecked()):
+            StrStatusCliche = "1"
+        if(self.radioButtonClicheHab.isChecked()):
+            StrStatusCliche = "0"
+        if(self.radioButtonGuiDes.isChecked()):
+            StrStatusGui = "0"
+        if(self.radioButtonGuiHab.isChecked()):
+            StrStatusGui = "1"
+
+        tratarRetornoFiscal(confProgramarAvancoPapel_ECF_Daruma(StrSepLinhas,StrSepDocs,StrLinhasGui,StrStatusGui,StrStatusCliche), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_confProgramarAvancoPapel):
         ui_FISCAL_confProgramarAvancoPapel.setObjectName("ui_FISCAL_confProgramarAvancoPapel")
