@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import confProgramarIDLoja_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_confProgramarIDLoja(QtGui.QWidget):
 
@@ -15,6 +18,19 @@ class Ui_ui_FISCAL_confProgramarIDLoja(QtGui.QWidget):
         super(Ui_ui_FISCAL_confProgramarIDLoja, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        # Declaraçao das Variaveis que recebem os valores da UI
+        StrID =  self.lineEditID.text()
+
+        # Chamada do Método
+        tratarRetornoFiscal(confProgramarIDLoja_ECF_Daruma(StrID), self)
+        self.close();
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_confProgramarIDLoja):
         ui_FISCAL_confProgramarIDLoja.setObjectName("ui_FISCAL_confProgramarIDLoja")
