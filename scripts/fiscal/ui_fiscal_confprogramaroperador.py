@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import confProgramarOperador_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_confProgramarOperador(QtGui.QWidget):
 
@@ -15,6 +18,18 @@ class Ui_ui_FISCAL_confProgramarOperador(QtGui.QWidget):
         super(Ui_ui_FISCAL_confProgramarOperador, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        # Declaraçao das Variaveis que recebem os valores da UI
+        StrOperador = self.lineEditOperador.text()
+
+        # Chamada do Método
+        tratarRetornoFiscal(confProgramarOperador_ECF_Daruma(StrOperador), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_confProgramarOperador):
         ui_FISCAL_confProgramarOperador.setObjectName("ui_FISCAL_confProgramarOperador")
