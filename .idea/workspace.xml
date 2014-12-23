@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0336715-d62b-4c0e-b1a8-348ef873d3e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confprogramaroperador.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confprogramaroperador.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_eacionarguilhotina.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_eacionarguilhotina.py" />
     </list>
     <ignored path="daruma-exemplo-python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,13 +74,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui_fiscal_confprogramaroperador.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ui_fiscal_confprogramaroperador.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confprogramaroperador.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5714286" vertical-offset="51" max-vertical-offset="1326">
-              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1326">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="31" selection-end-column="20" />
               <folding>
                 <element signature="e#264#296#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ui_fiscal_eacionarguilhotina.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_eacionarguilhotina.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.31428573" vertical-offset="51" max-vertical-offset="1632">
+              <caret line="14" column="37" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="37" />
+              <folding>
+                <element signature="e#261#293#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,7 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatoriobaixonivel.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsped.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rinfoestendida.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacao.py" />
@@ -146,6 +156,7 @@
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confprogramaravancopapel.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confprogramaridloja.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confprogramaroperador.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_eacionarguilhotina.py" />
       </list>
     </option>
   </component>
@@ -490,13 +501,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/ui_geral_contatossuporte.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3910">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/modem/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="395">
@@ -540,13 +544,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4117647" vertical-offset="0" max-vertical-offset="578">
           <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/Recursos_rc.py">
@@ -859,10 +863,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confprogramaroperador.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5714286" vertical-offset="51" max-vertical-offset="1326">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1326">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="31" selection-end-column="20" />
           <folding>
             <element signature="e#264#296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_eacionarguilhotina.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31428573" vertical-offset="51" max-vertical-offset="1632">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="37" />
+          <folding>
+            <element signature="e#261#293#0" expanded="true" />
           </folding>
         </state>
       </provider>
