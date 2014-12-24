@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import eCarregarBitmapPromocional_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_eCarregarBitmapPromocional(QtGui.QWidget):
 
@@ -15,6 +18,27 @@ class Ui_ui_FISCAL_eCarregarBitmapPromocional(QtGui.QWidget):
         super(Ui_ui_FISCAL_eCarregarBitmapPromocional, self).__init__()
 
         self.setupUi(self)
+        self.comboBoxIndice.addItem(" ")
+        self.comboBoxIndice.addItem("1")
+        self.comboBoxIndice.addItem("2")
+        self.comboBoxIndice.addItem("3")
+        self.comboBoxIndice.addItem("4")
+        self.comboBoxIndice.addItem("5")
+        self.lineEditOrientacao.setText("000")
+        self.lineEditPath.setText("C:\\Logo.bmp")
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        # Declaraçao das Variaveis que recebem os valores da UI
+        StrIndice = self.comboBoxIndice.currentText()
+        StrPath = self.lineEditPath.text()
+
+        # Chamada do Método
+        tratarRetornoFiscal(eCarregarBitmapPromocional_ECF_Daruma(StrPath,StrIndice,"000"), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_eCarregarBitmapPromocional):
         ui_FISCAL_eCarregarBitmapPromocional.setObjectName("ui_FISCAL_eCarregarBitmapPromocional")
