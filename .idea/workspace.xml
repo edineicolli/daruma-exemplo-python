@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0336715-d62b-4c0e-b1a8-348ef873d3e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ecarregarbitmappromocional.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ecarregarbitmappromocional.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_edefinirmodoregistro.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_edefinirmodoregistro.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_edefinirproduto.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_edefinirproduto.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="daruma-exemplo-python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,25 +40,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui_fiscal_eacionarguilhotina.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_eacionarguilhotina.py">
+      <file leaf-file-name="ui_fiscal_edefinirmodoregistro.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_edefinirmodoregistro.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1632">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="33" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1666">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="33" selection-end-column="20" />
               <folding>
-                <element signature="e#261#293#0" expanded="true" />
+                <element signature="e#263#295#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui_fiscal_ecarregarbitmappromocional.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ecarregarbitmappromocional.py">
+      <file leaf-file-name="ui_fiscal_edefinirproduto.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_edefinirproduto.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6230366" vertical-offset="68" max-vertical-offset="2074">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.31428573" vertical-offset="51" max-vertical-offset="1768">
+              <caret line="14" column="34" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="34" />
               <folding>
-                <element signature="e#269#301#0" expanded="true" />
+                <element signature="e#258#290#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,8 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rinfoestendida.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacao.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacaoseparador.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_retornosstatusecf.py" />
         <option value="$PROJECT_DIR$/scripts/Recursos_rc.py" />
@@ -121,6 +121,8 @@
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confprogramaroperador.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_eacionarguilhotina.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ecarregarbitmappromocional.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_edefinirmodoregistro.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_edefinirproduto.py" />
       </list>
     </option>
   </component>
@@ -400,18 +402,18 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33490565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39937106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33490565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39937106" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -465,20 +467,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/generico/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="395">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="395">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/dual/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="395">
@@ -501,13 +489,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4117647" vertical-offset="0" max-vertical-offset="578">
           <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/Recursos_rc.py">
@@ -778,9 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="35734">
           <caret line="125" column="23" selection-start-line="125" selection-start-column="23" selection-end-line="125" selection-end-column="23" />
-          <folding>
-            <element signature="e#249#281#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -802,9 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="2499">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="44" selection-end-column="20" />
-          <folding>
-            <element signature="e#267#299#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -812,9 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1479">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="32" selection-end-column="20" />
-          <folding>
-            <element signature="e#262#294#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -822,9 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1326">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="31" selection-end-column="20" />
-          <folding>
-            <element signature="e#264#296#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -840,10 +816,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ecarregarbitmappromocional.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6230366" vertical-offset="68" max-vertical-offset="2074">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="2074">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="40" selection-end-column="20" />
           <folding>
             <element signature="e#269#301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_edefinirmodoregistro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1666">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="33" selection-end-column="20" />
+          <folding>
+            <element signature="e#263#295#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_edefinirproduto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31428573" vertical-offset="51" max-vertical-offset="1768">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <element signature="e#258#290#0" expanded="true" />
           </folding>
         </state>
       </provider>

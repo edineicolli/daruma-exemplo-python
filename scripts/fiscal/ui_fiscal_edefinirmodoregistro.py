@@ -8,6 +8,8 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_eDefinirModoRegistro(QtGui.QWidget):
 
@@ -15,6 +17,21 @@ class Ui_ui_FISCAL_eDefinirModoRegistro(QtGui.QWidget):
         super(Ui_ui_FISCAL_eDefinirModoRegistro, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        if(self.radioButtonTipo_0.isChecked()):
+            iModoRegistro = 0
+        if(self.radioButtonTipo_1.isChecked()):
+            iModoRegistro = 1
+        if(self.radioButtonTipo_2.isChecked()):
+           iModoRegistro = 2
+
+        #tratarRetornoFiscal(eDefinirModoRegistro_Daruma(iModoRegistro), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_eDefinirModoRegistro):
         ui_FISCAL_eDefinirModoRegistro.setObjectName("ui_FISCAL_eDefinirModoRegistro")
