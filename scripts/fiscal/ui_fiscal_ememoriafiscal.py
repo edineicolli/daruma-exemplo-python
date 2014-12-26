@@ -8,6 +8,10 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtCore import QDate
+from pydaruma.pydaruma import eMemoriaFiscal_ECF_Daruma, regAlterarValor_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_eMemoriaFiscal(QtGui.QWidget):
 
@@ -15,6 +19,42 @@ class Ui_ui_FISCAL_eMemoriaFiscal(QtGui.QWidget):
         super(Ui_ui_FISCAL_eMemoriaFiscal, self).__init__()
 
         self.setupUi(self)
+
+        self.lineEditInicial.setVisible(False)
+        self.lineEditFinal.setVisible(False)
+        self.dateEditInicial.setVisible(False)
+        self.dateEditFinal.setVisible(False)
+        self.dateEditInicial.setDate(QDate.currentDate())
+        self.dateEditFinal.setDate(QDate.currentDate())
+
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+    
+        if(self.checkBoxArqMF.isChecked()):
+            StrRelatorios = "ATO+"
+        if(self.checkBoxEspelhoMF.isChecked()):
+            StrRelatorios = "ARQ+"
+        if(self.checkBoxImpMF.isChecked()):
+            StrRelatorios = "IMP"
+    
+        if(self.radioButtonCRZ.isChecked()):
+            StrIntInicial = self.lineEditInicial.text()
+            StrIntFinal = self.lineEditFinal.text()
+        if(self.radioButtonDATAM.isChecked()):
+            StrIntInicial = self.dateEditInicial.text()
+            StrIntFinal = self.dateEditFinal.text()
+
+        if(self.lineEditDestinoArq.text() != ""):
+            StrLocalDestino = self.lineEditDestinoArq.text()
+    
+            regAlterarValor_Daruma("START\\LocalArquivosRelatorios",StrLocalDestino)
+    
+        tratarRetornoFiscal(eMemoriaFiscal_ECF_Daruma(StrIntInicial,StrIntFinal, True,StrRelatorios), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_eMemoriaFiscal):
         ui_FISCAL_eMemoriaFiscal.setObjectName("ui_FISCAL_eMemoriaFiscal")
