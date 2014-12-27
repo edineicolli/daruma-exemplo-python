@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0336715-d62b-4c0e-b1a8-348ef873d3e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ememoriafiscal.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ememoriafiscal.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ersaassinararquivo.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ersaassinararquivo.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="daruma-exemplo-python.iws" />
@@ -63,13 +63,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui_fiscal_ememoriafiscal.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ui_fiscal_ememoriafiscal.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ememoriafiscal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4450262" vertical-offset="680" max-vertical-offset="3026">
-              <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3026">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="56" selection-end-column="20" />
               <folding>
                 <element signature="e#257#289#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ui_fiscal_ersaassinararquivo.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ersaassinararquivo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4450262" vertical-offset="136" max-vertical-offset="1496">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="e#261#293#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,7 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_retornosstatusecf.py" />
         <option value="$PROJECT_DIR$/scripts/Recursos_rc.py" />
         <option value="$PROJECT_DIR$/scripts/dual/__init__.py" />
         <option value="$PROJECT_DIR$/scripts/__init__.py" />
@@ -134,6 +145,7 @@
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_edefinirmodoregistro.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_edefinirproduto.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ememoriafiscal.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ersaassinararquivo.py" />
       </list>
     </option>
   </component>
@@ -166,7 +178,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,6 +230,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -478,13 +490,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="395">
@@ -493,13 +498,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4117647" vertical-offset="0" max-vertical-offset="578">
           <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/Recursos_rc.py">
@@ -842,10 +847,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ememoriafiscal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4450262" vertical-offset="680" max-vertical-offset="3026">
-          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3026">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="56" selection-end-column="20" />
           <folding>
             <element signature="e#257#289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ersaassinararquivo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4450262" vertical-offset="136" max-vertical-offset="1496">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#261#293#0" expanded="true" />
           </folding>
         </state>
       </provider>
