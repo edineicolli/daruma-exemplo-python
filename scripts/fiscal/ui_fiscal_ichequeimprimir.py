@@ -8,6 +8,8 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iChequeImprimir(QtGui.QWidget):
 
@@ -15,6 +17,24 @@ class Ui_ui_FISCAL_iChequeImprimir(QtGui.QWidget):
         super(Ui_ui_FISCAL_iChequeImprimir, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        # Declaraçao das Variaveis que recebem os valores da UI
+        StrBanco =  self.lineEditBanco.text()
+        StrCidade= self.lineEditCidade.text()
+        StrFavorecido =  self.lineEditFavorecido.text()
+        StrTextoLivre =  self.lineEditLivre.text()
+        StrValor =  self.lineEditValor.text()
+        StrData =  self.dateEdit.text()
+
+        # Chamada do Método
+        #pydaruma
+        #tratarRetornoFiscal(iChequeImprimir_FS2100_Daruma(StrBanco,StrCidade,StrData,StrFavorecido,StrTextoLivre,StrValor), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iChequeImprimir):
         ui_FISCAL_iChequeImprimir.setObjectName("ui_FISCAL_iChequeImprimir")

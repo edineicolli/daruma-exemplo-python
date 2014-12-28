@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import iCFLancarAcrescimoItem_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iCFLancarAcrescimoItem(QtGui.QWidget):
 
@@ -15,6 +18,17 @@ class Ui_ui_FISCAL_iCFLancarAcrescimoItem(QtGui.QWidget):
         super(Ui_ui_FISCAL_iCFLancarAcrescimoItem, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        StrNumeroItem = self.lineEditNumeroItem.text()
+        StrTipoAcres = self.comboBoxTipoAcrescimo.currentText()
+        StrValorAcres = self.lineEditValorAcrescimo.text()
+        tratarRetornoFiscal(iCFLancarAcrescimoItem_ECF_Daruma(StrNumeroItem,StrTipoAcres,StrValorAcres), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iCFLancarAcrescimoItem):
         ui_FISCAL_iCFLancarAcrescimoItem.setObjectName("ui_FISCAL_iCFLancarAcrescimoItem")

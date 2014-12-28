@@ -8,6 +8,8 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import iCFVenderSemDesc_ECF_Daruma
+
 
 class Ui_ui_FISCAL_iCFVenderSemDesc(QtGui.QWidget):
 
@@ -15,6 +17,30 @@ class Ui_ui_FISCAL_iCFVenderSemDesc(QtGui.QWidget):
         super(Ui_ui_FISCAL_iCFVenderSemDesc, self).__init__()
 
         self.setupUi(self)
+        self.pushButtoniCFVender_2.clicked.connect(self.on_pushButtoniCFVender_2_clicked)
+        self.pushButtonCancelar_2.clicked.connect(self.on_pushButtonCancelar_2_clicked)
+        self.pushButtoniCFVender_3.clicked.connect(self.on_pushButtoniCFVender_3_clicked)
+        self.pushButtonCancelar_3.clicked.connect(self.on_pushButtonCancelar_3_clicked)
+
+    def on_pushButtoniCFVender_2_clicked(self):
+        StrAliquota = self.lineEditAliquota.text()
+        StrQuantidade = self.lineEditQuantidade.text()
+        StrValorUnit = self.lineEditValotUnit.text()
+        StrCodItem = self.lineEditCodItem.text()
+        StrUnidade = self.lineEditUnidade.text()
+        StrDescricao = self.lineEditDescricao.text()
+
+        iCFVenderSemDesc_ECF_Daruma(StrAliquota,StrQuantidade,StrValorUnit,StrCodItem,StrUnidade,StrDescricao)
+        #tratarRetornoFiscal(iCFVenderSemDesc_ECF_Daruma(StrAliquota,StrQuantidade,StrValorUnit,StrCodItem,StrUnidade,StrDescricao), self)
+
+    def on_pushButtonCancelar_2_clicked(self):
+        self.close()
+
+    def on_pushButtoniCFVender_3_clicked(self):
+        pass
+
+    def on_pushButtonCancelar_3_clicked(self):
+        pass
 
     def setupUi(self, ui_FISCAL_iCFVenderSemDesc):
         ui_FISCAL_iCFVenderSemDesc.setObjectName("ui_FISCAL_iCFVenderSemDesc")

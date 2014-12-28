@@ -8,6 +8,8 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import iCFVenderResumido_ECF_Daruma
+
 
 class Ui_ui_FISCAL_iCFVenderResumido(QtGui.QWidget):
 
@@ -15,6 +17,20 @@ class Ui_ui_FISCAL_iCFVenderResumido(QtGui.QWidget):
         super(Ui_ui_FISCAL_iCFVenderResumido, self).__init__()
 
         self.setupUi(self)
+        self.pushButtoniCFVender_2.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar_2.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+         StrAliquota = self.lineEditAliquota.text()
+         StrValorUnit = self.lineEditValotUnit.text()
+         StrCodItem = self.lineEditCodItem.text()
+         StrDescricao = self.lineEditDescricao.text()
+
+         iCFVenderResumido_ECF_Daruma(StrAliquota,StrValorUnit,StrCodItem,StrDescricao)
+         #tratarRetornoFsical(iCFVenderResumido_ECF_Daruma(StrAliquota,StrValorUnit,StrCodItem,StrDescricao), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iCFVenderResumido):
         ui_FISCAL_iCFVenderResumido.setObjectName("ui_FISCAL_iCFVenderResumido")

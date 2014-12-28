@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import iSangria_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iSangria(QtGui.QWidget):
 
@@ -15,6 +18,19 @@ class Ui_ui_FISCAL_iSangria(QtGui.QWidget):
         super(Ui_ui_FISCAL_iSangria, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        # *Declaraçao das Variaveis que recebem os valores da UI
+        StrValor =  self.lineEditValor.text()
+        StrMensagem = self.lineEditMensagem.text()
+
+        # Chamada do Método
+        tratarRetornoFiscal(iSangria_ECF_Daruma(StrValor,StrMensagem), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iSangria):
         ui_FISCAL_iSangria.setObjectName("ui_FISCAL_iSangria")

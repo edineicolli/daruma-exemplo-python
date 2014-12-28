@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import iCCDImprimirTexto_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iCCDImprimirTexto(QtGui.QWidget):
 
@@ -15,6 +18,15 @@ class Ui_ui_FISCAL_iCCDImprimirTexto(QtGui.QWidget):
         super(Ui_ui_FISCAL_iCCDImprimirTexto, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        StrMensagem = self.textEditTextoImpressao.toPlainText()
+        tratarRetornoFiscal(iCCDImprimirTexto_ECF_Daruma(StrMensagem), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iCCDImprimirTexto):
         ui_FISCAL_iCCDImprimirTexto.setObjectName("ui_FISCAL_iCCDImprimirTexto")

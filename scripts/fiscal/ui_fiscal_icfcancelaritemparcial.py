@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import iCFCancelarItemParcial_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iCFCancelarItemParcial(QtGui.QWidget):
 
@@ -15,6 +18,16 @@ class Ui_ui_FISCAL_iCFCancelarItemParcial(QtGui.QWidget):
         super(Ui_ui_FISCAL_iCFCancelarItemParcial, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        StrNumeroItem = self.lineEditNumeroItem.text()
+        StrQuantidade = self.lineEditQuantidade.text()
+        tratarRetornoFiscal(iCFCancelarItemParcial_ECF_Daruma(StrNumeroItem,StrQuantidade), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iCFCancelarItemParcial):
         ui_FISCAL_iCFCancelarItemParcial.setObjectName("ui_FISCAL_iCFCancelarItemParcial")

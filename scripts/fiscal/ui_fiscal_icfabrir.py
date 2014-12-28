@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import iCFAbrir_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iCFAbrir(QtGui.QWidget):
 
@@ -15,6 +18,20 @@ class Ui_ui_FISCAL_iCFAbrir(QtGui.QWidget):
         super(Ui_ui_FISCAL_iCFAbrir, self).__init__()
 
         self.setupUi(self)
+        self.pushButton.clicked.connect(self.on_pushButton_clicked)
+        self.pushButton_2.clicked.connect(self.on_pushButton_2_clicked)
+
+    def on_pushButton_clicked(self):
+        # Declaraçao das Variaveis que recebem os valores da UI
+        StrCPF =  self.lineEditCPF.text()
+        StrNome = self.lineEditNome.text()
+        StrEndereco =  self.lineEditEndereco.text()
+
+        # Chamada do Método
+        tratarRetornoFiscal(iCFAbrir_ECF_Daruma(StrCPF,StrNome,StrEndereco), self)
+
+    def on_pushButton_2_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iCFAbrir):
         ui_FISCAL_iCFAbrir.setObjectName("ui_FISCAL_iCFAbrir")

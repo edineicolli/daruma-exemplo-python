@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import iCNFEncerrar_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iCNFEncerrar(QtGui.QWidget):
 
@@ -15,6 +18,16 @@ class Ui_ui_FISCAL_iCNFEncerrar(QtGui.QWidget):
         super(Ui_ui_FISCAL_iCNFEncerrar, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        # Pega o texto do TextEdit
+        StrMensagem = self.textEditMensagem.toPlainText()
+        tratarRetornoFiscal(iCNFEncerrar_ECF_Daruma(StrMensagem), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iCNFEncerrar):
         ui_FISCAL_iCNFEncerrar.setObjectName("ui_FISCAL_iCNFEncerrar")

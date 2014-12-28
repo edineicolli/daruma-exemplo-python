@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import iCNFEfetuarPagamento_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iCNFEfetuarPagamento(QtGui.QWidget):
 
@@ -15,6 +18,18 @@ class Ui_ui_FISCAL_iCNFEfetuarPagamento(QtGui.QWidget):
         super(Ui_ui_FISCAL_iCNFEfetuarPagamento, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        StrFormaPGTO = self.lineEditForma.text()
+        StrValor = self.lineEditValor.text()
+        StrInfo = self.lineEditInfo.text()
+
+        tratarRetornoFiscal(iCNFEfetuarPagamento_ECF_Daruma(StrFormaPGTO,StrValor,StrInfo), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iCNFEfetuarPagamento):
         ui_FISCAL_iCNFEfetuarPagamento.setObjectName("ui_FISCAL_iCNFEfetuarPagamento")

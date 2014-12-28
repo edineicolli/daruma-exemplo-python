@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import iCFTotalizarCupom_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iCFTotalizarCupom(QtGui.QWidget):
 
@@ -15,6 +18,16 @@ class Ui_ui_FISCAL_iCFTotalizarCupom(QtGui.QWidget):
         super(Ui_ui_FISCAL_iCFTotalizarCupom, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        StrTipoAcresDesc = self.comboBoxTipoAcresDesc.currentText()
+        StrValor = self.lineEditValor.text()
+        tratarRetornoFiscal(iCFTotalizarCupom_ECF_Daruma(StrTipoAcresDesc,StrValor), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iCFTotalizarCupom):
         ui_FISCAL_iCFTotalizarCupom.setObjectName("ui_FISCAL_iCFTotalizarCupom")

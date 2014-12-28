@@ -8,6 +8,10 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import iCNFReceberSemDesc_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iCNFReceberSemDesc(QtGui.QWidget):
 
@@ -15,6 +19,22 @@ class Ui_ui_FISCAL_iCNFReceberSemDesc(QtGui.QWidget):
         super(Ui_ui_FISCAL_iCNFReceberSemDesc, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        # Declaraçao das Variaveis que recebem os valores da UI
+        StrIndice =  self.comboBoxIndiceTotalizador.currentText()
+        StrValorRecebimento = self.lineEditValorRecebimento.text()
+
+        if((StrIndice == "Selecione...") and (StrValorRecebimento == "")):
+            QMessageBox.information(self,"DarumaFramework - Python/Qt","Preencha todos os Campos")
+        else:
+            # Chamada do Método
+            tratarRetornoFiscal(iCNFReceberSemDesc_ECF_Daruma(StrIndice,StrValorRecebimento), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iCNFReceberSemDesc):
         ui_FISCAL_iCNFReceberSemDesc.setObjectName("ui_FISCAL_iCNFReceberSemDesc")

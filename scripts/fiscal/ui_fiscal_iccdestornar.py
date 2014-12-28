@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import iCCDAbrirSimplificado_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iCCDEstornar(QtGui.QWidget):
 
@@ -15,6 +18,21 @@ class Ui_ui_FISCAL_iCCDEstornar(QtGui.QWidget):
         super(Ui_ui_FISCAL_iCCDEstornar, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        # Declaraçao das Variaveis que recebem os valores da UI
+        StrFPGTO = self.lineEditFormaPagamento.text()
+        StrParcelas = self.lineEditParcelas.text()
+        StrValor = self.lineEditValor.text()
+        StrDocOrigem = self.lineEditDocOrigem.text()
+
+        # Chamada do Método
+        tratarRetornoFiscal(iCCDAbrirSimplificado_ECF_Daruma(StrFPGTO, StrParcelas, StrDocOrigem,StrValor), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iCCDEstornar):
         ui_FISCAL_iCCDEstornar.setObjectName("ui_FISCAL_iCCDEstornar")

@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import eTEF_EsperarArquivo_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_eTEF_EsperarArquivo(QtGui.QWidget):
 
@@ -15,6 +18,24 @@ class Ui_ui_FISCAL_eTEF_EsperarArquivo(QtGui.QWidget):
         super(Ui_ui_FISCAL_eTEF_EsperarArquivo, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+
+        StrCaminhoArq = self.lineEditCaminhoArquivo.text()
+        StrTempoEspera = self.lineEditTempoEspera.text()
+        iTempoEspera = StrTempoEspera.toInt()
+
+        if(self.radioButtonTravarSIM.isChecked()):
+            bTravarTeclado = True
+        if(self.radioButtonTravarNAO.isChecked()):
+            bTravarTeclado = False
+
+        tratarRetornoFiscal(eTEF_EsperarArquivo_ECF_Daruma(StrCaminhoArq, bTravarTeclado, iTempoEspera), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_eTEF_EsperarArquivo):
         ui_FISCAL_eTEF_EsperarArquivo.setObjectName("ui_FISCAL_eTEF_EsperarArquivo")

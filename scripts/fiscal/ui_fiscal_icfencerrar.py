@@ -8,6 +8,10 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import iCFEncerrar_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iCFEncerrar(QtGui.QWidget):
 
@@ -15,6 +19,35 @@ class Ui_ui_FISCAL_iCFEncerrar(QtGui.QWidget):
         super(Ui_ui_FISCAL_iCFEncerrar, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        # Pega o indice da ComboBox
+        iIndice = self.comboBoxAdicional.currentIndex()
+
+        # Pega o texto do TextEdit
+        StrMensagem = self.lineEditMensagem.text()
+
+        if (iIndice == 0):
+            QMessageBox.information(self, "DarumaFramework - Python/Qt", "Preencha o Tipo de Cupom Adicional")
+
+        if (StrMensagem == ""):
+            QMessageBox.information(self, "DarumaFramework - Python/Qt", "Preencha a Mensagem Promocional")
+
+        if (iIndice == 1):
+            StrCAdicional = "0"
+        elif (iIndice == 2):
+            StrCAdicional = "1"
+        elif (iIndice == 3):
+            StrCAdicional = "2"
+        elif (iIndice == 4):
+            StrCAdicional = "3"
+
+        tratarRetornoFiscal(iCFEncerrar_ECF_Daruma(StrCAdicional,StrMensagem), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iCFEncerrar):
         ui_FISCAL_iCFEncerrar.setObjectName("ui_FISCAL_iCFEncerrar")

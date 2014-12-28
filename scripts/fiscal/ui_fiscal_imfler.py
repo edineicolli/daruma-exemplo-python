@@ -8,6 +8,10 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtCore import QDate
+from pydaruma.pydaruma import regAlterarValor_Daruma, iMFLer_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iMFLer(QtGui.QWidget):
 
@@ -15,6 +19,51 @@ class Ui_ui_FISCAL_iMFLer(QtGui.QWidget):
         super(Ui_ui_FISCAL_iMFLer, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+        self.radioButtonCRZ.pressed.connect(self.on_radioButtonCRZ_pressed)
+        self.radioButtonDATAM.pressed.connect(self.on_radioButtonDATAM_pressed)
+        self.radioButtonTipoCompleta.pressed.connect(self.on_radioButtonTipoCompleta_pressed)
+        self.radioButtonTipoSimplificada.pressed.connect(self.on_radioButtonTipoSimplificada_pressed)
+
+        self.groupBoxIntervaloDataM.setVisible(False)
+        self.groupBoxIntervaloCRZ.setVisible(False)
+        self.groupBoxTipoLeitura.setVisible(False)
+        self.dateEditDATAMInicial.setDate(QDate.currentDate())
+        self.dateEditDATAMFinal.setDate(QDate.currentDate())
+
+    def on_radioButtonCRZ_pressed(self):
+        self.groupBoxIntervaloDataM.setVisible(False)
+        self.groupBoxIntervaloCRZ.setVisible(True)
+        self.labelInformacao.setVisible(False)
+        self.groupBoxTipoLeitura.setVisible(True)
+
+    def on_radioButtonDATAM_pressed(self):
+        self.groupBoxIntervaloDataM.setVisible(True)
+        self.groupBoxIntervaloCRZ.setVisible(False)
+        self.labelInformacao.setVisible(False)
+        self.groupBoxTipoLeitura.setVisible(True)
+
+    def on_radioButtonTipoCompleta_pressed(self):
+        regAlterarValor_Daruma("ECF\\LMFCompleta","1")
+
+    def on_radioButtonTipoSimplificada_pressed(self):
+        regAlterarValor_Daruma("ECF\\LMFCompleta","0")
+
+    def on_pushButtonEnviar_clicked(self):
+        if(self.radioButtonCRZ.isChecked()):
+            StrIntInicial = self.lineEditCRZInicial.text()
+            StrIntFinal = self.lineEditCRZFinal.text()
+
+        if(self.radioButtonDATAM.isChecked()):
+            StrIntInicial = self.dateEditDATAMInicial.text()
+            StrIntFinal = self.dateEditDATAMFinal.text()
+
+        tratarRetornoFiscal(iMFLer_ECF_Daruma(StrIntInicial,StrIntFinal), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iMFLer):
         ui_FISCAL_iMFLer.setObjectName("ui_FISCAL_iMFLer")

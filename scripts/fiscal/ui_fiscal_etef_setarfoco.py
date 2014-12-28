@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import eTEF_SetarFoco_ECF_Daruma
+
 
 class Ui_ui_FISCAL_eTEF_SetarFoco(QtGui.QWidget):
 
@@ -15,6 +18,20 @@ class Ui_ui_FISCAL_eTEF_SetarFoco(QtGui.QWidget):
         super(Ui_ui_FISCAL_eTEF_SetarFoco, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+
+        if(self.lineEditCaption.text() != ""):
+            StrCaption = self.lineEditCaption.text()
+
+            eTEF_SetarFoco_ECF_Daruma(StrCaption)
+        else:
+            QMessageBox.information(self, "DarumaFramework - Qt/Python","Entre com o Titulo da Janela!")
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_eTEF_SetarFoco):
         ui_FISCAL_eTEF_SetarFoco.setObjectName("ui_FISCAL_eTEF_SetarFoco")

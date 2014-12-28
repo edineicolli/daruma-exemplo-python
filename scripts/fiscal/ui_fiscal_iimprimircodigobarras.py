@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import iImprimirCodigoBarras_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iImprimirCodigoBarras(QtGui.QWidget):
 
@@ -15,6 +18,63 @@ class Ui_ui_FISCAL_iImprimirCodigoBarras(QtGui.QWidget):
         super(Ui_ui_FISCAL_iImprimirCodigoBarras, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+        # insere valores na combobox dos Tipos de Cod de Barras
+        self.comboBoxTipo.addItem("Veja lista completa ao lado")
+        self.comboBoxTipo.addItem("EAN-13")
+        self.comboBoxTipo.addItem("EAN-8")
+        self.comboBoxTipo.addItem("STANDARD 2 OF 5")
+        self.comboBoxTipo.addItem("INTERVEALED 2 OF 5")
+        self.comboBoxTipo.addItem("CODE128")
+        self.comboBoxTipo.addItem("CODE39")
+        self.comboBoxTipo.addItem("CODE93")
+        self.comboBoxTipo.addItem("UPC-A")
+        self.comboBoxTipo.addItem("CODABAR")
+        self.comboBoxTipo.addItem("MSI")
+        self.comboBoxTipo.addItem("CODE11")
+
+        #Insere valores na Altura e Largura
+        add = ""
+        for a in range(2,5):
+            add += str(a)
+            self.comboBoxAltura.addItem(add)
+        for b in (50,200):
+            add += str(b)
+            self.comboBoxLargura.addItem(add)
+
+        self.lineEditCodBarras.setText("0123456789012")
+        self.textEditTextoLivre.setText("Texto com até 600 caracteres!")
+
+    def on_pushButtonEnviar_clicked(self):
+        iTipo = self.comboBoxTipo.currentIndex()
+        StrLargura = self.comboBoxLargura.currentText()
+        StrAltura = self.comboBoxAltura.currentText()
+        StrTextoLivre = self.textEditTextoLivre.toPlainText()
+        StrCodBarras = self.lineEditCodBarras.text()
+
+        #convertendo o Inteiro do Tipo do Codigo de barras para QString, e de QString para string.
+        StrTipo = iTipo.toString()
+
+        StrTextAbaixo = "0"
+        StrVertical = "h"
+        if ((self.checkBoxTextAbaixo.isChecked()) and (self.checkBoxVertical.isChecked())):
+            StrTextAbaixo = "1"
+            StrVertical = "v"
+            tratarRetornoFiscal(iImprimirCodigoBarras_ECF_Daruma(StrTipo,StrLargura,StrAltura,StrTextAbaixo,StrCodBarras,StrVertical,StrTextoLivre), self)
+        elif ((self.checkBoxTextAbaixo.isChecked())):
+            StrTextAbaixo = "1"
+            StrVertical = "h"
+            tratarRetornoFiscal(iImprimirCodigoBarras_ECF_Daruma(StrTipo,StrLargura,StrAltura,StrTextAbaixo,StrCodBarras,StrVertical,StrTextoLivre), self)
+        elif ((self.checkBoxVertical.isChecked())):
+            StrTextAbaixo = "0"
+            StrVertical = "v"
+            tratarRetornoFiscal(iImprimirCodigoBarras_ECF_Daruma(StrTipo,StrLargura,StrAltura,StrTextAbaixo,StrCodBarras,StrVertical,StrTextoLivre), self)
+        else:
+            tratarRetornoFiscal(iImprimirCodigoBarras_ECF_Daruma(StrTipo,StrLargura,StrAltura,StrTextAbaixo,StrCodBarras,StrVertical,StrTextoLivre),this);
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iImprimirCodigoBarras):
         ui_FISCAL_iImprimirCodigoBarras.setObjectName("ui_FISCAL_iImprimirCodigoBarras")

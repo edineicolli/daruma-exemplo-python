@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import iCFBPAbrir_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iCFBPAbrir(QtGui.QWidget):
 
@@ -15,6 +18,33 @@ class Ui_ui_FISCAL_iCFBPAbrir(QtGui.QWidget):
         super(Ui_ui_FISCAL_iCFBPAbrir, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        StrOrigem = self.lineEditOrigem.text()
+        StrDestino = self.lineEditDestino.text()
+        StrUFDestino = self.lineEditUFDestino.text()
+        #QString UFOrigem = ui->lineEditUFOrigem->text()
+        StrPrestadora = self.lineEditPrestadora.text()
+        StrPercurso = self.lineEditPercurso.text()
+        StrPlataforma = self.lineEditPlataforma.text()
+        StrPoltrona = self.lineEditPoltrona.text()
+        StrDTEmbarque = self.lineEditDTEmbarque.text()
+        StrRGPassageiro = self.lineEditRGPassageiro.text()
+        StrNomePassageiro = self.lineEditNomePassageiro.text()
+        StrEndPassageiro = self.lineEditEndPassageiro.text()
+        iModalidade = self.comboBoxModalidade.currentIndex()
+        iCategoria = self.comboBoxCategoria.currentIndex()
+
+        # Converte as variaveis inteiras para QString
+        StrCategoria = iCategoria.tostr()
+        StrModalidade = iModalidade.tostr()
+
+        tratarRetornoFiscal(iCFBPAbrir_ECF_Daruma(StrOrigem,StrDestino,StrUFDestino,StrPercurso,StrPrestadora,StrPlataforma,StrPoltrona,StrModalidade,StrCategoria,StrDTEmbarque,StrRGPassageiro,StrNomePassageiro,StrEndPassageiro), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iCFBPAbrir):
         ui_FISCAL_iCFBPAbrir.setObjectName("ui_FISCAL_iCFBPAbrir")

@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import iCFVender_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iCFVender(QtGui.QWidget):
 
@@ -15,6 +18,25 @@ class Ui_ui_FISCAL_iCFVender(QtGui.QWidget):
         super(Ui_ui_FISCAL_iCFVender, self).__init__()
 
         self.setupUi(self)
+        self.pushButtoniCFVender.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        # Declaraçao das Variaveis que recebem os valores da UI
+        StrAliquota = self.lineEditAliquota.text()
+        StrQuantidade = self.lineEditQuantidade.text()
+        StrValorUnit = self.lineEditValorUnit.text()
+        StrTipoDescAcres = self.comboBoxTipoDescAcres.currentText()
+        StrValorDescAcres = self.lineEditValorDescAcres.text()
+        StrCodItem = self.lineEditCodItem.text()
+        StrUnidade = self.lineEditUnidade.text()
+        StrDescricao = self.lineEditDescricao.text()
+
+        # Chamada do método dentro do QMessageBox, tratando retorno
+        tratarRetornoFiscal(iCFVender_ECF_Daruma(StrAliquota,StrQuantidade,StrValorUnit,StrTipoDescAcres,StrValorDescAcres,StrCodItem,StrUnidade,StrDescricao),self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iCFVender):
         ui_FISCAL_iCFVender.setObjectName("ui_FISCAL_iCFVender")

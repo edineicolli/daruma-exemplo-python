@@ -8,6 +8,10 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import iCNFCancelarAcrescimoItem_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iCNFCancelarAcrescimoItem(QtGui.QWidget):
 
@@ -15,6 +19,21 @@ class Ui_ui_FISCAL_iCNFCancelarAcrescimoItem(QtGui.QWidget):
         super(Ui_ui_FISCAL_iCNFCancelarAcrescimoItem, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        # Declaraçao das Variaveis que recebem os valores da UI
+        StrNumItem =  self.lineEditNumeroItem.text()
+
+        if(StrNumItem ==""):
+            QMessageBox.information(self, "DarumaFramework - Python/Qt","Preencha todos os Campos")
+        else:
+            # Chamada do Método
+            tratarRetornoFiscal(iCNFCancelarAcrescimoItem_ECF_Daruma(StrNumItem), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iCNFCancelarAcrescimoItem):
         ui_FISCAL_iCNFCancelarAcrescimoItem.setObjectName("ui_FISCAL_iCNFCancelarAcrescimoItem")

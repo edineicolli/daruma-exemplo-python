@@ -8,6 +8,10 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import eTEF_TravarTeclado_ECF_Daruma
+import time
+
 
 class Ui_ui_FISCAL_eTEF_TravarTeclado(QtGui.QWidget):
 
@@ -15,6 +19,23 @@ class Ui_ui_FISCAL_eTEF_TravarTeclado(QtGui.QWidget):
         super(Ui_ui_FISCAL_eTEF_TravarTeclado, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        QMessageBox.information(self, "DarumaFramework - Python/Qt!","Vou Travar o Teclado!")
+        bTravar = True
+        eTEF_TravarTeclado_ECF_Daruma(bTravar)
+        time.sleep(5)
+        bTravar = False
+        eTEF_TravarTeclado_ECF_Daruma(bTravar)
+        QMessageBox.information(self, "DarumaFramework - Python/Qt!", "Teclado Destravado!")
+
+    def on_pushButtonCancelar_clicked(self):
+        bTravar = False
+        eTEF_TravarTeclado_ECF_Daruma(bTravar)
+        QMessageBox.information(self, "DarumaFramework - Qt/Python!", "Teclado não travado!")
+        self.close()
 
     def setupUi(self, ui_FISCAL_eTEF_TravarTeclado):
         ui_FISCAL_eTEF_TravarTeclado.setObjectName("ui_FISCAL_eTEF_TravarTeclado")
