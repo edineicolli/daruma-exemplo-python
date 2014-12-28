@@ -8,6 +8,11 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import iCFAbrirPadrao_ECF_Daruma, iCFVenderResumido_ECF_Daruma, \
+    iCFTotalizarCupomPadrao_ECF_Daruma, iCFEfetuarPagamentoFormatado_ECF_Daruma, iCFEncerrarPadrao_ECF_Daruma, \
+    iTEF_Fechar_ECF_Daruma, iTEF_ImprimirRespostaCartao_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_iTEF_ImprimirRespostaCartao(QtGui.QWidget):
 
@@ -15,6 +20,56 @@ class Ui_ui_FISCAL_iTEF_ImprimirRespostaCartao(QtGui.QWidget):
         super(Ui_ui_FISCAL_iTEF_ImprimirRespostaCartao, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonFecharDocumento.clicked.connect(self.on_pushButtonFecharDocumento_clicked)
+        self.pushButton.clicked.connect(self.on_pushButton_clicked)
+        self.pushButtonImprimirRespostaTEF.clicked.connect(self.on_pushButtonImprimirRespostaTEF_clicked)
+        self.pushButtonImprimirCF.clicked.connect(self.on_pushButtonImprimirCF_clicked)
+
+    def on_pushButtonImprimirCF_clicked(self):
+        StrValorPagamento = self.lineEditValorPgto.text()
+        StrFormaPagamento = self.lineEditFormaPgto.text()
+
+        iRetorno = iCFAbrirPadrao_ECF_Daruma();
+        if(iRetorno != 1):
+            tratarRetornoFiscal(iRetorno, self)
+
+        iCFVenderResumido_ECF_Daruma("F1","2,00","123456789","ITEM DE TESTE")
+        iCFVenderResumido_ECF_Daruma("F1","2,00","123456789","ITEM DE TESTE")
+        iCFVenderResumido_ECF_Daruma("F1","2,00","123456789","ITEM DE TESTE")
+        iCFVenderResumido_ECF_Daruma("F1","2,00","123456789","ITEM DE TESTE")
+        iRetorno = iCFVenderResumido_ECF_Daruma("F1","2,00","123456789","ITEM DE TESTE")
+        if(iRetorno != 1):
+            tratarRetornoFiscal(iRetorno, self)
+
+        iRetorno = iCFTotalizarCupomPadrao_ECF_Daruma()
+        if(iRetorno != 1):
+            tratarRetornoFiscal(iRetorno, self)
+
+        iRetorno = iCFEfetuarPagamentoFormatado_ECF_Daruma(StrFormaPagamento,StrValorPagamento)
+        if(iRetorno != 1):
+            tratarRetornoFiscal(iRetorno, self)
+
+        iRetorno = iCFEncerrarPadrao_ECF_Daruma()
+        tratarRetornoFiscal(iRetorno, self)
+
+    def on_pushButtonImprimirRespostaTEF_clicked(self):
+        StrLocalArquivo = self.lineEditCaminhoArq.text()
+        StrFormaPagamento = self.lineEditFormaPgto.text()
+        StrValorPagamento = self.lineEditValorPgto.text()
+
+        if(self.radioButtonTravarNAO.isChecked()):
+            bTravarTeclado = False
+            tratarRetornoFiscal(iTEF_ImprimirRespostaCartao_ECF_Daruma(StrLocalArquivo,bTravarTeclado,StrFormaPagamento,StrValorPagamento), self)
+
+        if(self.radioButtonTravarSIM.isChecked()):
+            bTravarTeclado = True
+            tratarRetornoFiscal(iTEF_ImprimirRespostaCartao_ECF_Daruma(StrLocalArquivo,bTravarTeclado,StrFormaPagamento,StrValorPagamento),self)
+
+    def on_pushButtonFecharDocumento_clicked(self):
+        tratarRetornoFiscal(iTEF_Fechar_ECF_Daruma(), self)
+
+    def on_pushButton_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_iTEF_ImprimirRespostaCartao):
         ui_FISCAL_iTEF_ImprimirRespostaCartao.setObjectName("ui_FISCAL_iTEF_ImprimirRespostaCartao")

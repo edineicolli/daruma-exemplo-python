@@ -2,56 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0336715-d62b-4c0e-b1a8-348ef873d3e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_etef_esperararquivo.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_etef_esperararquivo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_etef_setarfoco.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_etef_setarfoco.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_etef_travarteclado.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_etef_travarteclado.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iccdabrir.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iccdabrir.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iccdabrirsimplificado.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iccdabrirsimplificado.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iccdestornar.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iccdestornar.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iccdimprimirarquivo.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iccdimprimirarquivo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iccdimprimirtexto.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iccdimprimirtexto.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfabrir.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfabrir.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfbpabrir.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfbpabrir.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfbpvender.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfbpvender.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelaracrescimoitem.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelaracrescimoitem.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelardescontoitem.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelardescontoitem.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelaritem.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelaritem.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelaritemparcial.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelaritemparcial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelarultimoitemparcial.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelarultimoitemparcial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfefetuarpagamento.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfefetuarpagamento.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfefetuarpagamentoformatado.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfefetuarpagamentoformatado.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfencerrar.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfencerrar.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfencerrarconfigmsg.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfencerrarconfigmsg.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfidentificarconsumidor.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfidentificarconsumidor.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancaracrescimoitem.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancaracrescimoitem.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancaracrescimoultimoitem.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancaracrescimoultimoitem.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancardescontoitem.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancardescontoitem.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancardescontoultimoitem.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancardescontoultimoitem.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icftotalizarcupom.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icftotalizarcupom.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfvender.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfvender.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfvenderresumido.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfvenderresumido.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfvendersemdesc.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfvendersemdesc.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ichequeimprimir.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ichequeimprimir.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfabrir.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfabrir.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfcancelaracrescimoitem.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfcancelaracrescimoitem.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfcancelardescontoitem.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfcancelardescontoitem.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfcancelaritem.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfcancelaritem.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfefetuarpagamento.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfefetuarpagamento.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfefetuarpagamentoformatado.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfefetuarpagamentoformatado.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfencerrar.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfencerrar.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfreceber.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfreceber.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfrecebersemdesc.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfrecebersemdesc.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnftotalizarcomprovante.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnftotalizarcomprovante.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iestornarpagamento.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iestornarpagamento.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iimprimircodigobarras.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iimprimircodigobarras.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_imfler.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_imfler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_imflerserial.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_imflerserial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_irgabrir.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_irgabrir.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_irgabririndice.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_irgabririndice.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_irgimprimirtexto.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_irgimprimirtexto.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_isangria.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_isangria.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_isuprimento.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_isuprimento.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_itef_imprimirresposta.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_itef_imprimirresposta.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_itef_imprimirrespostacartao.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_itef_imprimirrespostacartao.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_menufiscal.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_menufiscal.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_menufiscal_arqmfd.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_menufiscal_arqmfd.py" />
     </list>
     <ignored path="daruma-exemplo-python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,13 +41,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui_fiscal_isuprimento.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_isuprimento.py">
+      <file leaf-file-name="ui_fiscal_menufiscal.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_menufiscal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33246073" vertical-offset="230" max-vertical-offset="1598">
-              <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="213" max-vertical-offset="969">
+              <caret line="17" column="48" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ui_fiscal_menufiscal_arqmfd.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_menufiscal_arqmfd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.35602096" vertical-offset="0" max-vertical-offset="3026">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
-                <element signature="e#254#286#0" expanded="true" />
+                <element signature="e#260#292#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,10 +71,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ememoriafiscal.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ersaassinararquivo.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_etef_esperararquivo.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_etef_setarfoco.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_etef_travarteclado.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iccdabrir.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iccdabrirsimplificado.py" />
@@ -158,6 +118,10 @@
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_irgimprimirtexto.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_isangria.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_isuprimento.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_itef_imprimirresposta.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_itef_imprimirrespostacartao.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_menufiscal.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_menufiscal_arqmfd.py" />
       </list>
     </option>
   </component>
@@ -428,7 +392,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -437,7 +401,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33490565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33490565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -502,36 +466,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_etef_setarfoco.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="213" max-vertical-offset="1394">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="33" selection-end-column="20" />
-          <folding>
-            <element signature="e#257#289#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_etef_travarteclado.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="281" max-vertical-offset="1530">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="37" selection-end-column="20" />
-          <folding>
-            <element signature="e#261#293#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iccdabrir.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="2686">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="37" selection-end-column="20" />
-          <folding>
-            <element signature="e#252#284#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_iccdabrirsimplificado.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="2108">
@@ -720,16 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="e#22#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancardescontoitem.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.91099477" vertical-offset="230" max-vertical-offset="2074">
@@ -773,7 +697,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1836">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="29" selection-end-column="20" />
           <folding>
-            <element signature="e#260#292#0" expanded="true" />
+            <element signature="e#260#292#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -803,7 +727,7 @@
         <state vertical-scroll-proportion="0.7329843" vertical-offset="264" max-vertical-offset="2142">
           <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
           <folding>
-            <element signature="e#258#290#0" expanded="true" />
+            <element signature="e#258#290#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -853,7 +777,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="1632">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="31" selection-end-column="20" />
           <folding>
-            <element signature="e#263#295#0" expanded="true" />
+            <element signature="e#263#295#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -863,7 +787,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1496">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="30" selection-end-column="20" />
           <folding>
-            <element signature="e#272#304#0" expanded="true" />
+            <element signature="e#272#304#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -903,7 +827,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="1751">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="29" selection-end-column="20" />
           <folding>
-            <element signature="e#267#299#0" expanded="true" />
+            <element signature="e#267#299#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -943,7 +867,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1972">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="34" selection-end-column="20" />
           <folding>
-            <element signature="e#261#293#0" expanded="true" />
+            <element signature="e#261#293#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -973,7 +897,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="1428">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="28" selection-end-column="20" />
           <folding>
-            <element signature="e#259#291#0" expanded="true" />
+            <element signature="e#259#291#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -983,25 +907,65 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="1598">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="32" selection-end-column="20" />
           <folding>
-            <element signature="e#251#283#0" expanded="true" />
+            <element signature="e#251#283#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_itef_imprimirresposta.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7329843" vertical-offset="1607" max-vertical-offset="1989">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="859" max-vertical-offset="2873">
+          <caret line="68" column="20" selection-start-line="22" selection-start-column="0" selection-end-line="68" selection-end-column="20" />
+          <folding>
+            <element signature="e#264#296#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_isuprimento.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33246073" vertical-offset="230" max-vertical-offset="1598">
-          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.19895288" vertical-offset="230" max-vertical-offset="1598">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#254#286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_itef_imprimirrespostacartao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="26" max-vertical-offset="3298">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="71" selection-end-column="20" />
+          <folding>
+            <element signature="e#270#302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="e#22#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_menufiscal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="213" max-vertical-offset="969">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_menufiscal_arqmfd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35602096" vertical-offset="0" max-vertical-offset="3026">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#260#292#0" expanded="true" />
           </folding>
         </state>
       </provider>

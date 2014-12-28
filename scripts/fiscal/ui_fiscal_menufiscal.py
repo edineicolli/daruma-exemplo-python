@@ -15,6 +15,10 @@ class Ui_ui_FISCAL_MenuFiscal(QtGui.QWidget):
         super(Ui_ui_FISCAL_MenuFiscal, self).__init__()
 
         self.setupUi(self)
+        self.pushButton.clicked.connect(self.on_pushButton_clicked)
+
+    def on_pushButton_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_MenuFiscal):
         ui_FISCAL_MenuFiscal.setObjectName("ui_FISCAL_MenuFiscal")
