@@ -16,6 +16,15 @@ class Ui_ui_FISCAL_rGerarMFD(QtGui.QWidget):
 
         self.setupUi(self)
 
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        pass
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
+
     def setupUi(self, ui_FISCAL_rGerarMFD):
         ui_FISCAL_rGerarMFD.setObjectName("ui_FISCAL_rGerarMFD")
         ui_FISCAL_rGerarMFD.resize(319, 225)

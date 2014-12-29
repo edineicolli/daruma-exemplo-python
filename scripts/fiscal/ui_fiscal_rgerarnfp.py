@@ -16,6 +16,15 @@ class Ui_ui_FISCAL_rGerarNFP(QtGui.QWidget):
 
         self.setupUi(self)
 
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        pass
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
+
     def setupUi(self, ui_FISCAL_rGerarNFP):
         ui_FISCAL_rGerarNFP.setObjectName("ui_FISCAL_rGerarNFP")
         ui_FISCAL_rGerarNFP.resize(319, 225)

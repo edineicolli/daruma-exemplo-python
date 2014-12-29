@@ -2,13 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0336715-d62b-4c0e-b1a8-348ef873d3e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_menufiscal_lmfc.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_menufiscal_lmfc.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_menufiscal_lmfs.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_menufiscal_lmfs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_parametrizacaosintegra.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_parametrizacaosintegra.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rassinarrsa.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rassinarrsa.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rcalcularmd5.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rcalcularmd5.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rcodigomodelofiscal.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rcodigomodelofiscal.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressoraint.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressoraint.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressorastr.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressorastr.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_regalterarvalor.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_regalterarvalor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_regcfcupomadicionaldllconfig.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_regcfcupomadicionaldllconfig.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_regretornavalorchave.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_regretornavalorchave.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarespelhomfd.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarespelhomfd.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarmf.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarmf.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarmfd.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarmfd.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarnfp.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarnfp.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatorio.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatorio.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatoriobaixonivel.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatoriobaixonivel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatoriooffline.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatoriooffline.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsintegra.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsintegra.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsped.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsped.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerartdm.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerartdm.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rinfoestendida.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rinfoestendida.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rleituraxcustomizada.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rleituraxcustomizada.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornargtcodificado.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornargtcodificado.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacao.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacao.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacaoseparador.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacaoseparador.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarnumeroseriecodificado.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarnumeroseriecodificado.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rrsachavepublica.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rrsachavepublica.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rverificargtcodificado.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rverificargtcodificado.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rverificarnumeroseriecodificado.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rverificarnumeroseriecodificado.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_testedevendasempararbufferizando.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_testedevendasempararbufferizando.py" />
     </list>
     <ignored path="daruma-exemplo-python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,62 +50,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/setup.py">
+      <file leaf-file-name="ui_fiscal_rconsultastatusimpressoraint.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressoraint.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="442">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-              <folding>
-                <element signature="e#22#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ui_fiscal_parametrizacaosintegra.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_parametrizacaosintegra.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="4522">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="25" selection-end-column="130" />
-              <folding>
-                <element signature="e#265#297#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ui_fiscal_rassinarrsa.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rassinarrsa.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1547">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="38" selection-end-column="20" />
-              <folding>
-                <element signature="e#253#292#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ui_fiscal_rcalcularmd5.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rcalcularmd5.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="298" max-vertical-offset="1564">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="40" selection-end-column="20" />
-              <folding>
-                <element signature="e#254#293#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ui_fiscal_rcodigomodelofiscal.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rcodigomodelofiscal.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4" vertical-offset="204" max-vertical-offset="1377">
-              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-              <folding>
-                <element signature="e#261#300#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.56666666" vertical-offset="34" max-vertical-offset="1275">
+              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,31 +68,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfabrir.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfbpabrir.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfbpvender.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelaracrescimoitem.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelardescontoitem.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelaritem.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelaritemparcial.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelarultimoitemparcial.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfefetuarpagamento.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfefetuarpagamentoformatado.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfencerrar.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfencerrarconfigmsg.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfidentificarconsumidor.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancaracrescimoitem.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancaracrescimoultimoitem.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icftotalizarcupom.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancardescontoultimoitem.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancardescontoitem.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfvender.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfvenderresumido.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfvendersemdesc.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ichequeimprimir.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfabrir.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfcancelaracrescimoitem.py" />
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfcancelardescontoitem.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfcancelaritem.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfefetuarpagamento.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfefetuarpagamentoformatado.py" />
@@ -151,6 +94,31 @@
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rassinarrsa.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rcalcularmd5.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rcodigomodelofiscal.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressoraint.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressorastr.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_regalterarvalor.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_regcfcupomadicionaldllconfig.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_regretornavalorchave.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarespelhomfd.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarmf.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarmfd.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarnfp.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatorio.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatoriobaixonivel.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatoriooffline.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsintegra.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsped.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerartdm.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rinfoestendida.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rleituraxcustomizada.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornargtcodificado.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacao.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacaoseparador.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarnumeroseriecodificado.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rrsachavepublica.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rverificargtcodificado.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rverificarnumeroseriecodificado.py" />
+        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_testedevendasempararbufferizando.py" />
       </list>
     </option>
   </component>
@@ -495,194 +463,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfbpvender.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="2363">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="33" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelaracrescimoitem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1632">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="28" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelardescontoitem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="1598">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelaritem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="128" max-vertical-offset="1428">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="28" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelaritemparcial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="179" max-vertical-offset="1768">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfcancelarultimoitemparcial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="1581">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="28" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfefetuarpagamento.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="230" max-vertical-offset="1649">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="30" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfefetuarpagamentoformatado.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="179" max-vertical-offset="1445">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfencerrar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="706" max-vertical-offset="2006">
-          <caret line="50" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfencerrarresumido.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7329843" vertical-offset="196" max-vertical-offset="578">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfencerrarconfigmsg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="179" max-vertical-offset="1326">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="28" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfidentificarconsumidor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="1819">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="31" selection-end-column="20" />
-          <folding>
-            <element signature="e#267#299#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancardescontoultimoitem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55497384" vertical-offset="247" max-vertical-offset="1751">
-          <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancardescontoitem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91099477" vertical-offset="230" max-vertical-offset="2074">
-          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancaracrescimoitem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4895288" vertical-offset="289" max-vertical-offset="1921">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icflancaracrescimoultimoitem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4895288" vertical-offset="323" max-vertical-offset="1734">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfvender.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7329843" vertical-offset="298" max-vertical-offset="2975">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icftotalizarcupom.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1836">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfvendersemdesc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="3060">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfabrir.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6439791" vertical-offset="264" max-vertical-offset="1768">
-          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-          <folding>
-            <element signature="e#252#284#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_ichequeimprimir.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7329843" vertical-offset="264" max-vertical-offset="2142">
-          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icfvenderresumido.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="281" max-vertical-offset="2261">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="32" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfcancelaracrescimoitem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="1666">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="35" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfcancelardescontoitem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1666">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="35" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfcancelaritem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="1666">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="35" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfefetuarpagamento.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="1632">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="31" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_icnfefetuarpagamentoformatado.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1496">
@@ -881,11 +661,219 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rcodigomodelofiscal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4" vertical-offset="204" max-vertical-offset="1377">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1377">
+          <caret line="32" column="20" selection-start-line="20" selection-start-column="0" selection-end-line="32" selection-end-column="20" />
           <folding>
             <element signature="e#261#300#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressorastr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_regalterarvalor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1445">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_regcfcupomadicionaldllconfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_retornosstatusecf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.93333334" vertical-offset="1428" max-vertical-offset="6511">
+          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_regretornavalorchave.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1887">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarespelhomfd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3145">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarmf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2414">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarmfd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2414">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarnfp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="2210">
+          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatorio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3774">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatoriobaixonivel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2397">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatoriooffline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3451">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsintegra.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2210">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsped.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2193">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerartdm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2397">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_testedevendasempararbufferizando.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8333333" vertical-offset="0" max-vertical-offset="1445">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rverificarnumeroseriecodificado.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8333333" vertical-offset="0" max-vertical-offset="1258">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rverificargtcodificado.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8333333" vertical-offset="0" max-vertical-offset="1258">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rrsachavepublica.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8333333" vertical-offset="0" max-vertical-offset="1275">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarnumeroseriecodificado.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8333333" vertical-offset="0" max-vertical-offset="1258">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacaoseparador.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8333333" vertical-offset="0" max-vertical-offset="2312">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8333333" vertical-offset="0" max-vertical-offset="2091">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornargtcodificado.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8333333" vertical-offset="0" max-vertical-offset="1258">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rinfoestendida.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56666666" vertical-offset="0" max-vertical-offset="1428">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rleituraxcustomizada.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56666666" vertical-offset="0" max-vertical-offset="1309">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressoraint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56666666" vertical-offset="34" max-vertical-offset="1275">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
