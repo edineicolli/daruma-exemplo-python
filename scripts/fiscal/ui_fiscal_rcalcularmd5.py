@@ -6,8 +6,12 @@
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
+from ctypes import create_string_buffer
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import rCalcularMD5_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_rCalcularMD5(QtGui.QWidget):
 
@@ -15,6 +19,26 @@ class Ui_ui_FISCAL_rCalcularMD5(QtGui.QWidget):
         super(Ui_ui_FISCAL_rCalcularMD5, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonFechar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+
+        cMD5Hexa = create_string_buffer(1000)
+        cMD5Ascii = create_string_buffer(1000)
+
+        StrCaminhoArq = self.lineEditCaminhoArq.text()
+
+        tratarRetornoFiscal(rCalcularMD5_ECF_Daruma(StrCaminhoArq,cMD5Hexa,cMD5Ascii), self)
+
+        StrMD5Hexa = cMD5Hexa
+        StrMD5Ascii = cMD5Ascii
+
+        self.textEditMD5Hexa.setText(StrMD5Hexa)
+        self.textEditMD5Ascii.setText(StrMD5Ascii)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_rCalcularMD5):
         ui_FISCAL_rCalcularMD5.setObjectName("ui_FISCAL_rCalcularMD5")

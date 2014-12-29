@@ -6,8 +6,12 @@
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
+from ctypes import create_string_buffer
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import rAssinarRSA_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_rAssinarRSA(QtGui.QWidget):
 
@@ -15,6 +19,24 @@ class Ui_ui_FISCAL_rAssinarRSA(QtGui.QWidget):
         super(Ui_ui_FISCAL_rAssinarRSA, self).__init__()
 
         self.setupUi(self)
+
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+        
+    def on_pushButtonEnviar_clicked(self):
+
+     cAssinaturaRSA = create_string_buffer(1000)
+    
+     StrCaminhoArq = self.lineEditCaminhoArq.text()
+     StrCaminhoKey = self.lineEditCaminhoKey.text()
+        
+     tratarRetornoFiscal(rAssinarRSA_ECF_Daruma(StrCaminhoArq,StrCaminhoKey,cAssinaturaRSA), self)
+
+     StrAssinaturaRSA = cAssinaturaRSA
+     self.textEditAssinaturaRSA.setText(StrAssinaturaRSA)
+            
+    def on_pushButtonCancelar_clicked(self):    
+        self.close()
 
     def setupUi(self, ui_FISCAL_rAssinarRSA):
         ui_FISCAL_rAssinarRSA.setObjectName("ui_FISCAL_rAssinarRSA")

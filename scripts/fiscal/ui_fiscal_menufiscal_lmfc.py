@@ -8,6 +8,10 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtCore import QDate
+from pydaruma.pydaruma import regAlterarValor_Daruma, iMFLer_ECF_Daruma, iMFLerSerial_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_MenuFiscal_LMFC(QtGui.QWidget):
 
@@ -15,6 +19,44 @@ class Ui_ui_FISCAL_MenuFiscal_LMFC(QtGui.QWidget):
         super(Ui_ui_FISCAL_MenuFiscal_LMFC, self).__init__()
 
         self.setupUi(self)
+        self.radioButtonDATAM.clicked.connect(self.on_radioButtonDATAM_clicked)
+        self.radioButtonCRZ.clicked.connect(self.on_radioButtonCRZ_clicked)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+        regAlterarValor_Daruma("ECF\\LMFCompleta","1")
+        self.groupBoxIntervaloDataM.setVisible(False)
+        self.groupBoxIntervaloCRZ.setVisible(False)
+        self.dateEditInicial.setDate(QDate.currentDate())
+        self.dateEditFinal.setDate(QDate.currentDate())
+        
+    def on_radioButtonCRZ_clicked(self):
+        self.groupBoxIntervaloDataM.setVisible(False)
+        self.groupBoxIntervaloCRZ.setVisible(True)
+
+    def on_radioButtonDATAM_clicked(self):
+    
+        self.groupBoxIntervaloDataM.setVisible(True)
+        self.groupBoxIntervaloCRZ.setVisible(False)
+
+    def on_pushButtonEnviar_clicked(self):
+        if(self.radioButtonCRZ.isChecked(self)):
+            StrInicial = self.lineEditCRZInicial.text()
+            StrFinal = self.lineEditCRZFinal.text()
+        
+        if(self.radioButtonDATAM.isChecked(self)):
+            StrInicial = self.dateEditInicial.text()
+            StrFinal = self.dateEditFinal.text()
+
+        #Execuçao do comando
+        if(self.radioButtonLMFTipoArquivo.isChecked(self)):
+            tratarRetornoFiscal(iMFLerSerial_ECF_Daruma(StrInicial,StrFinal), self)
+
+        if(self.radioButtonLMFTipoImpressa.isChecked(self)):
+            tratarRetornoFiscal(iMFLer_ECF_Daruma(StrInicial,StrFinal), self)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_MenuFiscal_LMFC):
         ui_FISCAL_MenuFiscal_LMFC.setObjectName("ui_FISCAL_MenuFiscal_LMFC")

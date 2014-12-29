@@ -6,8 +6,11 @@
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
+from ctypes import create_string_buffer
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import rCodigoModeloFiscal_ECF_Daruma
+
 
 class Ui_ui_FISCAL_rCodigoModeloFiscal(QtGui.QWidget):
 
@@ -15,6 +18,19 @@ class Ui_ui_FISCAL_rCodigoModeloFiscal(QtGui.QWidget):
         super(Ui_ui_FISCAL_rCodigoModeloFiscal, self).__init__()
 
         self.setupUi(self)
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+    def on_pushButtonEnviar_clicked(self):
+        cModeloFiscal = create_string_buffer(1000)
+
+        rCodigoModeloFiscal_ECF_Daruma(cModeloFiscal)
+
+        StrModeloFiscal = cModeloFiscal
+        self.lineEditModeloFiscal.setText(StrModeloFiscal)
+
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_rCodigoModeloFiscal):
         ui_FISCAL_rCodigoModeloFiscal.setObjectName("ui_FISCAL_rCodigoModeloFiscal")

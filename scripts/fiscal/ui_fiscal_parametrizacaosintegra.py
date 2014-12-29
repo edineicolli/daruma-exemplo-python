@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import regAlterarValor_Daruma
+
 
 class Ui_ui_FISCAL_ParametrizacaoSintegra(QtGui.QWidget):
 
@@ -15,6 +18,97 @@ class Ui_ui_FISCAL_ParametrizacaoSintegra(QtGui.QWidget):
         super(Ui_ui_FISCAL_ParametrizacaoSintegra, self).__init__()
 
         self.setupUi(self)
+
+        self.pushButtonFechar.clicked.connect(self.on_pushButtonFechar_clicked)
+        self.pushButtonParametrizar.clicked.connect(self.on_pushButtonParametrizar_clicked)
+        self.comboBoxFinalidade.currentIndexChanged['QString'].connect(self.on_comboBoxFinalidade_currentIndexChanged)
+        self.comboBoxIdentificacaoConvenio.currentIndexChanged['QString'].connect(self.on_comboBoxIdentificacaoConvenio_currentIndexChanged)
+        self.comboBoxNaturezaOperacao.currentIndexChanged['QString'].connect(self.on_comboBoxNaturezaOperacao_currentIndexChanged)
+
+        #DEFINE VALORES DOS LINEEDIT
+        self.lineEditEndereco.setText("Avenida Shishima Hifumi")
+        self.lineEditNumero.setText("3911")
+        self.lineEditComplemento.setText("Pq Tecnológico")
+        self.lineEditBairro.setText("Urbanova")
+        self.lineEditCEP.setText("12200-000")
+        self.lineEditMunicipio.setText("São José dos Campos")
+        self.lineEditTelefone.setText("12-33221122")
+        self.lineEditFAX.setText("12-33221122")
+        self.lineEditNomeContato.setText("João Oliveira")
+
+        #DEFINE VALORES DAS COMBOBOX, USANDO QSTRINGLIST
+        StrEstados = 'AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO'.split()
+        self.comboBoxUF.addItems(StrEstados)
+        StrFinalidade = '1 2 3 4 5'.split()
+        self.comboBoxFinalidade.addItems(StrFinalidade)
+        StrIdentificacao = '1 2 3'.split()
+        self.comboBoxIdentificacaoConvenio.addItems(StrIdentificacao)
+        StrNatureza = '1 2 3'.split()
+        self.comboBoxNaturezaOperacao.addItems(StrNatureza)
+        
+    def on_comboBoxFinalidade_currentIndexChanged(self):
+        if(self.comboBoxFinalidade.currentText() == "1"):
+            self.labelFinalidade.setText("Normal")
+        if(self.comboBoxFinalidade.currentText() == "2"):
+            self.labelFinalidade.setText("Retificação Total do Arquivo")
+        if(self.comboBoxFinalidade.currentText() == "3"):
+            self.labelFinalidade.setText("Retificação Aditiva do Arquivo")
+        if(self.comboBoxFinalidade.currentText() == "4"):
+            self.labelFinalidade.setText("Retificação Corretiva")
+        if(self.comboBoxFinalidade.currentText() == "5"):
+            self.labelFinalidade.setText("Desfazimento: arquivo de informação referente a operações/pretações não efetivadas")
+
+    def on_comboBoxIdentificacaoConvenio_currentIndexChanged(self):
+        if (self.comboBoxIdentificacaoConvenio.currentText() == "1"):
+            self.labelIdentificacaoConvenio.setText("Convênio ICMS 31/99")
+        if (self.comboBoxIdentificacaoConvenio.currentText() == "2"):
+            self.labelIdentificacaoConvenio.setText("Convênio ICMS 69/02 e 142/02")
+        if (self.comboBoxIdentificacaoConvenio.currentText() == "3"):
+            self.labelIdentificacaoConvenio.setText("Convênio ICMS 76/03 e 20/04")
+    
+    def on_comboBoxNaturezaOperacao_currentIndexChanged(self):
+        if(self.comboBoxNaturezaOperacao.currentText() == "1"):
+            self.labelNaturezaOperacao.setText("Interestaduais somente com substituição tributária")
+        if(self.comboBoxNaturezaOperacao.currentText() == "2"):
+            self.labelNaturezaOperacao.setText("Interestaduais com ou sem substituição tributária")
+        if(self.comboBoxNaturezaOperacao.currentText() == "3"):
+            self.labelNaturezaOperacao.setText("Todas das operações do informante")
+
+    def on_pushButtonParametrizar_clicked(self):
+        StrEndereco = self.lineEditEndereco.text()
+        StrNumero = self.lineEditNumero.text()
+        StrComplemento = self.lineEditComplemento.text()
+        StrBairro = self.lineEditBairro.text()
+        StrCEP = self.lineEditCEP.text()
+        StrMunicipio = self.lineEditMunicipio.text()
+        StrUF = self.comboBoxUF.currentText()
+        StrTelefone = self.lineEditTelefone.text()
+        StrFAX = self.lineEditFAX.text()
+        StrNome = self.lineEditNomeContato.text()
+        StrFinalidade = self.comboBoxFinalidade.currentText()
+        StrConvenio = self.comboBoxIdentificacaoConvenio.currentText()
+        StrNatureza = self.comboBoxNaturezaOperacao.currentText()
+
+        regAlterarValor_Daruma("ECF\\SINTEGRA\\Bairro",StrBairro)
+        regAlterarValor_Daruma("ECF\\SINTEGRA\\CEP",StrCEP)
+        regAlterarValor_Daruma("ECF\\SINTEGRA\\Cod_Finalidade",StrFinalidade)
+        regAlterarValor_Daruma("ECF\\SINTEGRA\\Cod_Convenio",StrConvenio)
+        regAlterarValor_Daruma("ECF\\SINTEGRA\\Cod_Natureza",StrNatureza)
+        regAlterarValor_Daruma("ECF\\SINTEGRA\\Complemento",StrComplemento)
+        regAlterarValor_Daruma("ECF\\SINTEGRA\\Contato_Nome",StrNome)
+        regAlterarValor_Daruma("ECF\\SINTEGRA\\Contato_Telefone",StrTelefone)
+        regAlterarValor_Daruma("ECF\\SINTEGRA\\Fax",StrFAX)
+        regAlterarValor_Daruma("ECF\\SINTEGRA\\Logradouro",StrEndereco)
+        regAlterarValor_Daruma("ECF\\SINTEGRA\\Municipio",StrMunicipio)
+        regAlterarValor_Daruma("ECF\\SINTEGRA\\Numero",StrNumero)
+        regAlterarValor_Daruma("ECF\\SINTEGRA\\UF",StrUF)
+    
+        QMessageBox.information(self,"DarumaFramework - Qt C++","Parametrização Concluída.")
+        self.close()
+    
+    
+    def on_pushButtonFechar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_FISCAL_ParametrizacaoSintegra):
         ui_FISCAL_ParametrizacaoSintegra.setObjectName("ui_FISCAL_ParametrizacaoSintegra")
