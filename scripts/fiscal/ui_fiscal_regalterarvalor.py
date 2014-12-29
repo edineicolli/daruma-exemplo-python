@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import regAlterarValor_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_regAlterarValor(QtGui.QWidget):
 
@@ -19,8 +22,14 @@ class Ui_ui_FISCAL_regAlterarValor(QtGui.QWidget):
         self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
+        self.lineEditProdutoChave.setText("ECF\\Auditoria")
+        self.lineEditValor.setText("1")
+
     def on_pushButtonEnviar_clicked(self):
-        pass
+        StrProdutoChave = self.lineEditProdutoChave.text()
+        StrValor = self.lineEditValor.text()
+
+        tratarRetornoFiscal(regAlterarValor_Daruma(StrProdutoChave, StrValor), self)
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

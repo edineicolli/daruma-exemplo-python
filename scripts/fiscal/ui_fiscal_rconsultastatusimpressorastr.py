@@ -6,8 +6,12 @@
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
+from ctypes import create_string_buffer
 
 from PySide import QtCore, QtGui
+from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import rConsultaStatusImpressoraStr_ECF_Daruma
+
 
 class Ui_ui_FISCAL_rConsultaStatusImpressoraStr(QtGui.QWidget):
 
@@ -20,7 +24,19 @@ class Ui_ui_FISCAL_rConsultaStatusImpressoraStr(QtGui.QWidget):
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
     def on_pushButtonEnviar_clicked(self):
-        pass
+        # Definiçao do Tamanho do Vetor de Recebimento da informação
+
+        cStatus = create_string_buffer(100)
+
+        iIndice = self.lineEditIndice.text().toInt()
+
+         # Execuçao do Método de Retorno da Informação
+        # trataRetorno(
+        rConsultaStatusImpressoraStr_ECF_Daruma(iIndice,cStatus)
+        #));
+
+        # Devolve o retorno da DLL para o campo de texto
+        QMessageBox.information(self,"DarumaFramework - Qt C++","Indice: "+ str(iIndice) +"   Status: "+ str(cStatus))
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

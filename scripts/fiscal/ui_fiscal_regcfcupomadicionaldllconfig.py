@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import regCFCupomAdicionalDllConfig_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_regCFCupomAdicionalDllConfig(QtGui.QWidget):
 
@@ -20,7 +23,9 @@ class Ui_ui_FISCAL_regCFCupomAdicionalDllConfig(QtGui.QWidget):
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
     def on_pushButtonEnviar_clicked(self):
-        pass
+        StrValor = self.lineEditValor.text()
+
+        tratarRetornoFiscal(regCFCupomAdicionalDllConfig_ECF_Daruma(StrValor), self)
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

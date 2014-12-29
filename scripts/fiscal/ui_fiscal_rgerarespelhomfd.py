@@ -8,6 +8,11 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtCore import QDate
+from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import rGerarEspelhoMFD_ECF_Daruma, regAlterarValor_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_rGerarEspelhoMFD(QtGui.QWidget):
 
@@ -19,8 +24,78 @@ class Ui_ui_FISCAL_rGerarEspelhoMFD(QtGui.QWidget):
         self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
+        self.radioButtonIntervaloCOO.clicked.connect(self.on_radioButtonIntervaloCOO_clicked)
+        self.radioButtonIntervaloDATA.clicked.connect(self.on_radioButtonIntervaloDATA_clicked)
+        self.radioButtonIntervaloDATAM.clicked.connect(self.on_radioButtonIntervaloDATAM_clicked)
+
+        self.groupBoxTipoIntervalo.setVisible(True)
+        self.groupBoxIntervaloCOO.setVisible(False)
+        self.groupBoxIntervaloDATA.setVisible(False)
+        self.groupBoxIntervaloDATAM.setVisible(False)
+        self.groupBoxLocalDestino.setVisible(False)
+        self.dateEditDATAInicial.setDate(QDate.currentDate())
+        self.dateEditDATAFinal.setDate(QDate.currentDate())
+        self.dateEditDATAMInicial.setDate(QDate.currentDate())
+        self.dateEditDATAMFinal.setDate(QDate.currentDate())
+        
+    def on_radioButtonIntervaloCOO_clicked(self):
+        self.groupBoxTipoIntervalo.setVisible(True)
+        self.groupBoxIntervaloCOO.setVisible(True)
+        self.groupBoxIntervaloDATA.setVisible(False)
+        self.groupBoxIntervaloDATAM.setVisible(False)
+        self.groupBoxLocalDestino.setVisible(True)
+    
+    def on_radioButtonIntervaloDATA_clicked(self):
+        self.groupBoxTipoIntervalo.setVisible(True)
+        self.groupBoxIntervaloCOO.setVisible(False)
+        self.groupBoxIntervaloDATA.setVisible(True)
+        self.groupBoxIntervaloDATAM.setVisible(False)
+        self.groupBoxLocalDestino.setVisible(True)
+    
+    def on_radioButtonIntervaloDATAM_clicked(self):
+        self.groupBoxTipoIntervalo.setVisible(True)
+        self.groupBoxIntervaloCOO.setVisible(False)
+        self.groupBoxIntervaloDATA.setVisible(False)
+        self.groupBoxIntervaloDATAM.setVisible(True)
+        self.groupBoxLocalDestino.setVisible(True)
+
     def on_pushButtonEnviar_clicked(self):
-        pass
+
+        if (self.radioButtonIntervaloCOO.isChecked()):
+
+            if(self.lineEditLocalDestino.text() != ""):
+                StrLocalCaminho = self.lineEditLocalDestino.text()
+                regAlterarValor_Daruma("START\\LocalArquivos",StrLocalCaminho)
+
+            # Declaraçao das Variaveis que recebem os valores da UI
+            StrCOOInicial = self.lineEditCOOInicial.text()
+            StrCOOFinal = self.lineEditCOOFinal.text()
+
+            tratarRetornoFiscal(rGerarEspelhoMFD_ECF_Daruma("2",StrCOOInicial,StrCOOFinal), self)
+
+        elif (self.radioButtonIntervaloDATA.isChecked()):
+            if(self.lineEditLocalDestino.text() != ""):
+                StrLocalCaminho = self.lineEditLocalDestino.text()
+                regAlterarValor_Daruma("START\\LocalArquivos",StrLocalCaminho)
+
+            # Declaraçao das Variaveis que recebem os valores da UI
+            StrDATAInicial = self.dateEditDATAInicial.text()
+            StrDATAFinal = self.dateEditDATAFinal.text()
+
+            tratarRetornoFiscal(rGerarEspelhoMFD_ECF_Daruma("1",StrDATAInicial,StrDATAFinal), self)
+
+        elif (self.radioButtonIntervaloDATAM.isChecked()):
+            if(self.lineEditLocalDestino.text() != ""):
+                StrLocalCaminho = self.lineEditLocalDestino.text()
+                regAlterarValor_Daruma("START\\LocalArquivos",StrLocalCaminho)
+
+            # Declaraçao das Variaveis que recebem os valores da UI
+            StrDATAMInicial = self.dateEditDATAMInicial.text()
+            StrDATAMFinal = self.dateEditDATAMFinal.text()
+
+            tratarRetornoFiscal(rGerarEspelhoMFD_ECF_Daruma("3",StrDATAMInicial,StrDATAMFinal), self)
+        else:
+            QMessageBox.information(self, "DarumaFramework - Qt C++","Selecione o Tipo de Intervalo!")
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

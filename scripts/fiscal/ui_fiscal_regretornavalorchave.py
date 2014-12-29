@@ -6,8 +6,12 @@
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
+from ctypes import create_string_buffer
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import regRetornaValorChave_DarumaFramework
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_regRetornaValorChave(QtGui.QWidget):
 
@@ -20,7 +24,13 @@ class Ui_ui_FISCAL_regRetornaValorChave(QtGui.QWidget):
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
     def on_pushButtonEnviar_clicked(self):
-        pass
+        StrProduto = self.lineEditProduto.text()
+        StrChave = self.lineEditChave.text()
+        cValor = create_string_buffer(1165)
+
+        tratarRetornoFiscal(regRetornaValorChave_DarumaFramework(StrProduto, StrChave, cValor),self)
+        StrValor = cValor
+        self.labelRetorno.setText(StrValor)
 
     def on_pushButtonCancelar_clicked(self):
         self.close()
