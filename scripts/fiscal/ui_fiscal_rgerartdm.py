@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtCore import QDate
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_rGerarTDM(QtGui.QWidget):
 
@@ -15,11 +18,51 @@ class Ui_ui_FISCAL_rGerarTDM(QtGui.QWidget):
         super(Ui_ui_FISCAL_rGerarTDM, self).__init__()
 
         self.setupUi(self)
+
+        self.lineEditFinal.setVisible(False)
+        self.lineEditInicial.setVisible(False)
+        self.dateEditFinal.setVisible(False)
+        self.dateEditInicial.setVisible(False)
+        self.labelInicial.setVisible(False)
+        self.labelFinal.setVisible(False)
+        self.dateEditInicial.setDate(QDate.currentDate())
+        self.dateEditFinal.setDate(QDate.currentDate())
+
+        self.radioButtonDATAM.clicked.connect(self.on_radioButtonDATAM_clicked)
+        self.radioButtonCOO.clicked.connect(self.on_radioButtonCOO_clicked)
         self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
+    def on_radioButtonDATAM_clicked(self):
+        self.dateEditInicial.setVisible(True)
+        self.dateEditFinal.setVisible(True)
+        self.lineEditFinal.setVisible(False)
+        self.lineEditInicial.setVisible(False)
+        self.labelInicial.setVisible(True)
+        self.labelFinal.setVisible(True)
+
+    def on_radioButtonCOO_clicked(self):
+        self.lineEditFinal.setVisible(True)
+        self.lineEditInicial.setVisible(True)
+        self.dateEditFinal.setVisible(False)
+        self.dateEditInicial.setVisible(False)
+        self.labelInicial.setVisible(True)
+        self.labelFinal.setVisible(True)
+
     def on_pushButtonEnviar_clicked(self):
-        pass
+        StrInicial = self.lineEditInicial.text()
+        StrFinal = self.lineEditFinal.text()
+        if(self.radioButtonCOO.isChecked()):
+            StrTipoIntervalo = "COO"
+        if(self.radioButtonDATAM.isChecked()):
+        
+            StrInicial = self.dateEditInicial.text()
+            StrFinal = self.dateEditFinal.text()
+            StrTipoIntervalo = "DATAM"
+
+        # Execuçao do Metodo
+        # pydaruma
+        # tratarRetornoFiscal(rGerarTDM_ECF_Daruma(StrTipoIntervalo,StrInicial,StrFinal), self)
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

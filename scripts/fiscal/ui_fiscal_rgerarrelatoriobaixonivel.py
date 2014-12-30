@@ -8,6 +8,10 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtCore import QDate
+from pydaruma.pydaruma import rGerarRelatorio_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_rGerarRelatorioBaixoNivel(QtGui.QWidget):
 
@@ -16,11 +20,64 @@ class Ui_ui_FISCAL_rGerarRelatorioBaixoNivel(QtGui.QWidget):
 
         self.setupUi(self)
 
+        self.radioButtonDATAM.clicked.connect(self.on_radioButtonDATAM_clicked)
+        self.radioButtonCRZ.clicked.connect(self.on_radioButtonCRZ_clicked)
+        self.radioButtonCOO.clicked.connect(self.on_radioButtonCOO_clicked)
         self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
+        self.lineEditFinal.setVisible(False)
+        self.lineEditInicial.setVisible(False)
+        self.dateEditFinal.setVisible(False)
+        self.dateEditInicial.setVisible(False)
+        self.labelInicial.setVisible(False)
+        self.labelFinal.setVisible(False)
+        self.lineEditRelatorios.setText("CF_Abrir+CF_Item")
+        self.dateEditInicial.setDate(QDate.currentDate())
+        self.dateEditFinal.setDate(QDate.currentDate())
+
+    def on_radioButtonDATAM_clicked(self):
+        self.dateEditInicial.setVisible(True)
+        self.dateEditFinal.setVisible(True)
+        self.lineEditFinal.setVisible(False)
+        self.lineEditInicial.setVisible(False)
+        self.labelInicial.setVisible(True)
+        self.labelFinal.setVisible(True)
+    
+    def on_radioButtonCRZ_clicked(self):
+        self.lineEditFinal.setVisible(True)
+        self.lineEditInicial.setVisible(True)
+        self.dateEditFinal.setVisible(False)
+        self.dateEditInicial.setVisible(False)
+        self.labelInicial.setVisible(True)
+        self.labelFinal.setVisible(True)
+    
+    def on_radioButtonCOO_clicked(self):
+        self.lineEditFinal.setVisible(True)
+        self.lineEditInicial.setVisible(True)
+        self.dateEditFinal.setVisible(False)
+        self.dateEditInicial.setVisible(False)
+        self.labelInicial.setVisible(True)
+        self.labelFinal.setVisible(True)
+    
     def on_pushButtonEnviar_clicked(self):
-        pass
+
+        if(self.radioButtonCOO.isChecked(self) and self.radioButtonCRZ.isChecked(self) and self.radioButtonDATAM.isChecked(self)):
+            StrInicial = self.lineEditInicial.text()
+            StrFinal = self.lineEditFinal.text()
+            if(self.radioButtonCOO.isChecked(self)):
+                StrTipoIntervalo = "COO"
+            if(self.radioButtonCRZ.isChecked(self)):
+                StrTipoIntervalo = "CRZ"
+            if(self.radioButtonDATAM.isChecked(self)):
+                StrInicial = self.dateEditInicial.text()
+                StrFinal = self.dateEditFinal.text()
+                StrTipoIntervalo = "DATAM"
+
+        StrRelatorios = self.lineEditRelatorios.text()
+
+        # Execuçao do Metodo
+        tratarRetornoFiscal(rGerarRelatorio_ECF_Daruma(StrRelatorios,StrTipoIntervalo,StrInicial,StrFinal),self)
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

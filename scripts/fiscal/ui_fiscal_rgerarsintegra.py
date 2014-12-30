@@ -8,6 +8,10 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtCore import QDate
+from pydaruma.pydaruma import regAlterarValor_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_rGerarSINTEGRA(QtGui.QWidget):
 
@@ -16,11 +20,26 @@ class Ui_ui_FISCAL_rGerarSINTEGRA(QtGui.QWidget):
 
         self.setupUi(self)
 
+        self.dateEditInicial.setDate(QDate.currentDate())
+        self.dateEditFinal.setDate(QDate.currentDate())
+
         self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
     def on_pushButtonEnviar_clicked(self):
-        pass
+        if(self.lineEditLocalArquivos.text() != ""):
+            StrLocal = self.lineEditLocalArquivos.text()
+
+            regAlterarValor_Daruma("START\\LocalArquivosRelatorios",StrLocal)
+
+        if(self.radioButtonDATAM.isChecked()):
+            StrInicial = self.dateEditInicial.text()
+            StrFinal = self.dateEditFinal.text()
+            StrTipoIntervalo = "DATAM"
+
+        # Execuçao do Metodo
+        # pydaruma
+        #tratarRetornoFiscal(rGerarSINTEGRA_ECF_Daruma(StrTipoIntervalo,StrInicial,StrFinal), self)
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

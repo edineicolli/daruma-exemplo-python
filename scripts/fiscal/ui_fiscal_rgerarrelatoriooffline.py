@@ -8,6 +8,10 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtCore import QDate
+from pydaruma.pydaruma import rGerarRelatorioOffline_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_rGerarRelatorioOffline(QtGui.QWidget):
 
@@ -16,11 +20,98 @@ class Ui_ui_FISCAL_rGerarRelatorioOffline(QtGui.QWidget):
 
         self.setupUi(self)
 
+        self.lineEditFinal.setVisible(False)
+        self.lineEditInicial.setVisible(False)
+        self.dateEditFinal.setVisible(False)
+        self.dateEditInicial.setVisible(False)
+        self.labelInicial.setVisible(False)
+        self.labelFinal.setVisible(False)
+        self.dateEditInicial.setDate(QDate.currentDate())
+        self.dateEditFinal.setDate(QDate.currentDate())
+
+        self.radioButtonDATAM.clicked.connect(self.on_radioButtonDATAM_clicked)
+        self.radioButtonCRZ.clicked.connect(self.on_radioButtonCRZ_clicked)
+        self.radioButtonCOO.clicked.connect(self.on_radioButtonCOO_clicked)
         self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
+    def on_radioButtonDATAM_clicked(self):
+        self.dateEditInicial.setVisible(True)
+        self.dateEditFinal.setVisible(True)
+        self.lineEditFinal.setVisible(False)
+        self.lineEditInicial.setVisible(False)
+        self.labelInicial.setVisible(True)
+        self.labelFinal.setVisible(True)
+    
+    
+    def on_radioButtonCRZ_clicked(self):
+        self.lineEditFinal.setVisible(True)
+        self.lineEditInicial.setVisible(True)
+        self.dateEditFinal.setVisible(False)
+        self.dateEditInicial.setVisible(False)
+        self.labelInicial.setVisible(True)
+        self.labelFinal.setVisible(True)
+    
+    
+    def on_radioButtonCOO_clicked(self):
+        self.lineEditFinal.setVisible(True)
+        self.lineEditInicial.setVisible(True)
+        self.dateEditFinal.setVisible(False)
+        self.dateEditInicial.setVisible(False)
+        self.labelInicial.setVisible(True)
+        self.labelFinal.setVisible(True)
+    
+    
     def on_pushButtonEnviar_clicked(self):
-        pass
+
+        StrRelatorios = ''    
+        if(self.checkBoxMF.isChecked()):
+            StrRelatorios+= "MF+"
+        
+        if(self.checkBoxMFD.isChecked()):
+            StrRelatorios+= "MFD+"
+        
+        if(self.checkBoxTDM.isChecked()):
+            StrRelatorios+= "TDM+"
+        
+        if(self.checkBoxNFP.isChecked()):
+            StrRelatorios+= "NFP+"
+        
+        if(self.checkBoxNFPTDM.isChecked()):
+            StrRelatorios+= "NFPTDM+"
+        
+        if(self.checkBoxSINTEGRA.isChecked()):
+            StrRelatorios+= "SINTEGRA+"
+        
+        if(self.checkBoxSPED.isChecked()):
+            StrRelatorios+= "SPED+"
+        
+        if(self.checkBoxLMFC.isChecked()):
+            StrRelatorios+= "LFMC+"
+        
+        if(self.checkBoxLMFS.isChecked()):
+            StrRelatorios+= "LMFS+"
+            
+        if(self.radioButtonCOO.isChecked() and self.radioButtonCRZ.isChecked() and self.radioButtonDATAM.isChecked()):
+        
+            StrInicial = self.lineEditInicial.text()
+            StrFinal = self.lineEditFinal.text()
+            if(self.radioButtonCOO.isChecked()):
+                StrTipoIntervalo = "COO"
+            if(self.radioButtonCRZ.isChecked()):
+                StrTipoIntervalo = "CRZ"
+            if(self.radioButtonDATAM.isChecked()):
+                StrInicial = self.dateEditInicial.text()
+                StrFinal = self.dateEditFinal.text()
+                StrTipoIntervalo = "DATAM"
+
+        if((self.lineEditArqINF != "") and (self.lineEditArqMF !="") and (self.lineEditArqMFD != "")):
+            StrArqINF = self.lineEditArqINF.text()
+            StrArqMF = self.lineEditArqMF.text()
+            StrArqMFD = self.lineEditArqMFD.text()
+
+        # Execuçao do Metodo
+        tratarRetornoFiscal(rGerarRelatorioOffline_ECF_Daruma(StrRelatorios,StrTipoIntervalo,StrInicial,StrFinal,StrArqMF,StrArqMFD,StrArqINF), self)
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

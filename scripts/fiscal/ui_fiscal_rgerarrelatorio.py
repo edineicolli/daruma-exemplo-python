@@ -8,6 +8,13 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtCore import QDate
+from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import regAlterarValor_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+from scripts.fiscal.ui_fiscal_parametrizacaosintegra import Ui_ui_FISCAL_ParametrizacaoSintegra
+from scripts.fiscal.ui_fiscal_rgerarrelatoriobaixonivel import Ui_ui_FISCAL_rGerarRelatorioBaixoNivel
+
 
 class Ui_ui_FISCAL_rGerarRelatorio(QtGui.QWidget):
 
@@ -16,11 +23,110 @@ class Ui_ui_FISCAL_rGerarRelatorio(QtGui.QWidget):
 
         self.setupUi(self)
 
+        self.pushButtonBaixoNivel.clicked.connect(self.on_pushButtonBaixoNivel_clicked)
+        self.radioButtonDATAM.clicked.connect(self.on_radioButtonDATAM_clicked)
+        self.radioButtonCRZ.clicked.connect(self.on_radioButtonCRZ_clicked)
+        self.radioButtonCOO.clicked.connect(self.on_radioButtonCOO_clicked)
+        self.checkBoxSINTEGRA.clicked.connect(self.on_checkBoxSINTEGRA_clicked)
         self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
+        self.lineEditFinal.setVisible(False)
+        self.lineEditInicial.setVisible(False)
+        self.dateEditFinal.setVisible(False)
+        self.dateEditInicial.setVisible(False)
+        self.labelInicial.setVisible(False)
+        self.labelFinal.setVisible(False)
+        self.dateEditInicial.setDate(QDate.currentDate())
+        self.dateEditFinal.setDate(QDate.currentDate())
+
     def on_pushButtonEnviar_clicked(self):
-        pass
+        # Variaveis que irão receber os valores dos lineEdits
+        StrRelatorios = ''
+        if(self.checkBoxMF.isChecked(self)):
+            StrRelatorios+= "MF+"
+        if(self.checkBoxMFD.isChecked(self)):
+            StrRelatorios+= "MFD+"
+        if(self.checkBoxTDM.isChecked(self)):
+            StrRelatorios+= "TDM+"
+        if(self.checkBoxNFP.isChecked(self)):
+            StrRelatorios+= "NFP+"
+        if(self.checkBoxNFPTDM.isChecked(self)):
+            StrRelatorios+= "NFPTDM+"
+        if(self.checkBoxSINTEGRA.isChecked(self)):
+            StrRelatorios+= "SINTEGRA+"
+        if(self.checkBoxSPED.isChecked(self)):
+            StrRelatorios+= "SPED+"
+        if(self.checkBoxLMFC.isChecked(self)):
+            StrRelatorios+= "LFMC+"
+        if(self.checkBoxLMFS.isChecked(self)):
+            StrRelatorios+= "LMFS+"
+        if(self.checkBoxVIVANOTA.isChecked(self)):
+            StrRelatorios+= "VIVANOTA+"
+        if(self.checkBoxEAD.isChecked(self)):
+            StrRelatorios+= "[EAD]"
+            if(self.lineEditArquivoKey.text() == ""):
+                QMessageBox.information(self,"DarumaFramework - Qt C++","Você selecionou EAD. Insira o local do arqivo .Key")
+            else:
+                StrRelatorios+=(self.lineEditArquivoKey.text())
+    
+        if(self.lineEditLocalArquivos.text() != ""):
+            StrLocal = self.lineEditLocalArquivos.text()
+    
+            regAlterarValor_Daruma("START\\LocalArquivosRelatorios",StrLocal)
+
+        if(self.radioButtonCOO.isChecked(self) and self.radioButtonCRZ.isChecked(self) and self.radioButtonDATAM.isChecked(self)):
+            StrInicial = self.lineEditInicial.text()
+            StrFinal = self.lineEditFinal.text()
+            if(self.radioButtonCOO.isChecked(self)):
+                StrTipoIntervalo = "COO"
+            if(self.radioButtonCRZ.isChecked(self)):
+                StrTipoIntervalo = "CRZ"
+            if(self.radioButtonDATAM.isChecked(self)):
+                StrInicial = self.dateEditInicial.text()
+                StrFinal = self.dateEditFinal.text()
+                StrTipoIntervalo = "DATAM"
+    
+        # Execuçao do Metodo
+        # pydaruma
+        #tratarRetornoFiscal(rGerarRelatorio_ECF_Daruma(StrRelatorios,StrTipoIntervalo,StrInicial,StrFinal), self)
+
+    def on_radioButtonDATAM_clicked(self):
+        self.dateEditInicial.setVisible(True)
+        self.dateEditFinal.setVisible(True)
+        self.lineEditFinal.setVisible(False)
+        self.lineEditInicial.setVisible(False)
+        self.labelInicial.setVisible(True)
+        self.labelFinal.setVisible(True)
+    
+    def on_radioButtonCRZ_clicked(self):
+        self.lineEditFinal.setVisible(True)
+        self.lineEditInicial.setVisible(True)
+        self.dateEditFinal.setVisible(False)
+        self.dateEditInicial.setVisible(False)
+        self.labelInicial.setVisible(True)
+        self.labelFinal.setVisible(True)
+        self.lineEditInicial.setMaxLength(4)
+        self.lineEditFinal.setMaxLength(6)
+    
+    def on_radioButtonCOO_clicked(self):
+        self.lineEditFinal.setVisible(True)
+        self.lineEditInicial.setVisible(True)
+        self.dateEditFinal.setVisible(False)
+        self.dateEditInicial.setVisible(False)
+        self.labelInicial.setVisible(True)
+        self.labelFinal.setVisible(True)
+        self.lineEditInicial.setMaxLength(6)
+        self.lineEditFinal.setMaxLength(6)
+    
+    def on_pushButtonBaixoNivel_clicked(self):
+        self.form_FISCAL_rGerarRelatorioBaixoNivel = Ui_ui_FISCAL_rGerarRelatorioBaixoNivel()
+        self.form_FISCAL_rGerarRelatorioBaixoNivel.show()
+    
+    def on_checkBoxSINTEGRA_clicked(self):
+        if(self.checkBoxSINTEGRA.isChecked(self)):
+            self.form_FISCAL_ParametrizacaoSintegra = Ui_ui_FISCAL_ParametrizacaoSintegra()
+            self.form_FISCAL_ParametrizacaoSintegra.show()
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

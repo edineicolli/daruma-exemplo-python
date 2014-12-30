@@ -6,8 +6,12 @@
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
+from ctypes import create_string_buffer
 
 from PySide import QtCore, QtGui
+from PySide.QtGui import QMessageBox
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_rInfoEstendida(QtGui.QWidget):
 
@@ -16,11 +20,30 @@ class Ui_ui_FISCAL_rInfoEstendida(QtGui.QWidget):
 
         self.setupUi(self)
 
+        self.comboBoxIndice.addItem("Selecione...")
+        self.comboBoxIndice.addItem("1")
+        self.comboBoxIndice.addItem("2")
+        self.comboBoxIndice.addItem("3")
+        self.comboBoxIndice.addItem("4")
+        self.comboBoxIndice.addItem("5")
+
         self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
     def on_pushButtonEnviar_clicked(self):
-        pass
+        # Definiçao do Tamanho do Vetor de Recebimento da informação
+        cRetorno = create_string_buffer(100)
+        iIndice = self.comboBoxIndice.currentIndex()
+        if(self.comboBoxIndice.currentIndex()==0):
+            QMessageBox.warning(self,"DarumaFramework - Qt C++","Selecione o Indice!")
+        else:
+             # Execuçao do Método de Retorno da Informação*** */
+            # pydaruma
+            #tratarRetornoFiscal(rInfoEstentida_ECF_Daruma(iIndice,cRetorno),self)
+            StrRetorno = cRetorno
+            # Devolve o retorno da DLL para o campo de texto
+            QMessageBox.information(self,"DarumaFramework - Qt C++","Informaçao: "+ StrRetorno)
+
 
     def on_pushButtonCancelar_clicked(self):
         self.close()
