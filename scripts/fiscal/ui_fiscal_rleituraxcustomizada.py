@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import rLeituraXCustomizada_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_rLeituraXCustomizada(QtGui.QWidget):
 
@@ -20,7 +23,10 @@ class Ui_ui_FISCAL_rLeituraXCustomizada(QtGui.QWidget):
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
     def on_pushButtonEnviar_clicked(self):
-        pass
+        StrCaminho= self.lineEditCaminho.text()
+
+        # Chamada do Método
+        tratarRetornoFiscal(rLeituraXCustomizada_ECF_Daruma(StrCaminho), self)
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

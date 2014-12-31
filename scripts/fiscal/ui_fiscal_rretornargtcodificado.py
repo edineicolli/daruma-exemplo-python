@@ -6,8 +6,11 @@
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
+from ctypes import create_string_buffer
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import rRetornarGTCodificado_ECF_Daruma
+
 
 class Ui_ui_FISCAL_rRetornarGTCodificado(QtGui.QWidget):
 
@@ -20,7 +23,11 @@ class Ui_ui_FISCAL_rRetornarGTCodificado(QtGui.QWidget):
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
     def on_pushButtonEnviar_clicked(self):
-        pass
+        cGtCodificado = create_string_buffer(1000)
+        rRetornarGTCodificado_ECF_Daruma(cGtCodificado);
+
+        StrGtCodificado = cGtCodificado
+        self.lineEditGTCodificado.setText(StrGtCodificado)
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

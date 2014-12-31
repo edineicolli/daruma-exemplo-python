@@ -8,6 +8,12 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import regAlterarValor_Daruma, iCFAbrirPadrao_ECF_Daruma, iCFCancelar_ECF_Daruma, \
+    iCFEncerrar_ECF_Daruma, iCFEfetuarPagamentoPadrao_ECF_Daruma, iCFTotalizarCupomPadrao_ECF_Daruma, \
+    iCFVender_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_TesteDeVendaSemPararBufferizando(QtGui.QWidget):
 
@@ -20,7 +26,34 @@ class Ui_ui_FISCAL_TesteDeVendaSemPararBufferizando(QtGui.QWidget):
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
     def on_pushButtonEnviar_clicked(self):
-        pass
+
+        sCF = self.lineEditQtdCF.text() # recebe Quantidade de Cupom Fiscal do LineEdit
+        sItem = self.lineEditQtdItem.text() # recebe Quantidade de Item do LineEdit
+
+        regAlterarValor_Daruma("ECF\\RetornarAvisoErro","1")
+        iRetornoAbrir = iCFAbrirPadrao_ECF_Daruma()
+
+        if (iRetornoAbrir == 1):
+            for cf in range(1,sCF):
+                 iCFAbrirPadrao_ECF_Daruma()
+
+                 for item in range(1,sItem):
+                     #QMessageBox.information(self,"DarumaFramework - Qt C++","Entrou no vender")
+                     iRetorno = iCFVender_ECF_Daruma("I1","1,00","1,00","D$","0,00","123456789012","UN","ITEM")
+
+                 iCFTotalizarCupomPadrao_ECF_Daruma()
+                 iCFEfetuarPagamentoPadrao_ECF_Daruma()
+                 iCFEncerrar_ECF_Daruma("0","Teste de Venda de Item Sem Parar. Mensagem Promocional com até 8 linhas!")
+            QMessageBox.information(self,"DarumaFramework - Qt C++","Processo Concluido.")
+
+        if (iRetornoAbrir != 1):
+            tratarRetornoFiscal(iRetornoAbrir, self)
+            QMessageBox.warning(self,"DarumaFramework - Qt C++","Erro  Primeira Venda. Cancelando Processo")
+            iCFCancelar_ECF_Daruma()
+
+
+        if ((sCF == "") and (sItem =="")):
+            QMessageBox.information(self,"DarumaFramework - Python/Qt","Preencha todos os campos!")
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

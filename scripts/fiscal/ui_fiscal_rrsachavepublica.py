@@ -6,8 +6,11 @@
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
+from ctypes import create_string_buffer
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import rRSAChavePublica_ECF_Daruma
+
 
 class Ui_ui_FISCAL_rRSAChavePublica(QtGui.QWidget):
 
@@ -20,7 +23,18 @@ class Ui_ui_FISCAL_rRSAChavePublica(QtGui.QWidget):
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
     def on_pushButtonEnviar_clicked(self):
-        pass
+        StrCaminhoKey = self.lineEditCaminhoArq.text()
+
+        cChavePublica = create_string_buffer(1000)
+        cExpoentePublico  = create_string_buffer(1000)
+
+        rRSAChavePublica_ECF_Daruma(StrCaminhoKey,cChavePublica,cExpoentePublico);
+
+        StrChavePublica = cChavePublica
+        StrExpoentePublico = cExpoentePublico
+
+        self.textEditChavePublica.setText(StrChavePublica)
+        self.textEditExpoentePublico.setText(StrExpoentePublico)
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

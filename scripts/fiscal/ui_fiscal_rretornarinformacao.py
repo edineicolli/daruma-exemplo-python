@@ -6,8 +6,12 @@
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
+from ctypes import create_string_buffer
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import rRetornarInformacao_ECF_Daruma
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_FISCAL_rRetornarInformacao(QtGui.QWidget):
 
@@ -20,7 +24,17 @@ class Ui_ui_FISCAL_rRetornarInformacao(QtGui.QWidget):
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
     def on_pushButtonEnviar_clicked(self):
-        pass
+        # Declaraçao das Variaveis que recebem os valores da UI
+        StrIndice =  self.lineEditIndice.text()
+
+        # Definiçao do Tamanho do Vetor de Recebimento da informação
+        cRetorno = create_string_buffer(80000)
+
+        # Execuçao do Método de Retorno da Informação
+        tratarRetornoFiscal(rRetornarInformacao_ECF_Daruma(StrIndice,cRetorno), self)
+        StrRetorno = cRetorno
+        # Devolve o retorno da DLL para o campo de texto
+        self.textEditRetorno.setText(StrRetorno)
 
     def on_pushButtonCancelar_clicked(self):
         self.close()
