@@ -62,7 +62,7 @@ class Ui_ui_FISCAL_rGerarMFD(QtGui.QWidget):
             StrInicial = self.lineEditInicial.text()
             StrFinal = self.lineEditFinal.text()
             if(self.radioButtonCOO.isChecked()):
-                StrTipoIntervalo = "COO";
+                StrTipoIntervalo = "COO"
             if(self.radioButtonDATAM.isChecked()):
                 StrInicial = self.dateEditInicial.text()
                 StrFinal = self.dateEditFinal.text()

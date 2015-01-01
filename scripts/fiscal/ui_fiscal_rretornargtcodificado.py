@@ -24,7 +24,7 @@ class Ui_ui_FISCAL_rRetornarGTCodificado(QtGui.QWidget):
 
     def on_pushButtonEnviar_clicked(self):
         cGtCodificado = create_string_buffer(1000)
-        rRetornarGTCodificado_ECF_Daruma(cGtCodificado);
+        rRetornarGTCodificado_ECF_Daruma(cGtCodificado)
 
         StrGtCodificado = cGtCodificado
         self.lineEditGTCodificado.setText(StrGtCodificado)

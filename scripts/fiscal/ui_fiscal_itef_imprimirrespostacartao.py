@@ -29,7 +29,7 @@ class Ui_ui_FISCAL_iTEF_ImprimirRespostaCartao(QtGui.QWidget):
         StrValorPagamento = self.lineEditValorPgto.text()
         StrFormaPagamento = self.lineEditFormaPgto.text()
 
-        iRetorno = iCFAbrirPadrao_ECF_Daruma();
+        iRetorno = iCFAbrirPadrao_ECF_Daruma()
         if(iRetorno != 1):
             tratarRetornoFiscal(iRetorno, self)
 

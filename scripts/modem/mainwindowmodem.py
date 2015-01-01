@@ -65,11 +65,14 @@ class Ui_MainWindowModem(QtGui.QMainWindow):
         self.actionTRUEThread.triggered.connect(self.on_TRUEThread_triggered)
         self.actionFALSEThread.triggered.connect(self.on_FALSEThread_triggered)
 
+        # CARREGA A DARUMAFRAMEWORK
+        #carregarDarumaFramework(self)
+
     def on_pushButtonEncerrar_clicked(self):
         self.close()
 
     def on_eDefinirProduto_Daruma_triggered(self):
-        iRetorno = eDefinirProduto_Daruma("MODEM");
+        iRetorno = eDefinirProduto_Daruma("MODEM")
         if(iRetorno == 1):
             QMessageBox.information(self, "Método eDefinirProduto_Daruma","Produto definido com sucesso!")
         else:
@@ -154,7 +157,7 @@ class Ui_MainWindowModem(QtGui.QMainWindow):
         self.form_MODEM_ConexaoCSD.show()
 
     def on_TRUELerApagar_triggered(self):
-        tratarRetornoModemReg(regLerApagar_MODEM_DarumaFramework("TRUE"), self);
+        tratarRetornoModemReg(regLerApagar_MODEM_DarumaFramework("TRUE"), self)
 
     def on_FALSELerApagar_triggered(self):
         tratarRetornoModemReg(regLerApagar_MODEM_DarumaFramework("FALSE"), self)

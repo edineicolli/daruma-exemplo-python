@@ -127,14 +127,6 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         super(Ui_MainWindowFISCAL, self).__init__()
 
         self.setupUi(self)
-        '''
-        #CHAMA A FUNÇAO PARA CARREGAR A BIBLIOTECA DARUMAFRAMEWORK
-        carregarDarumaFramework(this);
-        #CHAMA A FUNÇAO DE EXECUÇAO DE PARAMETROS INICIAIS PARA EXECUÇÃO DO EXEMPLO, É TOTALMENTE OPCIONAL.
-        ConfiguracoesIniciaisECF()
-        #CHAMA A FUNÇÃO DE VERIFICAÇÃO DE IMPRESSORA LIGADA E IMPRIME RESULTADO NA TELA, UTILIZANDO O QMESSAGEBOX. TAMBÉM É OPCIONAL
-        VerificaImpressoraLigada(this);
-        '''
 
         self.pushButtonEncerrar.clicked.connect(self.on_pushButtonEncerrar_clicked)
         self.pushButtonContatos.clicked.connect(self.on_pushButtonContatos_clicked)
@@ -294,6 +286,15 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.action_MenuFiscal_Leitura_do_Movimento_Di_rio_de_Cupom_de_Gratuidade.triggered.connect(self.on_action_MenuFiscal_Leitura_do_Movimento_Di_rio_de_Cupom_de_Gratuidade_triggered)
         self.action_MenuFiscal_Ped_gios.triggered.connect(self.on_action_MenuFiscal_Ped_gios_triggered)
         self.action_MenuFiscal_Manuten_ao_de_Bombas.triggered.connect(self.on_action_MenuFiscal_Manuten_ao_de_Bombas_triggered)
+
+        '''
+        #CHAMA A FUNÇAO PARA CARREGAR A BIBLIOTECA DARUMAFRAMEWORK
+        carregarDarumaFramework(self)
+        #CHAMA A FUNÇAO DE EXECUÇAO DE PARAMETROS INICIAIS PARA EXECUÇÃO DO EXEMPLO, É TOTALMENTE OPCIONAL.
+        ConfiguracoesIniciaisECF()
+        #CHAMA A FUNÇÃO DE VERIFICAÇÃO DE IMPRESSORA LIGADA E IMPRIME RESULTADO NA TELA, UTILIZANDO O QMESSAGEBOX. TAMBÉM É OPCIONAL
+        VerificaImpressoraLigada(self)
+        '''
 
     def on_retorno_e_Status_triggered(self):
         self.form_FISCAL_RetornosStatusECF = Ui_ui_FISCAL_RetornosStatusECF()

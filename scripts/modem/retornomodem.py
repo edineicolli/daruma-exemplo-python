@@ -25,7 +25,7 @@ def tratarRetornoModem(iRetorno, Janela):
         RetornoMetodo = 'Tratamento de Retorno - DarumaFramework Python/Qt','Retorno -7 - Modem retornou BUSY.'
 
     if (iRetorno > 1):
-        QMessageBox.information(Janela,'Tratamento de Retorno - DarumaFramework Python/Qt',' O nivel de sinal é: ' + str(iRetorno));
+        QMessageBox.information(Janela,'Tratamento de Retorno - DarumaFramework Python/Qt',' O nivel de sinal é: ' + str(iRetorno))
     else:
         QMessageBox.information(Janela, 'Tratamento Retorno - Genérico','Retorno do Método: ' + str(RetornoMetodo))
 

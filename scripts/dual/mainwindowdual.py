@@ -36,8 +36,6 @@ class Ui_MainWindowDual(QtGui.QMainWindow):
         super(Ui_MainWindowDual, self).__init__()
 
         self.setupUi(self)
-        #//CHAMA A FUNÇAO PARA CARREGAR A BIBLIOTECA DARUMAFRAMEWORK
-        #carregarDarumaFramework(this);
 
         self.actionM_todo_eDefinirProduto_Daruma.triggered.connect(self.on_actionM_todo_eDefinirProduto_Daruma_triggered)
         self.actionM_todo_regRetornaValorChave_DarumaFramework.triggered.connect(self.on_actionM_todo_regRetornaValorChave_DarumaFramework_triggered)
@@ -79,6 +77,9 @@ class Ui_MainWindowDual(QtGui.QMainWindow):
         self.actionM_todo_iImprimirTexto_DUAL_DarumaFramework.triggered.connect(self.on_actionM_todo_iImprimirTexto_DUAL_DarumaFramework_triggered)
         self.pushButtonEncerrar.clicked.connect(self.on_pushButtonEncerrar_clicked)
         self.pushButtonContatos_2.clicked.connect(self.on_pushButtonContatos_clicked)
+
+        # CHAMA A FUNÇAO PARA CARREGAR A BIBLIOTECA DARUMAFRAMEWORK
+        #carregarDarumaFramework(self)
 
     def on_actionM_todo_eDefinirProduto_Daruma_triggered(self):
         tratarRetornoDUAL(eDefinirProduto_Daruma("DUAL"), self)

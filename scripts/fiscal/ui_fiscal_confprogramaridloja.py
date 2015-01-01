@@ -27,7 +27,7 @@ class Ui_ui_FISCAL_confProgramarIDLoja(QtGui.QWidget):
 
         # Chamada do Método
         tratarRetornoFiscal(confProgramarIDLoja_ECF_Daruma(StrID), self)
-        self.close();
+        self.close()
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

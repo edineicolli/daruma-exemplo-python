@@ -28,7 +28,7 @@ class Ui_ui_FISCAL_rRSAChavePublica(QtGui.QWidget):
         cChavePublica = create_string_buffer(1000)
         cExpoentePublico  = create_string_buffer(1000)
 
-        rRSAChavePublica_ECF_Daruma(StrCaminhoKey,cChavePublica,cExpoentePublico);
+        rRSAChavePublica_ECF_Daruma(StrCaminhoKey,cChavePublica,cExpoentePublico)
 
         StrChavePublica = cChavePublica
         StrExpoentePublico = cExpoentePublico

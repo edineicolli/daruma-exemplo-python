@@ -25,5 +25,5 @@ def tratarRetornoFiscal(iRetorno, Janela):
     QStrMensagem+=cInterpretaAviso
     QStrMensagem+="\n"
 
-    QMessageBox.information(Janela,"Tratamento de Retorno - DarumaFramework Python/Qt",QStrMensagem);
-    return 0;
+    QMessageBox.information(Janela,"Tratamento de Retorno - DarumaFramework Python/Qt",QStrMensagem)
+    return 0

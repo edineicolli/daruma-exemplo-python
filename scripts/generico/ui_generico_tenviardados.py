@@ -22,12 +22,11 @@ class Ui_ui_GENERICO_tEnviarDados(QtGui.QWidget):
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
 
     def on_pushButtonEnviar_clicked(self):
-        StrDados = self.textEdit.toPlainText();
-        StrBytes = self.lineEdit.text();
-        iBytes = 0;
+        StrDados = self.textEdit.toPlainText()
+        StrBytes = self.lineEdit.text()
 
-        iRetorno = tEnviarDados_Daruma(StrDados, iBytes);
-        tratarRetornoGenerico(iRetorno, self);
+        iRetorno = tEnviarDados_Daruma(StrDados, StrBytes)
+        tratarRetornoGenerico(iRetorno, self)
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

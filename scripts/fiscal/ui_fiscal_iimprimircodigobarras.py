@@ -71,7 +71,7 @@ class Ui_ui_FISCAL_iImprimirCodigoBarras(QtGui.QWidget):
             StrVertical = "v"
             tratarRetornoFiscal(iImprimirCodigoBarras_ECF_Daruma(StrTipo,StrLargura,StrAltura,StrTextAbaixo,StrCodBarras,StrVertical,StrTextoLivre), self)
         else:
-            tratarRetornoFiscal(iImprimirCodigoBarras_ECF_Daruma(StrTipo,StrLargura,StrAltura,StrTextAbaixo,StrCodBarras,StrVertical,StrTextoLivre),this);
+            tratarRetornoFiscal(iImprimirCodigoBarras_ECF_Daruma(StrTipo,StrLargura,StrAltura,StrTextAbaixo,StrCodBarras,StrVertical,StrTextoLivre), self)
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

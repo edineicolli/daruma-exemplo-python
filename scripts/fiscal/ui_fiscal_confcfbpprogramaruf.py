@@ -23,10 +23,10 @@ class Ui_ui_FISCAL_confCFBPProgramarUF(QtGui.QWidget):
 
     def on_pushButtonEnviar_clicked(self):
         # Recebe valor em QString do LineEdit
-        StrUF = self.lineEditUF.text();
+        StrUF = self.lineEditUF.text()
 
         # Chamada do Método
-        tratarRetornoFiscal(confCFBPProgramarUF_ECF_Daruma(StrUF), self);
+        tratarRetornoFiscal(confCFBPProgramarUF_ECF_Daruma(StrUF), self)
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

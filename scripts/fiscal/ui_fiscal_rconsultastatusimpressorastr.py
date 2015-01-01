@@ -33,7 +33,7 @@ class Ui_ui_FISCAL_rConsultaStatusImpressoraStr(QtGui.QWidget):
          # Execuçao do Método de Retorno da Informação
         # trataRetorno(
         rConsultaStatusImpressoraStr_ECF_Daruma(iIndice,cStatus)
-        #));
+        #))
 
         # Devolve o retorno da DLL para o campo de texto
         QMessageBox.information(self,"DarumaFramework - Python/Qt","Indice: "+ str(iIndice) +"   Status: "+ str(cStatus))
