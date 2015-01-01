@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a0336715-d62b-4c0e-b1a8-348ef873d3e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/dual/mainwindowdual.py" afterPath="$PROJECT_DIR$/scripts/dual/mainwindowdual.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py" afterPath="$PROJECT_DIR$/scripts/fiscal/mainwindowfiscal.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/retornofiscal.py" afterPath="$PROJECT_DIR$/scripts/fiscal/retornofiscal.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/modem/retornomodem.py" afterPath="$PROJECT_DIR$/scripts/modem/retornomodem.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcadastrar.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcadastrar.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcadastrarpadrao.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_confcadastrarpadrao.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_etef_setarfoco.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_etef_setarfoco.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_etef_travarteclado.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_etef_travarteclado.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_parametrizacaosintegra.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_parametrizacaosintegra.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressoraint.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressoraint.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressorastr.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rconsultastatusimpressorastr.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_regretornavalorchave.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_regretornavalorchave.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarespelhomfd.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarespelhomfd.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatorio.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatorio.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rinfoestendida.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rinfoestendida.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_testedevendasempararbufferizando.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_testedevendasempararbufferizando.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/generico/ui_generico_rreceberdados.py" afterPath="$PROJECT_DIR$/scripts/generico/ui_generico_rreceberdados.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/modem/ui_modem_regretornavalorchave.py" afterPath="$PROJECT_DIR$/scripts/modem/ui_modem_regretornavalorchave.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="a0336715-d62b-4c0e-b1a8-348ef873d3e9" name="Default" comment="" />
     <ignored path="daruma-exemplo-python.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,10 +24,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ui_modem_regretornavalorchave.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ui_modem_regretornavalorchave.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/modem/ui_modem_regretornavalorchave.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13613446" vertical-offset="395" max-vertical-offset="1700">
+            <state vertical-scroll-proportion="0.0" vertical-offset="395" max-vertical-offset="1700">
               <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
               <folding>
                 <element signature="e#261#300#0" expanded="true" />
@@ -56,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="retornomodem.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/modem/retornomodem.py">
+      <file leaf-file-name="ui_modem_reglerapagar.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/modem/ui_modem_reglerapagar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="748">
-              <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.74285716" vertical-offset="0" max-vertical-offset="595">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -602,41 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/modem/ui_modem_conexaocsd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="857" max-vertical-offset="2669">
-          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/modem/ui_modem_eapagar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1037">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/modem/ui_modem_regbandejainicio.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/modem/ui_modem_regcaptionwinapp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/modem/ui_modem_reglerapagar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/modem/ui_modem_regporta.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
@@ -844,19 +789,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/modem/retornomodem.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="748">
+        <state vertical-scroll-proportion="0.028571429" vertical-offset="51" max-vertical-offset="748">
           <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/modem/ui_modem_conexaocsd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.028571429" vertical-offset="510" max-vertical-offset="2601">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/modem/ui_modem_eapagar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94285715" vertical-offset="340" max-vertical-offset="1003">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/modem/ui_modem_regbandejainicio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94285715" vertical-offset="204" max-vertical-offset="1003">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/modem/ui_modem_regcaptionwinapp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94285715" vertical-offset="119" max-vertical-offset="1003">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/modem/ui_modem_regretornavalorchave.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13613446" vertical-offset="395" max-vertical-offset="1700">
+        <state vertical-scroll-proportion="0.0" vertical-offset="395" max-vertical-offset="1700">
           <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
           <folding>
             <element signature="e#261#300#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/modem/ui_modem_reglerapagar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74285716" vertical-offset="0" max-vertical-offset="595">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
