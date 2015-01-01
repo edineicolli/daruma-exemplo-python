@@ -38,17 +38,17 @@ class Ui_ui_FISCAL_TesteDeVendaSemPararBufferizando(QtGui.QWidget):
                  iCFAbrirPadrao_ECF_Daruma()
 
                  for item in range(1,sItem):
-                     #QMessageBox.information(self,"DarumaFramework - Qt C++","Entrou no vender")
+                     #QMessageBox.information(self,"DarumaFramework - Python/Qt","Entrou no vender")
                      iRetorno = iCFVender_ECF_Daruma("I1","1,00","1,00","D$","0,00","123456789012","UN","ITEM")
 
                  iCFTotalizarCupomPadrao_ECF_Daruma()
                  iCFEfetuarPagamentoPadrao_ECF_Daruma()
                  iCFEncerrar_ECF_Daruma("0","Teste de Venda de Item Sem Parar. Mensagem Promocional com até 8 linhas!")
-            QMessageBox.information(self,"DarumaFramework - Qt C++","Processo Concluido.")
+            QMessageBox.information(self,"DarumaFramework - Python/Qt","Processo Concluido.")
 
         if (iRetornoAbrir != 1):
             tratarRetornoFiscal(iRetornoAbrir, self)
-            QMessageBox.warning(self,"DarumaFramework - Qt C++","Erro  Primeira Venda. Cancelando Processo")
+            QMessageBox.warning(self,"DarumaFramework - Python/Qt","Erro  Primeira Venda. Cancelando Processo")
             iCFCancelar_ECF_Daruma()
 
 

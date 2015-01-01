@@ -34,7 +34,7 @@ class Ui_ui_FISCAL_eTEF_TravarTeclado(QtGui.QWidget):
     def on_pushButtonCancelar_clicked(self):
         bTravar = False
         eTEF_TravarTeclado_ECF_Daruma(bTravar)
-        QMessageBox.information(self, "DarumaFramework - Qt/Python!", "Teclado não travado!")
+        QMessageBox.information(self, "DarumaFramework - Python/Qt!", "Teclado não travado!")
         self.close()
 
     def setupUi(self, ui_FISCAL_eTEF_TravarTeclado):

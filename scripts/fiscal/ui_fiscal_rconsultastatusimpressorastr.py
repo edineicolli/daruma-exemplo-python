@@ -36,7 +36,7 @@ class Ui_ui_FISCAL_rConsultaStatusImpressoraStr(QtGui.QWidget):
         #));
 
         # Devolve o retorno da DLL para o campo de texto
-        QMessageBox.information(self,"DarumaFramework - Qt C++","Indice: "+ str(iIndice) +"   Status: "+ str(cStatus))
+        QMessageBox.information(self,"DarumaFramework - Python/Qt","Indice: "+ str(iIndice) +"   Status: "+ str(cStatus))
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

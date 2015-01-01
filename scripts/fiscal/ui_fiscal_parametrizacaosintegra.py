@@ -103,7 +103,7 @@ class Ui_ui_FISCAL_ParametrizacaoSintegra(QtGui.QWidget):
         regAlterarValor_Daruma("ECF\\SINTEGRA\\Numero",StrNumero)
         regAlterarValor_Daruma("ECF\\SINTEGRA\\UF",StrUF)
     
-        QMessageBox.information(self,"DarumaFramework - Qt C++","Parametrização Concluída.")
+        QMessageBox.information(self,"DarumaFramework - Python/Qt","Parametrização Concluída.")
         self.close()
     
     

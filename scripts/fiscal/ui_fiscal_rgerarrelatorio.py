@@ -66,7 +66,7 @@ class Ui_ui_FISCAL_rGerarRelatorio(QtGui.QWidget):
         if(self.checkBoxEAD.isChecked(self)):
             StrRelatorios+= "[EAD]"
             if(self.lineEditArquivoKey.text() == ""):
-                QMessageBox.information(self,"DarumaFramework - Qt C++","Você selecionou EAD. Insira o local do arqivo .Key")
+                QMessageBox.information(self,"DarumaFramework - Python/Qt","Você selecionou EAD. Insira o local do arqivo .Key")
             else:
                 StrRelatorios+=(self.lineEditArquivoKey.text())
     

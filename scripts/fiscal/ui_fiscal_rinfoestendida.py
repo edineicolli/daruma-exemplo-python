@@ -35,14 +35,14 @@ class Ui_ui_FISCAL_rInfoEstendida(QtGui.QWidget):
         cRetorno = create_string_buffer(100)
         iIndice = self.comboBoxIndice.currentIndex()
         if(self.comboBoxIndice.currentIndex()==0):
-            QMessageBox.warning(self,"DarumaFramework - Qt C++","Selecione o Indice!")
+            QMessageBox.warning(self,"DarumaFramework - Python/Qt","Selecione o Indice!")
         else:
              # Execuçao do Método de Retorno da Informação*** */
             # pydaruma
             #tratarRetornoFiscal(rInfoEstentida_ECF_Daruma(iIndice,cRetorno),self)
             StrRetorno = cRetorno
             # Devolve o retorno da DLL para o campo de texto
-            QMessageBox.information(self,"DarumaFramework - Qt C++","Informaçao: "+ StrRetorno)
+            QMessageBox.information(self,"DarumaFramework - Python/Qt","Informaçao: "+ StrRetorno)
 
 
     def on_pushButtonCancelar_clicked(self):

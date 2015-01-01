@@ -435,7 +435,7 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         # MONTO A STRING PARA APRESENTAÇÃO NO QMESSAGEBOX
         StrTotalImposto = ''.join(["Total ISS: ", cISS.decode(), "\n", "Total ICMS: ", cICMS.decode()])
 
-        QMessageBox.information(self, "DarumaFramework - Qt C++", StrTotalImposto)
+        QMessageBox.information(self, "DarumaFramework - Python/Qt", StrTotalImposto)
 
     def on_actionM_todo_iEstornarPagamento_ECF_Daruma_triggered(self):
         self.form_FISCAL_iEstornarPagamento = Ui_ui_FISCAL_iEstornarPagamento()
@@ -478,7 +478,7 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
 
         StrMensagemAviso = "Importante: \n"+"Funcionalidade disponível apenas no ECF MACH1 e MACH2."
 
-        QMessageBox.information(self, "DarumaFramework - Qt/Python", StrMensagemAviso)
+        QMessageBox.information(self, "DarumaFramework - Python/Qt", StrMensagemAviso)
 
         #ALTERA O XML PARA HABILITAR O MODO PRÉ VENDA
         regAlterarValor_Daruma("ECF\\CF\\ModoPreVenda","1")
@@ -543,7 +543,7 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
 
     def on_actionExemplo_CCD_Completo_triggered(self):
 
-        QMessageBox.information(self, "DarumaFramework - Qt/Python","Procedimento necessita de Forma de Pagamento -CARTÃO- cadastrado no ECF.\n Caso não tenha esta forma cadastrada, o pagamento será efetuado como DINHEIRO e o vinculado não sera impresso.")
+        QMessageBox.information(self, "DarumaFramework - Python/Qt","Procedimento necessita de Forma de Pagamento -CARTÃO- cadastrado no ECF.\n Caso não tenha esta forma cadastrada, o pagamento será efetuado como DINHEIRO e o vinculado não sera impresso.")
 
         iRetorno = iCFAbrir_ECF_Daruma("111.111.111.11","Daruma Developers Community","Avenida Shishima Hifumi,2910")
         if(iRetorno != 1):
@@ -570,7 +570,7 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         tratarRetornoFiscal(iRetorno, self)
 
     def on_actionExemplo_Completo_TEF_triggered(self):
-        QMessageBox.information(self,"DarumaFramework - Qt/Python","Procedimento necessita de Forma de Pagamento -CARTÃO- cadastrado no ECF.")
+        QMessageBox.information(self,"DarumaFramework - Python/Qt","Procedimento necessita de Forma de Pagamento -CARTÃO- cadastrado no ECF.")
         QMessageBox.information(self,"DarumaFramework - Qt/Ptyhon","É necessario que exista o arquivo IntPos.001 no destino C:\\")
 
         iCFAbrir_ECF_Daruma("111.111.111.11","Daruma Developers Community","Avenida Shishima Hifumi,2910")
@@ -582,10 +582,10 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         iCFEfetuarPagamento_ECF_Daruma("CARTÃO","10,00","Pagamento Efetuado")
         iCFEncerrar_ECF_Daruma("0","Mensagem Promocional com até 8 linhas")
 
-        QMessageBox.information(self, "DarumaFramework - Qt/Python","Vou travar o teclado ate encontrar o arquivo! Caminho do Arquivo: C:\\IntPos.001")
+        QMessageBox.information(self, "DarumaFramework - Python/Qt","Vou travar o teclado ate encontrar o arquivo! Caminho do Arquivo: C:\\IntPos.001")
         iRetorno = iTEF_ImprimirResposta_ECF_Daruma("C:\IntPos.001", True, "CARTAO","10,00")
         if (iRetorno == 0):
-            QMessageBox.information(self, "DarumaFramework - Qt/Python","Erro na Leitura do Arquivo IntPos.001")
+            QMessageBox.information(self, "DarumaFramework - Python/Qt","Erro na Leitura do Arquivo IntPos.001")
 
         tratarRetornoFiscal(iTEF_Fechar_ECF_Daruma(), self)
 
@@ -700,7 +700,7 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
 
     def on_actionExemplo_CNF_Detalhado_triggered(self):
 
-        QMessageBox.warning(self, "DarumaFramework - Qt/Python",("É necessário ter pelo menos um Totalizador Não Fiscal Cadastrado. Caso nao possua, o Comprovante sairá cancelado."))
+        QMessageBox.warning(self, "DarumaFramework - Python/Qt",("É necessário ter pelo menos um Totalizador Não Fiscal Cadastrado. Caso nao possua, o Comprovante sairá cancelado."))
 
         iretAbrir = iCNFAbrir_ECF_Daruma("111.111.111-11","Daruma Developers Community","Av Shishima Hifumi")
         iretReceber = iCNFReceber_ECF_Daruma("03","5,00","A%","10,00")
@@ -710,7 +710,7 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
 
         if((iretAbrir != 1) and (iretReceber != 1) and (iretTotalizar != 1) and (iretPagamento != 1) and (iretEncerrar != 1)):
             iCNFCancelar_ECF_Daruma()
-            QMessageBox.warning(self, "DarumaFramework - Qt/Python","Ocorreu um Erro. O Cupom foi Cancelado")
+            QMessageBox.warning(self, "DarumaFramework - Python/Qt","Ocorreu um Erro. O Cupom foi Cancelado")
 
     #// *** FIM *** //
     #// *** COMPROVANTE NÃO FISCAL *** //
@@ -826,7 +826,7 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
 
     def on_menuModo_Pr_Venda_triggered(self):
         #//AVISO PARA PRÉ VENDA
-        QMessageBox.information(self, "DarumaFramework - Qt C++","Importante: A Configuraçao de Modo Pré-Venda é funcional apenas nas impressoras MACH1 e MACH2. Caso seu ECF seja diferente destes dois modelos, a configuração não terá efeito.")
+        QMessageBox.information(self, "DarumaFramework - Python/Qt","Importante: A Configuraçao de Modo Pré-Venda é funcional apenas nas impressoras MACH1 e MACH2. Caso seu ECF seja diferente destes dois modelos, a configuração não terá efeito.")
 
     def on_actionAvan_o_de_Papel_triggered(self):
         self.form_FISCAL_confProgramarAvancoPapel = Ui_ui_FISCAL_confProgramarAvancoPapel()
@@ -888,9 +888,9 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         tratarRetornoFiscal(rStatusGaveta_ECF_Daruma(iStatus), self)
 
         if (iStatus == 0):
-            QMessageBox.information(self, "DarumaFramework - Qt/Python", "Gaveta Fechada")
+            QMessageBox.information(self, "DarumaFramework - Python/Qt", "Gaveta Fechada")
         if (iStatus == 1):
-            QMessageBox.information(self, "DarumaFramework - Qt/Python", "Gaveta aberta")
+            QMessageBox.information(self, "DarumaFramework - Python/Qt", "Gaveta aberta")
 
     def on_actionM_todo_eCarregarBitmapPromocional_ECF_Daruma_triggered(self):
         self.form_FISCAL_eCarregarBitmapPromocional = Ui_ui_FISCAL_eCarregarBitmapPromocional()

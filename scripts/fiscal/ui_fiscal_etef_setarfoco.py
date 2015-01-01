@@ -28,7 +28,7 @@ class Ui_ui_FISCAL_eTEF_SetarFoco(QtGui.QWidget):
 
             eTEF_SetarFoco_ECF_Daruma(StrCaption)
         else:
-            QMessageBox.information(self, "DarumaFramework - Qt/Python","Entre com o Titulo da Janela!")
+            QMessageBox.information(self, "DarumaFramework - Python/Qt","Entre com o Titulo da Janela!")
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

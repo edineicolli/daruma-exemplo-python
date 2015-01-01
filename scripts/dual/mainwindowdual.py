@@ -442,7 +442,7 @@ class Ui_MainWindowDual(QtGui.QMainWindow):
         gavetaStatus = 0
         tratarRetornoDUAL(rStatusGaveta_DUAL_DarumaFramework(gavetaStatus), self)
         # Devolve o retorno da DLL para o campo de texto
-        QMessageBox.information(self, "DarumaFramework - Qt C++","Status: " + str(gavetaStatus))
+        QMessageBox.information(self, "DarumaFramework - Python/Qt","Status: " + str(gavetaStatus))
 
     def on_actionM_todo_rConsultaStatusImpressora_DUAL_DarumaFramework_triggered(self):
         self.form_dual_rconsultastatusimpressora = Ui_ui_dual_rconsultastatusimpressora()

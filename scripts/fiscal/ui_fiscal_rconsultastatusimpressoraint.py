@@ -28,11 +28,11 @@ class Ui_ui_FISCAL_rConsultaStatusImpressoraInt(QtGui.QWidget):
         iIndice = self.lineEditIndice.text().toInt()
 
         # Execuçao do Método de Retorno da Informação
-        #MessageBox::information(this,"DarumaFramework - Qt C++",trataRetorno(
+        #MessageBox::information(this,"DarumaFramework - Python/Qt",trataRetorno(
         rConsultaStatusImpressoraInt_ECF_Daruma(iIndice, iStatus)
 
         # Devolve o retorno da DLL para o campo de texto
-        QMessageBox.information(self,"DarumaFramework - Qt C++","Indice: "+ str(iIndice) +"   Status: "+ str(iStatus))
+        QMessageBox.information(self,"DarumaFramework - Python/Qt","Indice: "+ str(iIndice) +"   Status: "+ str(iStatus))
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

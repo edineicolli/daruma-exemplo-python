@@ -23,6 +23,7 @@ class Ui_ui_GENERICO_rReceberDados(QtGui.QWidget):
 
     def on_pushButtonReceber_clicked(self):
         StrRecebe = ''
+        # pydaruma erro
         iRetorno = rReceberDados_Daruma(StrRecebe);
         tratarRetornoGenerico(iRetorno, self);
         self.textEditRecebeDados.setText(StrRecebe);

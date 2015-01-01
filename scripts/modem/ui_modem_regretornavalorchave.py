@@ -6,6 +6,7 @@
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
+from ctypes import create_string_buffer
 
 from PySide import QtCore, QtGui
 from pydaruma.pydaruma import regRetornaValorChave_DarumaFramework
@@ -25,10 +26,9 @@ class Ui_ui_MODEM_regRetornaValorChave(QtGui.QWidget):
         StrProduto = self.lineEditProduto.text()
         StrChave = self.lineEditChave.text()
 
-        StrValorRetornado = ''
-        tratarRetornoModemReg(regRetornaValorChave_DarumaFramework(StrProduto, StrChave, StrValorRetornado), self)
-
-        self.lineEditValorRetornado.setText(StrValorRetornado)
+        StrValorRetornado = create_string_buffer(100)
+        tratarRetornoModemReg(regRetornaValorChave_DarumaFramework(StrProduto, StrChave, bytes(StrValorRetornado)), self)
+        self.lineEditValorRetornado.setText(StrValorRetornado.value.decode('utf-8'))
 
     def on_Fechar_clicked(self):
         self.close()

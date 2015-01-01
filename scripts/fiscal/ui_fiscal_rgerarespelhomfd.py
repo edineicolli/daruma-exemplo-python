@@ -95,7 +95,7 @@ class Ui_ui_FISCAL_rGerarEspelhoMFD(QtGui.QWidget):
 
             tratarRetornoFiscal(rGerarEspelhoMFD_ECF_Daruma("3",StrDATAMInicial,StrDATAMFinal), self)
         else:
-            QMessageBox.information(self, "DarumaFramework - Qt C++","Selecione o Tipo de Intervalo!")
+            QMessageBox.information(self, "DarumaFramework - Python/Qt","Selecione o Tipo de Intervalo!")
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

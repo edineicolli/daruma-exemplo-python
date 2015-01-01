@@ -24,7 +24,7 @@ class Ui_ui_FISCAL_confCadastrarPadrao(QtGui.QWidget):
 
     def on_pushButtonEnviar_clicked(self):
         if ((self.comboBoxTipo.currentIndex()== 0 ) and (self.lineEditValor.text()=="")):
-            QMessageBox.warning(self, "DarumaFramework - Qt/Python","Preencha todos os Campos!")
+            QMessageBox.warning(self, "DarumaFramework - Python/Qt","Preencha todos os Campos!")
         else:
             StrTipo = self.comboBoxTipo.currentText()
             StrValor = self.lineEditValor.text()
