@@ -9,7 +9,7 @@
 
 from PySide import QtCore, QtGui
 from PySide.QtCore import QDate
-from pydaruma.pydaruma import regAlterarValor_Daruma
+from pydaruma.pydaruma import regAlterarValor_Daruma, rGerarSPED_ECF_Daruma
 from scripts.fiscal.retornofiscal import tratarRetornoFiscal
 
 
@@ -37,9 +37,8 @@ class Ui_ui_FISCAL_rGerarSPED(QtGui.QWidget):
             StrFinal = self.dateEditFinal.text()
             StrTipoIntervalo = "DATAM"
 
-        # Execuçao do Metodo
-        # pydaruma
-        # tratarRetornoFiscal(rGerarSPED_ECF_Daruma(StrTipoIntervalo,StrInicial,StrFinal), self)
+            # Execuçao do Metodo
+            tratarRetornoFiscal(rGerarSPED_ECF_Daruma(StrTipoIntervalo,StrInicial,StrFinal), self)
 
     def on_pushButtonCancelar_clicked(self):
         self.close()

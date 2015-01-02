@@ -10,7 +10,7 @@
 from PySide import QtCore, QtGui
 from PySide.QtCore import QDate
 from PySide.QtGui import QMessageBox
-from pydaruma.pydaruma import regAlterarValor_Daruma
+from pydaruma.pydaruma import regAlterarValor_Daruma, rGerarRelatorio_ECF_Daruma
 from scripts.fiscal.retornofiscal import tratarRetornoFiscal
 from scripts.fiscal.ui_fiscal_parametrizacaosintegra import Ui_ui_FISCAL_ParametrizacaoSintegra
 from scripts.fiscal.ui_fiscal_rgerarrelatoriobaixonivel import Ui_ui_FISCAL_rGerarRelatorioBaixoNivel
@@ -80,16 +80,16 @@ class Ui_ui_FISCAL_rGerarRelatorio(QtGui.QWidget):
             StrFinal = self.lineEditFinal.text()
             if(self.radioButtonCOO.isChecked(self)):
                 StrTipoIntervalo = "COO"
-            if(self.radioButtonCRZ.isChecked(self)):
+            else:
+            #if(self.radioButtonCRZ.isChecked(self)):
                 StrTipoIntervalo = "CRZ"
             if(self.radioButtonDATAM.isChecked(self)):
                 StrInicial = self.dateEditInicial.text()
                 StrFinal = self.dateEditFinal.text()
                 StrTipoIntervalo = "DATAM"
     
-        # Execuçao do Metodo
-        # pydaruma
-        #tratarRetornoFiscal(rGerarRelatorio_ECF_Daruma(StrRelatorios,StrTipoIntervalo,StrInicial,StrFinal), self)
+            # Execuçao do Metodo
+            tratarRetornoFiscal(rGerarRelatorio_ECF_Daruma(StrRelatorios,StrTipoIntervalo,StrInicial,StrFinal), self)
 
     def on_radioButtonDATAM_clicked(self):
         self.dateEditInicial.setVisible(True)

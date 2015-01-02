@@ -28,9 +28,8 @@ class Ui_ui_FISCAL_regRetornaValorChave(QtGui.QWidget):
         StrChave = self.lineEditChave.text()
         cValor = create_string_buffer(1165)
 
-        # pydaruma erro
         tratarRetornoFiscal(regRetornaValorChave_DarumaFramework(StrProduto, StrChave, cValor),self)
-        StrValor = cValor
+        StrValor = cValor.value.decode('latin-1')
         self.labelRetorno.setText(StrValor)
 
     def on_pushButtonCancelar_clicked(self):

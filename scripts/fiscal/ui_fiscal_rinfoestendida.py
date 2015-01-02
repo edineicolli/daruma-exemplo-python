@@ -10,6 +10,7 @@ from ctypes import create_string_buffer
 
 from PySide import QtCore, QtGui
 from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import rInfoEstendida_ECF_Daruma
 from scripts.fiscal.retornofiscal import tratarRetornoFiscal
 
 
@@ -38,8 +39,7 @@ class Ui_ui_FISCAL_rInfoEstendida(QtGui.QWidget):
             QMessageBox.warning(self,"DarumaFramework - Python/Qt","Selecione o Indice!")
         else:
              # Execuçao do Método de Retorno da Informação*** */
-            # pydaruma
-            #tratarRetornoFiscal(rInfoEstentida_ECF_Daruma(iIndice,cRetorno),self)
+            tratarRetornoFiscal(rInfoEstendida_ECF_Daruma(iIndice,cRetorno),self)
             StrRetorno = cRetorno
             # Devolve o retorno da DLL para o campo de texto
             QMessageBox.information(self,"DarumaFramework - Python/Qt","Informaçao: "+ StrRetorno)

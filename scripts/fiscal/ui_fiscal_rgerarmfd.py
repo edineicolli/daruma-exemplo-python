@@ -9,7 +9,7 @@
 
 from PySide import QtCore, QtGui
 from PySide.QtCore import QDate
-from pydaruma.pydaruma import regAlterarValor_Daruma
+from pydaruma.pydaruma import regAlterarValor_Daruma, rGerarMFD_ECF_Daruma
 from scripts.fiscal.retornofiscal import tratarRetornoFiscal
 
 
@@ -63,14 +63,14 @@ class Ui_ui_FISCAL_rGerarMFD(QtGui.QWidget):
             StrFinal = self.lineEditFinal.text()
             if(self.radioButtonCOO.isChecked()):
                 StrTipoIntervalo = "COO"
-            if(self.radioButtonDATAM.isChecked()):
+            else:
+            #if(self.radioButtonDATAM.isChecked()):
                 StrInicial = self.dateEditInicial.text()
                 StrFinal = self.dateEditFinal.text()
                 StrTipoIntervalo = "DATAM"
 
-        # Execuçao do Metodo
-        # pydaruma
-        # tratarRetornoFiscal(rGerarMFD_ECF_Daruma(StrTipoIntervalo,StrInicial,StrFinal), self)
+            # Execuçao do Metodo
+            tratarRetornoFiscal(rGerarMFD_ECF_Daruma(StrTipoIntervalo,StrInicial,StrFinal), self)
 
     def on_pushButtonCancelar_clicked(self):
         self.close()
