@@ -26,15 +26,15 @@ class Ui_ui_dual_iimprimirtexto(QtGui.QWidget):
         self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
         
     def on_pushButtonEnviar_clicked(self):
-            StrTexto = self.lineEditTexto.toPlainText()
+            StrTexto = self.TextEditTexto.toPlainText()
 
             tratarRetornoDUAL(iImprimirTexto_DUAL_DarumaFramework(StrTexto,0), self)
     
     def on_pushButtonTesteCompleto_clicked(self):
-        Texto = create_string_buffer(2000)
         iImprimirTexto_DUAL_DarumaFramework("<e><b>BUFFER COMPLETO</e></b><l></l>",0)
         iImprimirTexto_DUAL_DarumaFramework("<e>DATA:<dt></dt></e><l></l><e>Hora:<hr></hr></e><l></l>",0)
-        Texto = ''.join(
+        Texto = create_string_buffer(2000)
+        Texto = ''.join([
             "<ce>Avançando 5 Linhas</ce><sl>5</sl>Inserindo<sp>10</sp>10 espaços em Branco<sl>2</sl>",
             "Formatação Normal</ce><l></l>DARUMA AUTOMAÇÃO!!<sl>2</sl><ce>Negr+Ital+Subl+Expand</ce><l></l>",
             "<b><i><s><e>DARUMA AUTOMAÇÃO!!</b></i></s></e><sl>2</sl><ce>Negr+Ital+Subl+Condensado</ce><l></l>",
@@ -48,8 +48,8 @@ class Ui_ui_dual_iimprimirtexto(QtGui.QWidget):
             "<b><c>DARUMA AUTOMAÇÃO!!</b></c><sl>2</sl><ce>Itálico+Condensado</ce><l></l>",
             "<i><c>DARUMA AUTOMAÇÃO!!</i></c><sl>2</sl><ce>Sublinhado+Condensado</ce><l></l>",
             "<s><c>DARUMA AUTOMAÇÃO!!</s></c><sl>2</sl><ce>Negrito+Normal</ce><l></l>",
-            "<b><n>DARUMA AUTOMAÇÃO!!</n></b><l></l>",
-        )
+            "<b><n>DARUMA AUTOMAÇÃO!!</n></b><l></l>"
+        ])
         iImprimirTexto_DUAL_DarumaFramework(Texto,0)
         iImprimirTexto_DUAL_DarumaFramework("<e><b>FIM BUFFER COMPLETO</b></e><sl>03</sl>", 0)
         iRetorno= iImprimirTexto_DUAL_DarumaFramework("<gui></gui>", 0)
@@ -58,7 +58,7 @@ class Ui_ui_dual_iimprimirtexto(QtGui.QWidget):
     def on_pushButtonTesteSeparado_clicked(self):
         Texto = create_string_buffer(2000)
         iImprimirTexto_DUAL_DarumaFramework("<sn><l><ce><s>Teste com Formatação DHTM</s></ce>",0)
-        Texto = ''.join(
+        Texto = ''.join([
             "<n>Estes são os carácteres que você poderá utilizar<n><l>Você poderá a qualquer monento combinar as formatações!!<l></l>",
             "<<i>><</i>> Para sinalizar Itálico<l></l>",
             "<<s>><</s>> Para sinalizar Sublinhado<l></l>",
@@ -93,8 +93,8 @@ class Ui_ui_dual_iimprimirtexto(QtGui.QWidget):
             "<dt></dt><tb></tb>Megane<tb></tb>Cinza<tb></tb>AAR5414<tb></tb>14:30<l></l>",
             "<dt></dt><tb></tb>Corsa<tb></tb>Preto<tb></tb>AWK0189<tb></tb>20:40<l></l>",
             "<l><tc>_</tc><l></l>",
-            "<l></l><e>DATA:<dt></dt></e><l></l><e>Hora:<hr></hr></e><l></l><l></l>",
-        )
+            "<l></l><e>DATA:<dt></dt></e><l></l><e>Hora:<hr></hr></e><l></l><l></l>"
+        ])
         iImprimirTexto_DUAL_DarumaFramework(Texto,0)
         iImprimirTexto_DUAL_DarumaFramework("<e><b>FIM BUFFER COMPLETO</b></e><sl>03</sl>", 0)
         iRetorno= iImprimirTexto_DUAL_DarumaFramework("<gui></gui>", 0)
