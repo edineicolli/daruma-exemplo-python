@@ -5,9 +5,12 @@
 # Created: Mon Nov 24 22:25:12 2014
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
-# WARNING! All changes made in this file will be lost!
+# WARNING! All changes made in self file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import rStatusDocumento_DUAL_DarumaFramework
+
 
 class Ui_ui_dual_loopingstatusdocumento(QtGui.QWidget):
 
@@ -22,7 +25,49 @@ class Ui_ui_dual_loopingstatusdocumento(QtGui.QWidget):
         self.close()
 
     def on_Enviar_clicked(self):
-        pass
+        sQtd = self.lineEditQuantidade.text() # recebe Quantidade de Looping do LineEdit
+
+        iRetornoInicio = rStatusDocumento_DUAL_DarumaFramework()
+
+        if (iRetornoInicio):
+
+            for qtd in range(1, int(sQtd)):
+                iRetorno = rStatusDocumento_DUAL_DarumaFramework()
+                if iRetorno == 0:
+                    self.lineEditStatus.setText("Retorno 0 - Erro de comunicação, não foi possível enviar o método.")
+                    break
+                elif iRetorno == 1:
+                    self.lineEditStatus.setText("Retorno 1 - OK, Sucesso ao enviar o método.")
+                    break
+                elif iRetorno == -99:
+                    self.lineEditStatus.setText("Retorno -99 - Método não executado, parâmetro inválido.")
+                    break
+                elif iRetorno == -1:
+                    self.lineEditStatus.setText("Retorno -1 - Erro de atualização de Chave.")
+                    break
+                elif iRetorno == -2:
+                    self.lineEditStatus.setText("Retorno -2 - Linhas e Colunas inválidas.")
+                    break
+                elif iRetorno == -4:
+                    self.lineEditStatus.setText("Retorno -4 - A chave ou Valor no Arquivo do Registro(Registry) não foi encontada.")
+                    break
+                elif iRetorno == -27:
+                    self.lineEditStatus.setText("Retorno -27 - Erro Genérico.")
+                    break
+                elif iRetorno == -50:
+                    self.lineEditStatus.setText("Retorno -50 - Impressora OFF-LINE.")
+                    break
+                elif iRetorno == -51:
+                    self.lineEditStatus.setText("Retorno -51 -  Impressora sem papel.")
+                    break
+                elif iRetorno == -52:
+                    self.lineEditStatus.setText("Retorno -52 -  Impressora inicializando.")
+                    break
+
+            QMessageBox.information(self,"DarumaFramework - Python/Qt","Processo Concluido.")
+
+        if (sQtd == ""):
+            QMessageBox.information(self,"DarumaFramework - Python/Qt","Preencha todos os campos!")
 
     def setupUi(self, ui_dual_loopingstatusdocumento):
         ui_dual_loopingstatusdocumento.setObjectName("ui_dual_loopingstatusdocumento")

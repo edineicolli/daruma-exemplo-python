@@ -6,8 +6,12 @@
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
+from ctypes import create_string_buffer
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import regRetornaValorChave_DarumaFramework
+from scripts.fiscal.retornofiscal import tratarRetornoFiscal
+
 
 class Ui_ui_dual_regretornavalorchave(QtGui.QWidget):
 
@@ -15,6 +19,10 @@ class Ui_ui_dual_regretornavalorchave(QtGui.QWidget):
         super(Ui_ui_dual_regretornavalorchave, self).__init__()
 
         self.setupUi(self)
+
+        self.lineEditChave.setText("Auditoria")
+        self.lineEditProduto.setText("DUAL")
+
         self.pushButtonCancelar.clicked.connect(self.on_Cancelar_clicked)
         self.pushButtonEnviar.clicked.connect(self.on_Enviar_clicked)
 
@@ -22,7 +30,13 @@ class Ui_ui_dual_regretornavalorchave(QtGui.QWidget):
         self.close()
 
     def on_Enviar_clicked(self):
-        pass
+        StrProduto = self.lineEditProduto.text()
+        StrChave = self.lineEditChave.text()
+        cValor = create_string_buffer(1165)
+
+        tratarRetornoFiscal(regRetornaValorChave_DarumaFramework(StrProduto, StrChave, cValor), self)
+        StrValor = cValor.decode('utf-8')
+        self.lineEditRetorno.setText(StrValor)
 
     def setupUi(self, ui_dual_regretornavalorchave):
         ui_dual_regretornavalorchave.setObjectName("ui_dual_regretornavalorchave")

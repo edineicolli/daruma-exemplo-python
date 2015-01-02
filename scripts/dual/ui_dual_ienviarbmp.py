@@ -8,6 +8,9 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import iEnviarBMP_DUAL_DarumaFramework
+from scripts.dual.retornodual import tratarRetornoDUAL
+
 
 class Ui_ui_dual_ienviarbmp(QtGui.QWidget):
 
@@ -15,6 +18,21 @@ class Ui_ui_dual_ienviarbmp(QtGui.QWidget):
         super(Ui_ui_dual_ienviarbmp, self).__init__()
 
         self.setupUi(self)
+
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+        self.lineEditPath.setText("C:\\logo.bmp")
+        
+    def on_pushButtonEnviar_clicked(self):
+        # Declaraçao das Variaveis que recebem os valores da UI
+        StrPath = self.lineEditPath.text()
+    
+        # Chamada do Método
+        tratarRetornoDUAL(iEnviarBMP_DUAL_DarumaFramework(StrPath), self)
+    
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_dual_ienviarbmp):
         ui_dual_ienviarbmp.setObjectName("ui_dual_ienviarbmp")

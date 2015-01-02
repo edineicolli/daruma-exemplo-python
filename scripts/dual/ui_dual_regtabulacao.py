@@ -8,6 +8,10 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import regTabulacao_DUAL_DarumaFramework
+from scripts.dual.retornodual import tratarRetornoDUAL
+
 
 class Ui_ui_dual_regtabulacao(QtGui.QWidget):
 
@@ -22,7 +26,11 @@ class Ui_ui_dual_regtabulacao(QtGui.QWidget):
         self.close()
 
     def on_Enviar_clicked(self):
-        pass
+        if ((self.lineEditValor.text()=="")):
+                QMessageBox.warning(self,"DarumaFramework - Python/Qt","Preencha todos os Campos!")
+        else:
+            StrValor = self.lineEditValor.text()
+            tratarRetornoDUAL(regTabulacao_DUAL_DarumaFramework(StrValor), self)
 
     def setupUi(self, ui_dual_regtabulacao):
         ui_dual_regtabulacao.setObjectName("ui_dual_regtabulacao")

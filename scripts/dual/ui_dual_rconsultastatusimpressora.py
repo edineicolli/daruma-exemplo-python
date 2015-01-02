@@ -6,8 +6,13 @@
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
+from ctypes import create_string_buffer
 
 from PySide import QtCore, QtGui
+from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import rConsultaStatusImpressora_DUAL_DarumaFramework
+from scripts.dual.retornodual import tratarRetornoDUAL
+
 
 class Ui_ui_dual_rconsultastatusimpressora(QtGui.QWidget):
 
@@ -22,7 +27,20 @@ class Ui_ui_dual_rconsultastatusimpressora(QtGui.QWidget):
         self.close()
 
     def on_Enviar_clicked(self):
-        pass
+        if ((self.lineEditIndice.text()=="") and (self.lineEditTipo.text()=="")):
+            QMessageBox.warning(self,"DarumaFramework - Python/Qt","Preencha todos os Campos!")
+        else:
+            # Definiçao do Tamanho do Vetor de Recebimento da informação
+            impressoraStatus = create_string_buffer(32)
+            StrIndice = self.lineEditIndice.text()
+            StrTipo = self.lineEditTipo.text()
+
+            tratarRetornoDUAL(rConsultaStatusImpressora_DUAL_DarumaFramework(StrIndice,StrTipo,impressoraStatus), self)
+
+            StrStatus = impressoraStatus.decode('utf-8')
+
+            # Devolve o retorno da DLL para o campo de texto
+            QMessageBox.information(self,"DarumaFramework - Python/Qt","Status: "+ StrStatus)
         
     def setupUi(self, ui_dual_rconsultastatusimpressora):
         ui_dual_rconsultastatusimpressora.setObjectName("ui_dual_rconsultastatusimpressora")

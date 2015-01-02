@@ -8,6 +8,10 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import iAutenticarDocumento_DUAL_DarumaFramework
+from scripts.dual.retornodual import tratarRetornoDUAL
+
 
 class Ui_ui_dual_iautenticardocumento(QtGui.QWidget):
 
@@ -15,6 +19,27 @@ class Ui_ui_dual_iautenticardocumento(QtGui.QWidget):
         super(Ui_ui_dual_iautenticardocumento, self).__init__()
 
         self.setupUi(self)
+
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+
+        self.lineEditLocal.setText("1")
+        self.lineEditTexto.setText("<sn><c>DARUMA AUTENTICAÇÃO</c> (D:<dt></dt> H:<hr></hr>)</sn>")
+        self.lineEditSegundos.setText("10")
+        
+    def on_pushButtonEnviar_clicked(self):
+        if ((self.lineEditLocal.text()=="") or (self.lineEditTexto.text()=="") or (self.lineEditSegundos.text()=="")):
+            QMessageBox.warning(self,"DarumaFramework - Python/Qt","Preencha todos os Campos!")
+        else:
+            Local = self.lineEditLocal.text()
+            Texto = self.lineEditTexto.text()
+            Segundos = self.lineEditSegundos.text()
+
+            tratarRetornoDUAL(iAutenticarDocumento_DUAL_DarumaFramework(Texto, Local,Segundos), self)
+    
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
+        
 
     def setupUi(self, ui_dual_iautenticardocumento):
         ui_dual_iautenticardocumento.setObjectName("ui_dual_iautenticardocumento")

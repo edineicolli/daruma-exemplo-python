@@ -6,8 +6,12 @@
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
+from ctypes import create_string_buffer
 
 from PySide import QtCore, QtGui
+from pydaruma.pydaruma import iImprimirTexto_DUAL_DarumaFramework
+from scripts.dual.retornodual import tratarRetornoDUAL
+
 
 class Ui_ui_dual_iimprimirtexto(QtGui.QWidget):
 
@@ -15,6 +19,89 @@ class Ui_ui_dual_iimprimirtexto(QtGui.QWidget):
         super(Ui_ui_dual_iimprimirtexto, self).__init__()
 
         self.setupUi(self)
+
+        self.pushButtonEnviar.clicked.connect(self.on_pushButtonEnviar_clicked)
+        self.pushButtonTesteCompleto.clicked.connect(self.on_pushButtonTesteCompleto_clicked)
+        self.pushButtonTesteSeparado.clicked.connect(self.on_pushButtonTesteSeparado_clicked)
+        self.pushButtonCancelar.clicked.connect(self.on_pushButtonCancelar_clicked)
+        
+    def on_pushButtonEnviar_clicked(self):
+            StrTexto = self.lineEditTexto.toPlainText()
+
+            tratarRetornoDUAL(iImprimirTexto_DUAL_DarumaFramework(StrTexto,0), self)
+    
+    def on_pushButtonTesteCompleto_clicked(self):
+        Texto = create_string_buffer(2000)
+        iImprimirTexto_DUAL_DarumaFramework("<e><b>BUFFER COMPLETO</e></b><l></l>",0)
+        iImprimirTexto_DUAL_DarumaFramework("<e>DATA:<dt></dt></e><l></l><e>Hora:<hr></hr></e><l></l>",0)
+        Texto = ''.join(
+            "<ce>Avançando 5 Linhas</ce><sl>5</sl>Inserindo<sp>10</sp>10 espaços em Branco<sl>2</sl>",
+            "Formatação Normal</ce><l></l>DARUMA AUTOMAÇÃO!!<sl>2</sl><ce>Negr+Ital+Subl+Expand</ce><l></l>",
+            "<b><i><s><e>DARUMA AUTOMAÇÃO!!</b></i></s></e><sl>2</sl><ce>Negr+Ital+Subl+Condensado</ce><l></l>",
+            "<b><i><s><c>DARUMA AUTOMAÇÃO!!</b></i></s></c><sl>2</sl><ce>Negr+Ital+Subl+Normal</ce><l></l>",
+            "<b><i><s><n>DARUMA AUTOMAÇÃO!!</b></i></s></n><sl>2</sl><ce>Expandido</ce><l></l>",
+            "<e>DARUMA AUTOMAÇÃO!!</e><sl>2</sl><ce>Condensado</ce><l></l>",
+            "<c>DARUMA AUTOMAÇÃO!!</c><sl>2</sl><ce>Negrito+Expandido</ce><l></l>",
+            "<b><e>DARUMA AUTOMAÇÃO!!</b></e><sl>2</sl><ce>Itálico+Expandido</ce><l></l>",
+            "<i><e>DARUMA AUTOMAÇÃO!!</i></e><sl>2</sl><ce>Sublinhado+Expandido</ce><l></l>",
+            "<s><e>DARUMA AUTOMAÇÃO!!</s></e><sl>2</sl><ce>Negrito+Condensado</ce><l></l>",
+            "<b><c>DARUMA AUTOMAÇÃO!!</b></c><sl>2</sl><ce>Itálico+Condensado</ce><l></l>",
+            "<i><c>DARUMA AUTOMAÇÃO!!</i></c><sl>2</sl><ce>Sublinhado+Condensado</ce><l></l>",
+            "<s><c>DARUMA AUTOMAÇÃO!!</s></c><sl>2</sl><ce>Negrito+Normal</ce><l></l>",
+            "<b><n>DARUMA AUTOMAÇÃO!!</n></b><l></l>",
+        )
+        iImprimirTexto_DUAL_DarumaFramework(Texto,0)
+        iImprimirTexto_DUAL_DarumaFramework("<e><b>FIM BUFFER COMPLETO</b></e><sl>03</sl>", 0)
+        iRetorno= iImprimirTexto_DUAL_DarumaFramework("<gui></gui>", 0)
+        tratarRetornoDUAL(iRetorno, self)
+    
+    def on_pushButtonTesteSeparado_clicked(self):
+        Texto = create_string_buffer(2000)
+        iImprimirTexto_DUAL_DarumaFramework("<sn><l><ce><s>Teste com Formatação DHTM</s></ce>",0)
+        Texto = ''.join(
+            "<n>Estes são os carácteres que você poderá utilizar<n><l>Você poderá a qualquer monento combinar as formatações!!<l></l>",
+            "<<i>><</i>> Para sinalizar Itálico<l></l>",
+            "<<s>><</s>> Para sinalizar Sublinhado<l></l>",
+            "<<e>><</e>> Para sinalizar Expandido<l></l>",
+            "<<c>><</c>> Para sinalizar Condensado<l></l>",
+            "<<n>><</n>> Para sinalizar Normal<l></l>",
+            "<<l>><</l>> Para Saltar Uma Linha<l></l>",
+            "<<fe>><</fe>> Ativa o Modo fonte Elite<l></l>",
+            "<<b>><</b>> Para sinalizar Negrito<l></l>",
+            "<<ad>><</ad>> Para alinhar a direita<l></l>",
+            "<<ft>>n1,n2,...,n6<</ft>> Para habilitar tabulação<l></l>",
+            "<<tb>><</tb>> Para saltar até a proxima tabulação<l></l>",
+            "<<sl>>NN<</sl>> Para Saltar Várias Linhas<l></l>",
+            "<<tc>>C<</tc>>Riscar Linha com Carácter Específico<l></l>",
+            "<<ce>><</ce>> Para Centralizar<l></l>",
+            "<<dt>><</dt>> Para Imprimir Data Atual<l></l>",
+            "<<hr>><</hr>> Para Imprimir Hora Atual<l></l>",
+            "<<sp>>NN<</sp>> Inserir NN Espaços em Branco<l></l>",
+            "<<sn>><</sn>> Sinal Sonoro, Apitar<l></l>",
+            "<<g>><</g>> Abre a Gaveta<l></l>",
+            "<<a>><</a>> Aguardar até o Término da Impressão<l></l>",
+            "<l><tc>_</tc><tc>_</tc><l></l>",
+            "<e><ce>TABULAÇÃO</ce></e><l></l><tc>_</tc><l></l>",
+            "<ft>05,10,15,20,30,40</ft><l></l>",
+            "<tb>5</tb><tb>10</tb><tb>15</tb><tb>20</tb><tb>30</tb><tb>40</tb><l></l>",
+            "<tb>5</tb><tb>10</tb><tb>15</tb><tb>20</tb><tb>30</tb><tb>40</tb><l></l>",
+            "<tb>5</tb><tb>10</tb><tb>15</tb><tb>20</tb><tb>30</tb><tb>40</tb><l></l>",
+            "<tb>5</tb><tb>10</tb><tb>15</tb><tb>20</tb><tb>30</tb><tb>40</tb><sl>02</sl>",
+            "Data<tb></tb>Veiculo<tb></tb>Cor<tb></tb>Placa<tb></tb>Hora<l></l>",
+            "<dt></dt><tb></tb>Golf<tb></tb><tb></tb>Branca<tb></tb>AJY5231<tb></tb>10:15<l></l>",
+            "<dt></dt><tb></tb>Focus<tb></tb>Vermelha<tb></tb>APG2013<tb></tb>13:45<l></l>",
+            "<dt></dt><tb></tb>Megane<tb></tb>Cinza<tb></tb>AAR5414<tb></tb>14:30<l></l>",
+            "<dt></dt><tb></tb>Corsa<tb></tb>Preto<tb></tb>AWK0189<tb></tb>20:40<l></l>",
+            "<l><tc>_</tc><l></l>",
+            "<l></l><e>DATA:<dt></dt></e><l></l><e>Hora:<hr></hr></e><l></l><l></l>",
+        )
+        iImprimirTexto_DUAL_DarumaFramework(Texto,0)
+        iImprimirTexto_DUAL_DarumaFramework("<e><b>FIM BUFFER COMPLETO</b></e><sl>03</sl>", 0)
+        iRetorno= iImprimirTexto_DUAL_DarumaFramework("<gui></gui>", 0)
+        tratarRetornoDUAL(iRetorno, self)
+    
+    def on_pushButtonCancelar_clicked(self):
+        self.close()
 
     def setupUi(self, ui_dual_iimprimirtexto):
         ui_dual_iimprimirtexto.setObjectName("ui_dual_iimprimirtexto")

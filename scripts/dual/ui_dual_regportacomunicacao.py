@@ -8,6 +8,10 @@
 # WARNING! All changes made in this file will be lost!
 
 from PySide import QtCore, QtGui
+from PySide.QtGui import QMessageBox
+from pydaruma.pydaruma import regPortaComunicacao_DUAL_DarumaFramework
+from scripts.dual.retornodual import tratarRetornoDUAL
+
 
 class Ui_ui_dual_regportacomunicacao(QtGui.QWidget):
 
@@ -23,7 +27,12 @@ class Ui_ui_dual_regportacomunicacao(QtGui.QWidget):
         self.close()
 
     def on_Enviar_clicked(self):
-        pass
+        if ((self.lineEditValor.text()=="")):
+            QMessageBox.warning(self,"DarumaFramework - Qt C++","Preencha todos os Campos!")
+        else:
+            StrValor = self.lineEditValor.text()
+
+            tratarRetornoDUAL(regPortaComunicacao_DUAL_DarumaFramework(StrValor), self)
 
     def setupUi(self, ui_dual_regportacomunicacao):
         ui_dual_regportacomunicacao.setObjectName("ui_dual_regportacomunicacao")
