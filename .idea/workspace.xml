@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0336715-d62b-4c0e-b1a8-348ef873d3e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/retornofiscal.py" afterPath="$PROJECT_DIR$/scripts/fiscal/retornofiscal.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_regretornavalorchave.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_regretornavalorchave.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarmfd.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarmfd.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarnfp.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarnfp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatorio.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatorio.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsintegra.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsintegra.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsped.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsped.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerartdm.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerartdm.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rinfoestendida.py" afterPath="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rinfoestendida.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
     </list>
     <ignored path="daruma-exemplo-python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,83 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mainwindowdual.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/dual/mainwindowdual.py">
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4774" max-vertical-offset="13056">
-              <caret line="302" column="49" selection-start-line="302" selection-start-column="49" selection-end-line="302" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="retornofiscal.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/fiscal/retornofiscal.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="612">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ui_fiscal_rgerarmfd.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarmfd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="3213">
-              <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ui_fiscal_rgerarnfp.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarnfp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="2448">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ui_fiscal_rgerarsintegra.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsintegra.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="2465">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ui_fiscal_rgerarsped.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsped.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="2448">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ui_fiscal_rgerartdm.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerartdm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3809524" vertical-offset="901" max-vertical-offset="3077">
-              <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ui_fiscal_rinfoestendida.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rinfoestendida.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1734">
-              <caret line="41" column="64" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.09189189" vertical-offset="0" max-vertical-offset="425">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -125,7 +44,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatoriooffline.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rleituraxcustomizada.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacao.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rretornarinformacaoseparador.py" />
@@ -176,6 +94,7 @@
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarnfp.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarmfd.py" />
         <option value="$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerartdm.py" />
+        <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
   </component>
@@ -238,24 +157,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daruma-exemplo-python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="daruma-exemplo-python" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fiscal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -534,14 +435,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_menufiscal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33226836" vertical-offset="593" max-vertical-offset="969">
-          <caret line="41" column="31" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_menufiscal_arqmfd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34504792" vertical-offset="28" max-vertical-offset="2992">
@@ -894,14 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/dual/mainwindowdual.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4774" max-vertical-offset="13056">
-          <caret line="302" column="49" selection-start-line="302" selection-start-column="49" selection-end-line="302" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/retornofiscal.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="612">
@@ -912,34 +797,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rinfoestendida.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1734">
-          <caret line="41" column="64" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarrelatorio.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20168068" vertical-offset="1186" max-vertical-offset="5474">
           <caret line="80" column="48" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsped.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="2448">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsintegra.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="2465">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -960,10 +821,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dual/mainwindowdual.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05602241" vertical-offset="4774" max-vertical-offset="13056">
+          <caret line="302" column="49" selection-start-line="302" selection-start-column="49" selection-end-line="302" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsintegra.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04761905" vertical-offset="425" max-vertical-offset="2465">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerarsped.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71428573" vertical-offset="323" max-vertical-offset="2448">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rgerartdm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3809524" vertical-offset="901" max-vertical-offset="3077">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="0" max-vertical-offset="3128">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#252#284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/fiscal/ui_fiscal_rinfoestendida.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3809524" vertical-offset="476" max-vertical-offset="1734">
+          <caret line="41" column="64" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09189189" vertical-offset="0" max-vertical-offset="425">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
