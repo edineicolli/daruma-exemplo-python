@@ -1,2 +1,3 @@
 cx-Freeze==4.3.3
+pydaruma==0.1.9
 pyside==1.2.2
