@@ -71,5 +71,14 @@ $ git clone https://github.com/edineicolli/daruma-exemplo-python.git
 $ cd daruma-exemplo-python
 $ python3 setup.py build
 ```
+
+### Screenshot
+
+*Windows
+![Image of exemplo-windows](https://github.com/edineicolli/daruma-exemplo-python/images/exemplo_windows_seven_32.png)
+
+*Linux
+![Image of exemplo-linux](https://github.com/edineicolli/daruma-exemplo-python/images/exemplo_linux_ubuntu_64.png)
+
 ### Feedback
 Envie seu feedback para colli.edinei@gmail.com.
