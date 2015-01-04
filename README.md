@@ -11,11 +11,11 @@ Os métodos foram reescritos em Python e a interface foi convertida do projeto o
 
 Comando para converter os arquivos .ui:
 ```
-pyside-uic -o output.py input.ui
+> pyside-uic -o output.py input.ui
 ```
 Comando para converter o arquivo de recursos com as imagens para o Python igual ou superior a versão 3:
 ```
-pyside-rcc -py3 Recursos.qrc -o Recursos_rc.py
+> pyside-rcc -py3 Recursos.qrc -o Recursos_rc.py
 ```
 
 ### Dependências
@@ -27,10 +27,7 @@ pyside-rcc -py3 Recursos.qrc -o Recursos_rc.py
 * DarumaFramework.dll 8.19.29.0 (Para Windows) ou libDarumaFramework.so (Para Linux)
 
 ### Instalação
-```
-git clone https://github.com/edineicolli/daruma-exemplo-python.git
-cd daruma-exemplo-python
-```
+
 * Instalação - Windows
 Copie a biblioteca DarumaFramework.dll para a mesma pasta do arquivo main.py
 ```
@@ -39,6 +36,7 @@ Copie a biblioteca DarumaFramework.dll para a mesma pasta do arquivo main.py
 > python main.py
 ```
 * Instalação - Linux
+
 Copie a biblioteca libDarumaFramework.so para /usr/local/lib.
 ```
 $ sudo chmod 777 /usr/local/lib/libDarumaFramework.so
@@ -48,17 +46,18 @@ $ sudo python3 main.py
 ```
 ### Build
 
-Congele os script em forma de arquivo binário utilizando cx_Freeze. 
+Congele os script Python em arquivo binário utilizando cx_Freeze. 
 * Build - Windows
-
-Para cx_Freeze em Windows, utilize os instaladores disponíveis em:
-- http://www.lfd.uci.edu/~gohlke/pythonlibs/dpv9ch6y/cx_Freeze-4.3.3.win32-py3.4.exe
-- http://www.lfd.uci.edu/~gohlke/pythonlibs/dpv9ch6y/cx_Freeze-4.3.3.win-amd64-py3.4.exe
 ```
 > git clone https://github.com/edineicolli/daruma-exemplo-python.git
 > cd daruma-exemplo-python
 > python setup.py build
 ```
+
+Observação: Para cx_Freeze em Windows, utilize os instaladores disponíveis em:
+- http://www.lfd.uci.edu/~gohlke/pythonlibs/dpv9ch6y/cx_Freeze-4.3.3.win32-py3.4.exe
+- http://www.lfd.uci.edu/~gohlke/pythonlibs/dpv9ch6y/cx_Freeze-4.3.3.win-amd64-py3.4.exe
+
 * Build - Linux
 ```
 $ git clone https://github.com/edineicolli/daruma-exemplo-python.git
