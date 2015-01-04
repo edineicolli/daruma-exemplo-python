@@ -74,10 +74,10 @@ $ python3 setup.py build
 
 ### Screenshot
 
-*Windows
+* Windows
 ![Image of exemplo-windows](https://github.com/edineicolli/daruma-exemplo-python/blob/develop/imagens/exemplo_windows_seven_32.png)
 
-*Linux
+* Linux
 ![Image of exemplo-linux](https://github.com/edineicolli/daruma-exemplo-python/blob/develop/imagens/exemplo_linux_ubuntu_64.png)
 
 ### Feedback
