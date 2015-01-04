@@ -55,8 +55,8 @@ Congele os script Python em arquivo binário utilizando cx_Freeze.
 ```
 
 Observação: Para cx_Freeze em Windows, utilize os instaladores disponíveis em:
-- http://www.lfd.uci.edu/~gohlke/pythonlibs/dpv9ch6y/cx_Freeze-4.3.3.win32-py3.4.exe
-- http://www.lfd.uci.edu/~gohlke/pythonlibs/dpv9ch6y/cx_Freeze-4.3.3.win-amd64-py3.4.exe
+    - http://www.lfd.uci.edu/~gohlke/pythonlibs/dpv9ch6y/cx_Freeze-4.3.3.win32-py3.4.exe
+    - http://www.lfd.uci.edu/~gohlke/pythonlibs/dpv9ch6y/cx_Freeze-4.3.3.win-amd64-py3.4.exe
 
 * Build - Linux
 ```
