@@ -38,10 +38,11 @@ Copie a biblioteca DarumaFramework.dll para a mesma pasta do arquivo main.py
 ```
 * Instalação - Linux
 
+Copie a biblioteca libDarumaFramework.so para /usr/local/lib.
+
 ```
 $ mkdir /usr/local/sahre/DarumaFramework
 $ chmod 777 DarumaFramework
-# Copie a biblioteca libDarumaFramework.so para /usr/local/lib.
 $ chmod 777 /usr/local/lib/libDarumaFramework.so
 $ git clone https://github.com/edineicolli/daruma-exemplo-python.git
 $ cd daruma-exemplo-python
@@ -68,7 +69,7 @@ http://www.lfd.uci.edu/~gohlke/pythonlibs/dpv9ch6y/cx_Freeze-4.3.3.win-amd64-py3
 ```
 $ git clone https://github.com/edineicolli/daruma-exemplo-python.git
 $ cd daruma-exemplo-python
-$ sudo python3 setup.py build
+$ python3 setup.py build
 ```
 ### Feedback
 Envie seu feedback para colli.edinei@gmail.com.
