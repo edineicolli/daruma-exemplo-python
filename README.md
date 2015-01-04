@@ -38,13 +38,18 @@ Copie a biblioteca DarumaFramework.dll para a mesma pasta do arquivo main.py
 ```
 * Instalação - Linux
 
-Copie a biblioteca libDarumaFramework.so para /usr/local/lib.
 ```
-$ sudo chmod 777 /usr/local/lib/libDarumaFramework.so
+$ mkdir /usr/local/sahre/DarumaFramework
+$ chmod 777 DarumaFramework
+# Copie a biblioteca libDarumaFramework.so para /usr/local/lib.
+$ chmod 777 /usr/local/lib/libDarumaFramework.so
 $ git clone https://github.com/edineicolli/daruma-exemplo-python.git
 $ cd daruma-exemplo-python
-$ sudo python3 main.py
+$ python3 main.py
 ```
+
+Basicamente os passos são os mesmos utilizados no exemplo original em Qt C++ desenvolvido pela Daruma, [veja aqui](http://www.daruma.com.br/ddemkt/dde023_2012.html).
+
 ### Build
 
 Congele os script Python em arquivo binário utilizando cx_Freeze. 
