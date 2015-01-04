@@ -29,6 +29,7 @@ Comando para converter o arquivo de recursos com as imagens para o Python igual 
 ### Instalação
 
 * Instalação - Windows
+
 Copie a biblioteca DarumaFramework.dll para a mesma pasta do arquivo main.py
 ```
 > git clone https://github.com/edineicolli/daruma-exemplo-python.git
@@ -54,9 +55,9 @@ Congele os script Python em arquivo binário utilizando cx_Freeze.
 > python setup.py build
 ```
 
-Observação: Para cx_Freeze em Windows, utilize os instaladores disponíveis em:
-    - http://www.lfd.uci.edu/~gohlke/pythonlibs/dpv9ch6y/cx_Freeze-4.3.3.win32-py3.4.exe
-    - http://www.lfd.uci.edu/~gohlke/pythonlibs/dpv9ch6y/cx_Freeze-4.3.3.win-amd64-py3.4.exe
+**Observação**: Para cx_Freeze em Windows, utilize os instaladores disponíveis em:
+http://www.lfd.uci.edu/~gohlke/pythonlibs/dpv9ch6y/cx_Freeze-4.3.3.win32-py3.4.exe
+http://www.lfd.uci.edu/~gohlke/pythonlibs/dpv9ch6y/cx_Freeze-4.3.3.win-amd64-py3.4.exe
 
 * Build - Linux
 ```
