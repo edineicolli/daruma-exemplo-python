@@ -41,7 +41,7 @@ Copie a biblioteca DarumaFramework.dll para a mesma pasta do arquivo main.py
 Copie a biblioteca libDarumaFramework.so para /usr/local/lib.
 
 ```
-$ mkdir /usr/local/sahre/DarumaFramework
+$ mkdir /usr/local/share/DarumaFramework
 $ chmod 777 DarumaFramework
 $ chmod 777 /usr/local/lib/libDarumaFramework.so
 $ git clone https://github.com/edineicolli/daruma-exemplo-python.git

@@ -1,3 +1,4 @@
+'''teste'''
 # -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'ui_modem_eapagar.ui'
@@ -11,45 +12,65 @@ from PySide import QtCore, QtGui
 from pydaruma.pydaruma import eApagarSms_MODEM_DarumaFramework
 from scripts.modem.retornomodem import tratarRetornoModem
 
-
 class Ui_ui_MODEM_eApagar(QtGui.QWidget):
-
+    '''teste'''
     def __init__(self):
+        '''teste'''
         super(Ui_ui_MODEM_eApagar, self).__init__()
 
-        self.setupUi(self)
+        self.setupui(self)
         self.pushButton.clicked.connect(self.on_apagar_clicked)
-        self.pushButton_2.clicked.connect(self.on_fechar_clicked)
+        self.BtnFechar.clicked.connect(self.on_fechar_clicked)
 
     def on_apagar_clicked(self):
-        StrIndiceSms = self.lineEditIndiceSms.text()
-        tratarRetornoModem(eApagarSms_MODEM_DarumaFramework(StrIndiceSms), self)
+        '''teste'''
+        indice_sms = self.lineEditIndiceSms.text()
+        tratarRetornoModem(eApagarSms_MODEM_DarumaFramework(indice_sms), self)
 
     def on_fechar_clicked(self):
+        '''teste'''
         self.close()
 
-    def setupUi(self, ui_MODEM_eApagar):
-        ui_MODEM_eApagar.setObjectName("ui_MODEM_eApagar")
-        ui_MODEM_eApagar.resize(212, 115)
-        self.lineEditIndiceSms = QtGui.QLineEdit(ui_MODEM_eApagar)
+    def setupui(self, ui_modem_eapagar):
+        '''teste'''
+        ui_modem_eapagar.setObjectName("ui_modem_eapagar")
+        ui_modem_eapagar.resize(212, 115)
+        self.lineEditIndiceSms = QtGui.QLineEdit(ui_modem_eapagar)
         self.lineEditIndiceSms.setGeometry(QtCore.QRect(20, 40, 161, 20))
         self.lineEditIndiceSms.setObjectName("lineEditIndiceSms")
-        self.label = QtGui.QLabel(ui_MODEM_eApagar)
+        self.label = QtGui.QLabel(ui_modem_eapagar)
         self.label.setGeometry(QtCore.QRect(20, 20, 151, 16))
         self.label.setObjectName("label")
-        self.pushButton = QtGui.QPushButton(ui_MODEM_eApagar)
+        self.pushButton = QtGui.QPushButton(ui_modem_eapagar)
         self.pushButton.setGeometry(QtCore.QRect(20, 70, 75, 23))
         self.pushButton.setObjectName("pushButton")
-        self.pushButton_2 = QtGui.QPushButton(ui_MODEM_eApagar)
-        self.pushButton_2.setGeometry(QtCore.QRect(110, 70, 75, 23))
-        self.pushButton_2.setObjectName("pushButton_2")
+        self.BtnFechar = QtGui.QPushButton(ui_modem_eapagar)
+        self.BtnFechar.setGeometry(QtCore.QRect(110, 70, 75, 23))
+        self.BtnFechar.setObjectName("pushButton_2")
 
-        self.retranslateUi(ui_MODEM_eApagar)
-        QtCore.QMetaObject.connectSlotsByName(ui_MODEM_eApagar)
+        self.retranslateui(ui_modem_eapagar)
+        QtCore.QMetaObject.connectSlotsByName(ui_modem_eapagar)
 
-    def retranslateUi(self, ui_MODEM_eApagar):
-        ui_MODEM_eApagar.setWindowTitle(QtGui.QApplication.translate("ui_MODEM_eApagar", "Método eApagarSms_MODEM_DarumaFramework", None, QtGui.QApplication.UnicodeUTF8))
-        self.label.setText(QtGui.QApplication.translate("ui_MODEM_eApagar", "Indice do SMS a ser apagado:", None, QtGui.QApplication.UnicodeUTF8))
-        self.pushButton.setText(QtGui.QApplication.translate("ui_MODEM_eApagar", "Enviar", None, QtGui.QApplication.UnicodeUTF8))
-        self.pushButton_2.setText(QtGui.QApplication.translate("ui_MODEM_eApagar", "Fechar", None, QtGui.QApplication.UnicodeUTF8))
-
+    def retranslateui(self, ui_modem_eapagar):
+        '''teste'''
+        ui_modem_eapagar.setWindowTitle(
+            QtGui.QApplication.translate(
+                "ui_modem_eapagar",
+                "Método eApagarSms_MODEM_DarumaFramework",
+                None,
+                QtGui.QApplication.UnicodeUTF8))
+        self.label.setText(QtGui.QApplication.translate(
+            "ui_modem_eapagar",
+            "Indice do SMS a ser apagado:",
+            None,
+            QtGui.QApplication.UnicodeUTF8))
+        self.pushButton.setText(QtGui.QApplication.translate(
+            "ui_modem_eapagar",
+            "Enviar",
+            None,
+            QtGui.QApplication.UnicodeUTF8))
+        self.BtnFechar.setText(QtGui.QApplication.translate(
+            "ui_modem_eapagar",
+            "Fechar",
+            None,
+            QtGui.QApplication.UnicodeUTF8))

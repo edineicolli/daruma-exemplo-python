@@ -15,7 +15,6 @@ from scripts.dual.mainwindowdual import Ui_MainWindowDual
 from scripts.fiscal.mainwindowfiscal import Ui_MainWindowFISCAL
 from scripts.generico.mainwindowgenerico import Ui_MainWindowGenerico
 from scripts.modem.mainwindowmodem import Ui_MainWindowModem
-from scripts import Recursos_rc
 
 class Ui_WidgetPrincipal(QtGui.QWidget):
 
@@ -36,22 +35,22 @@ class Ui_WidgetPrincipal(QtGui.QWidget):
         self.formPrincipalECF.showMaximized()
 
     def on_pushButtonImpressoraDual_clicked(self):
-        self.formPrincipalDual = Ui_MainWindowDual();
-        self.formPrincipalDual.showMaximized();
+        self.formPrincipalDual = Ui_MainWindowDual()
+        self.formPrincipalDual.showMaximized()
 
     def on_pushButtonHelpOnline_clicked(self):
-        QDesktopServices.openUrl(QUrl("http://desenvolvedoresdaruma.com.br/home/downloads/Site_2011/Help/DarumaFrameworkHelpOnline/Daruma_Framework.htm"));
+        QDesktopServices.openUrl(QUrl("http://desenvolvedoresdaruma.com.br/home/downloads/Site_2011/Help/DarumaFrameworkHelpOnline/Daruma_Framework.htm"))
 
     def on_pushButtonGenerico_clicked(self):
-        self.formPrincipalGenerico = Ui_MainWindowGenerico();
-        self.formPrincipalGenerico.showMaximized();
+        self.formPrincipalGenerico = Ui_MainWindowGenerico()
+        self.formPrincipalGenerico.showMaximized()
 
     def on_pushButtonFechar_clicked(self):
         self.close()
 
     def on_pushButtonImpressoraModem_clicked(self):
-        self.formPrincipalModem = Ui_MainWindowModem();
-        self.formPrincipalModem.showMaximized();
+        self.formPrincipalModem = Ui_MainWindowModem()
+        self.formPrincipalModem.showMaximized()
 
     def setupUi(self, WidgetPrincipal):
         WidgetPrincipal.setObjectName("WidgetPrincipal")

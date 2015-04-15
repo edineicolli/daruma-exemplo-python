@@ -340,7 +340,7 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_iCFCancelarItem.show()
 
     def on_actionM_todo_iCFCancelarUltimoItem_ECF_Daruma_triggered(self):
-        #MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCFCancelarUltimoItem_ECF_Daruma(), self)
 
     def on_actionM_todo_iCFCancelarItemParcial_ECF_Daruma_triggered(self):
@@ -360,11 +360,11 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_iCFCancelarAcrescimoItem.show()
 
     def on_actionM_todo_iCFCancelarAcrescimoUltimoItem_ECF_Daruma_triggered(self):
-        #MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCFCancelarAcrescimoUltimoItem_ECF_Daruma(), self)
 
     def on_actionM_todo_iCFCancelarDescontoUltimoItem_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCFCancelarDescontoUltimoItem_ECF_Daruma(), self)
 
     def on_actionM_todo_iCFTotalizarCupom_ECF_Daruma_triggered(self):
@@ -372,15 +372,15 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_iCFTotalizarCupom.show()
 
     def on_actionM_todo_iCFTotalizarPadrao_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCFTotalizarCupomPadrao_ECF_Daruma(), self)
 
     def on_actionM_todo_iCFCancelarAcrescimoSubTotal_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCFCancelarAcrescimoSubtotal_ECF_Daruma(), self)
 
     def on_actionM_todo_iCFCancelarDescontoSubTotal_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCFCancelarDescontoSubtotal_ECF_Daruma(), self)
 
     def on_actionM_todo_iCFEfetuarPagamento_ECF_Daruma_triggered(self):
@@ -392,15 +392,15 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_iCFEfetuarPagamentoFormatado.show()
 
     def on_actionM_todo_iCFEfetuarPagamentoPadrao_ECF_Daruma_triggered(self):
-        #MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCFEfetuarPagamentoPadrao_ECF_Daruma(), self)
 
     def on_actionM_todo_iCFEncerrarPadrao_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCFEncerrarPadrao_ECF_Daruma(), self)
 
     def on_actionM_todo_iCFEncerrarResumido_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCFEncerrarResumido_ECF_Daruma(), self)
 
     def on_actionM_todo_iCFEncerrar_ECF_Daruma_triggered(self):
@@ -412,11 +412,11 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_iCFEncerrarConfigMsg.show()
 
     def on_actionM_todo_iCFEncerrarCupomAdicional_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCFEmitirCupomAdicional_ECF_Daruma(), self)
 
     def on_actionM_todo_iCFCancelar_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCFCancelar_ECF_Daruma(), self)
 
     def on_actionM_todo_iCFIdentificarConsumidor_ECF_Daruma_triggered(self):
@@ -464,7 +464,7 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
     def on_actionCupom_Fiscal_Resumido_triggered(self):
 
         iCFAbrirPadrao_ECF_Daruma()
-        iCFVenderResumido_ECF_Daruma("F1","1,00","12345678901234","REFRIGERANTE");
+        iCFVenderResumido_ECF_Daruma("F1","1,00","12345678901234","REFRIGERANTE")
         iCFTotalizarCupomPadrao_ECF_Daruma()
 
         # Utilizarei a funçao iCFEncerrarResumido_ECF_Daruma que já passa a forma de pagamento padrão, não sendo
@@ -493,25 +493,25 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         iCFTotalizarCupomPadrao_ECF_Daruma()
         iCFEfetuarPagamentoPadrao_ECF_Daruma()
         iRetorno = iCFEncerrar_ECF_Daruma("0","MENSAGEM PROMOCIONAL COM ATE 8 LINHAS")
-        tratarRetornoFiscal(iRetorno, self);
+        tratarRetornoFiscal(iRetorno, self)
 
         #ALTERA O XML PARA DESABILITAR O MODO PRÉ VENDA
         regAlterarValor_Daruma("ECF\\CF\\ModoPreVen.","0")
 
-    #// *** FIM *** //
-    #// *** MÉTODOS DE CUPOM FISCAL *** //
+    # FIM
+    # MÉTODOS DE CUPOM FISCAL
 
 
 
-    #// *** CCD / COMPROVANTE DÉBIDO CRÉDITO - TEF *** //
-    #// *** INICIO *** //
+    # CCD / COMPROVANTE DÉBIDO CRÉDITO - TEF
+    # INICIO
 
     def on_actionM_todo_iCCDAbrir_ECF_Daruma_triggered(self):
         self.form_FISCAL_iCCDAbrir = Ui_ui_FISCAL_iCCDAbrir()
         self.form_FISCAL_iCCDAbrir.show()
 
     def on_actionM_todo_iCCDAbrirPadrao_ECF_Daruma_triggered(self):
-        #MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCCDAbrirPadrao_ECF_Daruma(), self)
 
     def on_actionM_todo_iCCDAbrirSimplificado_ECF_Daruma_triggered(self):
@@ -527,7 +527,7 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_iCCDImprimirArquivo.show()
 
     def on_actionM_todo_iCCDFechar_ECF_Daruma_triggered(self):
-        #MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCCDFechar_ECF_Daruma(), self)
 
     def on_actionM_todo_iCCDEstornar_ECF_Daruma_triggered(self):
@@ -535,11 +535,11 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_iCCDEstornar.show()
 
     def on_actionM_todo_iCCDEstornarPadrao_ECF_Daruma_triggered(self):
-        #MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCCDEstornarPadrao_ECF_Daruma(), self)
 
     def on_action2_Via_de_CCD_triggered(self):
-        #MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCCDSegundaVia_ECF_Daruma(), self)
 
     def on_actionExemplo_CCD_Completo_triggered(self):
@@ -607,17 +607,17 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_eTEF_TravarTeclado.show()
 
     def on_actionM_todo_iTEF_Fechar_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iTEF_Fechar_ECF_Daruma(), self)
 
     def on_actionM_todo_eTEF_SetarFoco_ECF_Daruma_triggered(self):
         self.form_FISCAL_eTEF_SetarFoco = Ui_ui_FISCAL_eTEF_SetarFoco()
         self.form_FISCAL_eTEF_SetarFoco.show()
-    #// *** FIM *** //
-    #// *** CCD / COMPROVANTE DÉBIDO CRÉDITO - TEF *** //
+    # FIM
+    # CCD / COMPROVANTE DÉBIDO CRÉDITO - TEF
 
-    #// *** COMPROVANTE NÃO FISCAL *** //
-    #// *** INICIO *** //
+    # COMPROVANTE NÃO FISCAL
+    # INICIO
 
     def on_actionM_todo_iCNFAbrir_ECF_Daruma_triggered(self):
         self.form_FISCAL_iCNFAbrir = Ui_ui_FISCAL_iCNFAbrir()
@@ -640,7 +640,7 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_iCNFCancelarItem.show()
 
     def on_actionM_todo_iCNFCancelarUltimoItem_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCNFCancelarUltimoItem_ECF_Daruma(), self)
 
     def on_actionM_todo_iCNFCancelarAcrescimoItem_ECF_Daruma_triggered(self):
@@ -648,7 +648,7 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_iCNFCancelarAcrescimoItem.show()
 
     def on_actionM_todo_iCNFCancelarAcrescimoUltimoItem_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCNFCancelarAcrescimoUltimoItem_ECF_Daruma(), self)
 
     def on_actionM_todo_iCNFCancelarDescontoItem_ECF_Daruma_triggered(self):
@@ -656,7 +656,7 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_iCNFCancelarDescontoItem.show()
 
     def on_actionM_todo_iCNFCancelarDescontoUltimoItem_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCNFCancelarDescontoUltimoItem_ECF_Daruma(), self)
 
     def on_actionM_todo_iCNFTotalizarComprovante_ECF_Daruma_triggered(self):
@@ -664,15 +664,15 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_iCNFTotalizarComprovante.show()
 
     def on_actionM_todo_iCNFTotalizarComprovantePadrao_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCNFTotalizarComprovantePadrao_ECF_Daruma(), self)
 
     def on_actionM_todo_iCNFCancelarAcrescimoSubtotal_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCNFCancelarAcrescimoSubtotal_ECF_Daruma(), self)
 
     def on_actionM_todo_iCNFCancelarDescontoSubtotal_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCNFCancelarDescontoSubtotal_ECF_Daruma(), self)
 
     def on_actionM_todo_iCNFEfetuarPagamento_ECF_Daruma_triggered(self):
@@ -684,7 +684,7 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_iCNFEfetuarPagamentoFormatado.show()
 
     def on_actionM_todo_iCNFEfetuarPagamentoPadrao_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCNFEfetuarPagamentoPadrao_ECF_Daruma(), self)
 
     def on_actionM_todo_iCNFEncerrar_ECF_Daruma_triggered(self):
@@ -692,11 +692,11 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_iCNFEncerrar.show()
 
     def on_actionM_todo_iCNFEncerrarPadrao_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCNFEncerrarPadrao_ECF_Daruma(), self)
 
     def on_actionM_todo_iCNFCancelar_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iCNFCancelar_ECF_Daruma(), self)
 
     def on_actionExemplo_CNF_Detalhado_triggered(self):
@@ -713,14 +713,14 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
             iCNFCancelar_ECF_Daruma()
             QMessageBox.warning(self, "DarumaFramework - Python/Qt","Ocorreu um Erro. O Cupom foi Cancelado")
 
-    #// *** FIM *** //
-    #// *** COMPROVANTE NÃO FISCAL *** //
+    # FIM
+    # COMPROVANTE NÃO FISCAL
 
 
 
 
     #/* ****** MÉTODOS PARA RELATORIO GERENCIAL ******* */
-    #// *** INICIO *** //
+    # INICIO
 
     def on_actionM_todo_iRGAbrir_ECF_Daruma_triggered(self):
         self.form_FISCAL_iRGAbrir = Ui_ui_FISCAL_iRGAbrir()
@@ -731,30 +731,30 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_iRGAbrirIndice.show()
 
     def on_actionM_todo_iRGAbrirPadrao_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iRGAbrirPadrao_ECF_Daruma(), self)
 
     def on_actionM_todo_iRGImprimirTexto_ECF_Daruma_triggered(self):
         self.form_FISCAL_iRGImprimirTexto = Ui_ui_FISCAL_iRGImprimirTexto()
         self.form_FISCAL_iRGImprimirTexto.show()
     def on_actionM_todo_iRGFechar_ECF_Daruma_triggered(self):
-        tratarRetornoFiscal(iRGFechar_ECF_Daruma(), self);
+        tratarRetornoFiscal(iRGFechar_ECF_Daruma(), self)
 
-    #// *** FIM *** //
-    #// *** MÉTODOS PARA RELATORIO GERENCIAL *** //
+    # FIM
+    # MÉTODOS PARA RELATORIO GERENCIAL
 
 
 
 
     #/* ****** RELATÓRIOS FISCAIS ******* */
-    #// *** INICIO *** //
+    # INICIO
 
     def on_actionM_todo_iLeituraX_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iLeituraX_ECF_Daruma(), self)
 
     def on_actionM_todo_rLeituraX_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(rLeituraX_ECF_Daruma(), self)
 
     def on_actionM_todo_rLeituraXCustomizada_ECF_Daruma_triggered(self):
@@ -762,7 +762,7 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_rLeituraXCustomizada.show()
 
     def on_actionM_todo_iReducaoZ_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iReducaoZ_ECF_Daruma("",""), self)
 
     def on_actionM_todo_iSangria_ECF_Daruma_triggered(self):
@@ -777,7 +777,7 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_iSuprimento.show()
 
     def on_actionM_todo_iSuprimentoPadrao_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(iSuprimentoPadrao_ECF_Daruma(), self)
 
     def on_actionM_todo_iMFLer_ECF_Daruma_triggered(self):
@@ -788,14 +788,14 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_iMFLerSerial = Ui_ui_FISCAL_iMFLerSerial()
         self.form_FISCAL_iMFLerSerial.show()
 
-    #// *** FIM *** //
+    # FIM
     #/* ****** RELATÓRIOS FISCAIS ******* */
 
 
 
 
     #/* ****** CONFIGURAÇAO DO ECF ******* */
-    #// *** INICIO *** //
+    # INICIO
 
     def on_actionM_todo_confCadastrar_ECF_Daruma_triggered(self):
         self.form_FISCAL_confCadastrar = Ui_ui_FISCAL_confCadastrar()
@@ -810,19 +810,19 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_confProgramarIDLoja.show()
 
     def on_actionHabilitarHVerao_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(confHabilitarHorarioVerao_ECF_Daruma(), self)
 
     def on_actionDesabilitarHVerao_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(confDesabilitarHorarioVerao_ECF_Daruma(), self)
 
     def on_actionHabilitarMPreVenda_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(confHabilitarModoPreVenda_ECF_Daruma(), self)
 
     def on_actionDesabilitarMPreVenda_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(confDesabilitarModoPreVenda_ECF_Daruma(), self)
 
     def on_menuModo_Pr_Venda_triggered(self):
@@ -838,25 +838,25 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
         self.form_FISCAL_confProgramarOperador.show()
 
 
-    #// *** FIM *** //
+    # FIM
     #/* ****** CONFIGURAÇAO DO ECF ******* */
 
 
 
 
     #/* ****** RETORNOS E STATUS DO ECF ******* */
-    #// *** INICIO *** //
+    # INICIO
 
     def on_actionM_todos_para_Retornos_e_Status_triggered(self):
         self.form_FISCAL_RetornosStatusECF = Ui_ui_FISCAL_RetornosStatusECF()
         self.form_FISCAL_RetornosStatusECF.show()
 
-    #// *** FIM *** //
+    # FIM
     #/* ****** RETORNOS E STATUS DO ECF ******* */
 
 
     #/* ****** BILHETE DE PASSAGEM ******* */
-    #// *** INICIO *** //
+    # INICIO
     def on_actionM_todo_iCFBPAbrir_ECF_Daruma_triggered(self):
         self.form_FISCAL_iCFBPAbrir = Ui_ui_FISCAL_iCFBPAbrir()
         self.form_FISCAL_iCFBPAbrir.show()
@@ -868,19 +868,19 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
     def on_actionM_todo_confCFBPProgramarUF_ECF_Daruma_triggered(self):
         self.form_FISCAL_confCFBPProgramarUF = Ui_ui_FISCAL_confCFBPProgramarUF()
         self.form_FISCAL_confCFBPProgramarUF.show()
-    #// *** FIM *** //
+    # FIM
     #/* ****** BILHETE DE PASSAGEM ******* */
 
 
     #/* ****** ESPECIAIS ******* */
-    #// *** INICIO *** //
+    # INICIO
 
     def on_actionM_todo_eAcionarGuilhotina_ECF_Daruma_triggered(self):
         self.form_FISCAL_eAcionarGuilhotina = Ui_ui_FISCAL_eAcionarGuilhotina()
         self.form_FISCAL_eAcionarGuilhotina.show()
 
     def on_actionM_todo_eAbrirGaveta_ECF_Daruma_triggered(self):
-        #//MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
+        # MÉTODO SEM PARAMETROS, PODE SER CHAMADO DIRETAMENTE.
         tratarRetornoFiscal(eAbrirGaveta_ECF_Daruma(), self)
 
     def on_actionM_todo_rStatusGaveta_ECF_Daruma_triggered(self):
@@ -920,21 +920,21 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
     def on_actionM_todo_eDefinirModoRegistro_Daruma_triggered(self):
         self.form_FISCAL_eDefinirModoRegistro = Ui_ui_FISCAL_eDefinirModoRegistro()
         self.form_FISCAL_eDefinirModoRegistro.show()
-    #// *** FIM *** //
+    # FIM
     #/* ****** ESPECIAIS ******* */
 
     #/* ****** CHEQUE ******* */
-    #// *** INICIO *** //
+    # INICIO
 
     def on_actionM_todo_iChequeImprimir_FS2100_Daruma_triggered(self):
         self.form_FISCAL_iChequeImprimir = Ui_ui_FISCAL_iChequeImprimir()
         self.form_FISCAL_iChequeImprimir.show()
 
-    #// *** FIM *** //
+    # FIM
     #/* ****** CHEQUE ******* */
 
     #/* ****** GERAÇAO DE ARQUIVO ******* */
-    #// *** INICIO *** //
+    # INICIO
     def on_actionRGerarEspelhoMFD_ECF_Daruma_triggered(self):
         self.form_FISCAL_rGerarEspelhoMFD = Ui_ui_FISCAL_rGerarEspelhoMFD()
         self.form_FISCAL_rGerarEspelhoMFD.show()
@@ -970,11 +970,11 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
     def on_actionM_todo_rGerarNFP_ECF_Daruma_triggered(self):
         self.form_FISCAL_rGerarNFP = Ui_ui_FISCAL_rGerarNFP()
         self.form_FISCAL_rGerarNFP.show()
-    #// *** FIM *** //
+    # FIM
     #/* ****** GERAÇAO DE ARQUIVO ******* */
 
     #/* ****** PAF-ECF ******* */
-    #// *** INICIO *** //
+    # INICIO
     def on_actionM_todo_rCalcularMD5_ECF_Daruma_triggered(self):
         self.form_FISCAL_rCalcularMD5 = Ui_ui_FISCAL_rCalcularMD5()
         self.form_FISCAL_rCalcularMD5.show()
@@ -1006,11 +1006,11 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
     def on_actionM_todo_rRSAChavePublica_ECF_Daruma_triggered(self):
         self.form_FISCAL_rRSAChavePublica = Ui_ui_FISCAL_rRSAChavePublica()
         self.form_FISCAL_rRSAChavePublica.show()
-    #// *** FIM *** //
+    # FIM
     #/* ****** PAF-ECF ******* */
 
     #/* ****** MENU FISCAL ******* */
-    #// *** INICIO *** //
+    # INICIO
     def on_actionM_todo_eMemoriaFiscal_ECF_Daruma_triggered(self):
         self.form_FISCAL_eMemoriaFiscal = Ui_ui_FISCAL_eMemoriaFiscal()
         self.form_FISCAL_eMemoriaFiscal.show()
@@ -1101,7 +1101,7 @@ class Ui_MainWindowFISCAL(QtGui.QMainWindow):
     def on_action_MenuFiscal_Manuten_ao_de_Bombas_triggered(self):
         self.form_FISCAL_MenuFiscal = Ui_ui_FISCAL_MenuFiscal()
         self.form_FISCAL_MenuFiscal.show()
-    #// *** FIM *** //
+    # FIM
     #/* ****** MENU FISCAL ******* */
 
     def on_pushButtonEncerrar_clicked(self):
